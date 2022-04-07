@@ -1,0 +1,10 @@
+D:\Year3\Ky2_nam3\CSDL\Thuctap_ANHTTT[BQTH]\CSDL\QLnhahang_anhttt\obj\Debug\QLnhahang_anhttt.csproj.AssemblyReference.cache
+D:\Year3\Ky2_nam3\CSDL\Thuctap_ANHTTT[BQTH]\CSDL\QLnhahang_anhttt\obj\Debug\QLnhahang_anhttt.loginform.resources
+D:\Year3\Ky2_nam3\CSDL\Thuctap_ANHTTT[BQTH]\CSDL\QLnhahang_anhttt\obj\Debug\QLnhahang_anhttt.csproj.GenerateResource.cache
+D:\Year3\Ky2_nam3\CSDL\Thuctap_ANHTTT[BQTH]\CSDL\QLnhahang_anhttt\bin\Debug\QLnhahang_anhttt.exe.config
+D:\Year3\Ky2_nam3\CSDL\Thuctap_ANHTTT[BQTH]\CSDL\QLnhahang_anhttt\bin\Debug\QLnhahang_anhttt.exe
+D:\Year3\Ky2_nam3\CSDL\Thuctap_ANHTTT[BQTH]\CSDL\QLnhahang_anhttt\bin\Debug\QLnhahang_anhttt.pdb
+D:\Year3\Ky2_nam3\CSDL\Thuctap_ANHTTT[BQTH]\CSDL\QLnhahang_anhttt\obj\Debug\QLnhahang_anhttt.Properties.Resources.resources
+D:\Year3\Ky2_nam3\CSDL\Thuctap_ANHTTT[BQTH]\CSDL\QLnhahang_anhttt\obj\Debug\QLnhahang_anhttt.csproj.CoreCompileInputs.cache
+D:\Year3\Ky2_nam3\CSDL\Thuctap_ANHTTT[BQTH]\CSDL\QLnhahang_anhttt\obj\Debug\QLnhahang_anhttt.exe
+D:\Year3\Ky2_nam3\CSDL\Thuctap_ANHTTT[BQTH]\CSDL\QLnhahang_anhttt\obj\Debug\QLnhahang_anhttt.pdb
