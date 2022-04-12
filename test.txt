@@ -1,9 +1,1 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-giôh
-sflsdkl
-=======
-sgsggd
->>>>>>> b3e3c46ccdbb9938c312f4883a2133c14816d7ae
-ha cong quoc bao
+ha coing quco bao
