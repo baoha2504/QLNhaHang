@@ -118,6 +118,18 @@
     <Compile Include="Staff.Designer.cs">
       <DependentUpon>Staff.cs</DependentUpon>
     </Compile>
+    <Compile Include="Warehouse\ChiTietNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Warehouse\ChiTietNhap.Designer.cs">
+      <DependentUpon>ChiTietNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Warehouse\ChiTietXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Warehouse\ChiTietXuat.Designer.cs">
+      <DependentUpon>ChiTietXuat.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Food\AddCustomer.resx">
       <DependentUpon>AddCustomer.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,6 +164,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Staff.resx">
       <DependentUpon>Staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Warehouse\ChiTietNhap.resx">
+      <DependentUpon>ChiTietNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Warehouse\ChiTietXuat.resx">
+      <DependentUpon>ChiTietXuat.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
