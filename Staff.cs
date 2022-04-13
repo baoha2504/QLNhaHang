@@ -15,7 +15,7 @@ namespace QLnhahang_anhttt
 {
     public partial class Staff : UserControl
     {
-       SqlConnection sqlCon = new SqlConnection(Data_Provider.connectionSTR);
+       SqlConnection sqlCon = new SqlConnection(Data_Provider.ConnectionSTR);
 
         string IDEmployee;
 
