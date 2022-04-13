@@ -11,12 +11,10 @@ namespace QLnhahang_anhttt.Data
     {
         private static string connectionSTR = @"Data Source=DESKTOP-PA4DT27\SQLEXPRESS;Initial Catalog=QLNhaHang3;Integrated Security=True";
 
-        public static string ConnectionSTR { get => connectionSTR; set => connectionSTR = value; }
-
         public static DataTable GetDataTable(string query)
         {
             DataTable data = new DataTable();
-            using (SqlConnection connection = new SqlConnection(ConnectionSTR))//du lieu duoc khai bao trong ngoac tu duoc giai phong
+            using (SqlConnection connection = new SqlConnection(connectionSTR))//du lieu duoc khai bao trong ngoac tu duoc giai phong
             {
                 connection.Open();
                 SqlCommand command = new SqlCommand(query, connection);//thuc thi query tren ket noi connection
