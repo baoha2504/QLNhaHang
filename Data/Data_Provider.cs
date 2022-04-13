@@ -9,7 +9,7 @@ namespace QLnhahang_anhttt.Data
 {
     class Data_Provider
     {
-        private static string connectionSTR = @"Data Source=DESKTOP-PA4DT27\SQLEXPRESS;Initial Catalog=QLNhaHang3;Integrated Security=True";
+        private static string connectionSTR = @"Data Source=;Initial Catalog=QLNhaHang3;Integrated Security=True";
 
         public static DataTable GetDataTable(string query)
         {
@@ -28,7 +28,7 @@ namespace QLnhahang_anhttt.Data
         public static DataTable exc(string query)
         {
             DataTable data = new DataTable();
-            using (SqlConnection connection = new SqlConnection(ConnectionSTR))//du lieu duoc khai bao trong ngoac tu duoc giai phong
+            using (SqlConnection connection = new SqlConnection(connectionSTR))//du lieu duoc khai bao trong ngoac tu duoc giai phong
             {
                 connection.Open();
                 SqlCommand command = new SqlCommand(query, connection);//thuc thi query tren ket noi connection
@@ -45,7 +45,7 @@ namespace QLnhahang_anhttt.Data
         {
             object data = 0;
             // string connectionSTR = "Data Source= DESKTOP-0JUE26U\\SQLEXPRESS;Initial Catalog = QuanLiquanCafe;Integrated Security = True";
-            using (SqlConnection connection = new SqlConnection(ConnectionSTR))//du lieu duoc khai bao trong ngoac tu duoc giai phong
+            using (SqlConnection connection = new SqlConnection(connectionSTR))//du lieu duoc khai bao trong ngoac tu duoc giai phong
             {
                 connection.Open();
                 SqlCommand command = new SqlCommand(query, connection);//thuc thi query tren ket noi connection
