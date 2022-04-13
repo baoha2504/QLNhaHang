@@ -51,3 +51,7 @@ D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.exe
 D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.pdb
 D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Warehouse.ChiTietNhap.resources
 D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Warehouse.ChiTietXuat.resources
+D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Warehouse.FormPhieuNhap.resources
+D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Warehouse.FormPhieuXuat.resources
+D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Warehouse.ThemPhieuNhap.resources
+D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Warehouse.ThemPhieuXuat.resources
