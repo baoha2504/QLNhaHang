@@ -14,7 +14,7 @@ namespace QLnhahang_anhttt
 {
     public partial class Registerform : Form
     {
-        SqlConnection sqlCon = new SqlConnection(Data_Provider.ConnectionSTR);
+        SqlConnection sqlCon = new SqlConnection(Data_Provider.connectionSTR);
 
         Staff staff;
         public Registerform(Staff fg)
