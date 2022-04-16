@@ -32,7 +32,6 @@ namespace QLnhahang_anhttt
             DataTable dtb = new DataTable();
             sqlDa.Fill(dtb);
             guna2DataGridViewStaff.DataSource = dtb;
-
             guna2DataGridViewStaff.AutoGenerateColumns = false;
             guna2DataGridViewStaff.AllowUserToAddRows = false;
             guna2DataGridViewStaff.AutoResizeColumns();

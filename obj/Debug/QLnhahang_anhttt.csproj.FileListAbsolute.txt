@@ -55,3 +55,5 @@ D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Warehouse.FormPhieuNhap.resources
 D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Warehouse.FormPhieuXuat.resources
 D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Warehouse.ThemPhieuNhap.resources
 D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Warehouse.ThemPhieuXuat.resources
+D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Statistical.Statistical.resources
+D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Warehouse.NguyenLieu.resources
