@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using QLnhahang_anhttt.Data;
+using QLnhahang_anhttt.Statistical;
+using QLnhahang_anhttt.Warehouse;
 
 namespace QLnhahang_anhttt
 {
@@ -48,6 +50,7 @@ namespace QLnhahang_anhttt
         {
             sidePanel.Height = guna2GradientTileWarehouse.Height;
             sidePanel.Top = guna2GradientTileWarehouse.Top;
+            
         }
         // introduce
         private void guna2GradientTileBtnIntroduce_Click(object sender, EventArgs e)

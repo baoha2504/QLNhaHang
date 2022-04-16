@@ -111,3 +111,9 @@ D:\QLNhaHang\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 D:\QLNhaHang\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Warehouse.InPhieuNhap.resources
 D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Warehouse.InPhieuXuat.resources
+D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Statistical.BDNgayTuan.resources
+D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Statistical.BDThangNam.resources
+D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Statistical.ThongKeLuaChon.resources
+D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Statistical.ThongKeTheoNam.resources
+D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Statistical.ThongKeTheoNgay.resources
+D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Statistical.ThongKeTheoThang.resources

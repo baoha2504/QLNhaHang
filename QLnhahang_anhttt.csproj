@@ -137,11 +137,47 @@
     <Compile Include="Staff.Designer.cs">
       <DependentUpon>Staff.cs</DependentUpon>
     </Compile>
+    <Compile Include="Statistical\BDNgayTuan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Statistical\BDNgayTuan.Designer.cs">
+      <DependentUpon>BDNgayTuan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistical\BDThangNam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Statistical\BDThangNam.Designer.cs">
+      <DependentUpon>BDThangNam.cs</DependentUpon>
+    </Compile>
     <Compile Include="Statistical\Statistical.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Statistical\Statistical.Designer.cs">
       <DependentUpon>Statistical.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistical\ThongKeLuaChon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Statistical\ThongKeLuaChon.Designer.cs">
+      <DependentUpon>ThongKeLuaChon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistical\ThongKeTheoNam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Statistical\ThongKeTheoNam.Designer.cs">
+      <DependentUpon>ThongKeTheoNam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistical\ThongKeTheoNgay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Statistical\ThongKeTheoNgay.Designer.cs">
+      <DependentUpon>ThongKeTheoNgay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistical\ThongKeTheoThang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Statistical\ThongKeTheoThang.Designer.cs">
+      <DependentUpon>ThongKeTheoThang.cs</DependentUpon>
     </Compile>
     <Compile Include="Warehouse\ChiTietNhap.cs">
       <SubType>Form</SubType>
@@ -232,8 +268,26 @@
     <EmbeddedResource Include="Staff.resx">
       <DependentUpon>Staff.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Statistical\BDNgayTuan.resx">
+      <DependentUpon>BDNgayTuan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistical\BDThangNam.resx">
+      <DependentUpon>BDThangNam.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Statistical\Statistical.resx">
       <DependentUpon>Statistical.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistical\ThongKeLuaChon.resx">
+      <DependentUpon>ThongKeLuaChon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistical\ThongKeTheoNam.resx">
+      <DependentUpon>ThongKeTheoNam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistical\ThongKeTheoNgay.resx">
+      <DependentUpon>ThongKeTheoNgay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistical\ThongKeTheoThang.resx">
+      <DependentUpon>ThongKeTheoThang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Warehouse\ChiTietNhap.resx">
       <DependentUpon>ChiTietNhap.cs</DependentUpon>
@@ -380,5 +434,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
