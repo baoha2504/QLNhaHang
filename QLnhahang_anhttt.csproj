@@ -167,6 +167,18 @@
     <Compile Include="Warehouse\FormPhieuXuat.Designer.cs">
       <DependentUpon>FormPhieuXuat.cs</DependentUpon>
     </Compile>
+    <Compile Include="Warehouse\InPhieuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Warehouse\InPhieuNhap.Designer.cs">
+      <DependentUpon>InPhieuNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Warehouse\InPhieuXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Warehouse\InPhieuXuat.Designer.cs">
+      <DependentUpon>InPhieuXuat.cs</DependentUpon>
+    </Compile>
     <Compile Include="Warehouse\NguyenLieu.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -234,6 +246,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Warehouse\FormPhieuXuat.resx">
       <DependentUpon>FormPhieuXuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Warehouse\InPhieuNhap.resx">
+      <DependentUpon>InPhieuNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Warehouse\InPhieuXuat.resx">
+      <DependentUpon>InPhieuXuat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Warehouse\NguyenLieu.resx">
       <DependentUpon>NguyenLieu.cs</DependentUpon>
