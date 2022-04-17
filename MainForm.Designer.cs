@@ -52,6 +52,8 @@ namespace QLnhahang_anhttt
             this.guna2GradientTileWarehouse = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.guna2GradientTileBtnStaff = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.nguyenLieu1 = new QLnhahang_anhttt.Warehouse.NguyenLieu();
+            this.statistical1 = new QLnhahang_anhttt.Statistical.Statistical();
             this.mainPage1 = new QLnhahang_anhttt.MainPage();
             this.staff1 = new QLnhahang_anhttt.Staff();
             this.MainPage = new QLnhahang_anhttt.MainPage();
@@ -459,6 +461,8 @@ namespace QLnhahang_anhttt
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel1.Controls.Add(this.nguyenLieu1);
+            this.panel1.Controls.Add(this.statistical1);
             this.panel1.Controls.Add(this.mainPage1);
             this.panel1.Controls.Add(this.staff1);
             this.panel1.Location = new System.Drawing.Point(189, 95);
@@ -467,22 +471,36 @@ namespace QLnhahang_anhttt
             this.panel1.Size = new System.Drawing.Size(1299, 598);
             this.panel1.TabIndex = 3;
             // 
+            // nguyenLieu1
+            // 
+            this.nguyenLieu1.Location = new System.Drawing.Point(0, 0);
+            this.nguyenLieu1.Name = "nguyenLieu1";
+            this.nguyenLieu1.Size = new System.Drawing.Size(1299, 598);
+            this.nguyenLieu1.TabIndex = 3;
+            // 
+            // statistical1
+            // 
+            this.statistical1.Location = new System.Drawing.Point(-3, 0);
+            this.statistical1.Name = "statistical1";
+            this.statistical1.Size = new System.Drawing.Size(1299, 598);
+            this.statistical1.TabIndex = 2;
+            // 
             // mainPage1
             // 
             this.mainPage1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.mainPage1.Location = new System.Drawing.Point(17, 26);
+            this.mainPage1.Location = new System.Drawing.Point(3, 0);
             this.mainPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mainPage1.Name = "mainPage1";
-            this.mainPage1.Size = new System.Drawing.Size(1242, 567);
+            this.mainPage1.Size = new System.Drawing.Size(1290, 596);
             this.mainPage1.TabIndex = 1;
             // 
             // staff1
             // 
-            this.staff1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.staff1.Location = new System.Drawing.Point(17, 26);
+            this.staff1.BackColor = System.Drawing.Color.White;
+            this.staff1.Location = new System.Drawing.Point(9, 2);
             this.staff1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.staff1.Name = "staff1";
-            this.staff1.Size = new System.Drawing.Size(1242, 567);
+            this.staff1.Size = new System.Drawing.Size(1290, 593);
             this.staff1.TabIndex = 0;
             // 
             // MainPage
@@ -509,6 +527,7 @@ namespace QLnhahang_anhttt
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.pnl1.ResumeLayout(false);
             this.pnl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
@@ -550,5 +569,7 @@ namespace QLnhahang_anhttt
         private System.Windows.Forms.Panel sidePanel;
         private Staff staff1;
         private MainPage mainPage1;
+        private Warehouse.NguyenLieu nguyenLieu1;
+        private Statistical.Statistical statistical1;
     }
 }

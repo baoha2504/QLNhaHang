@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
@@ -46,32 +46,10 @@
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.CustomBorderColor = System.Drawing.Color.Teal;
             this.guna2Panel1.CustomBorderThickness = new System.Windows.Forms.Padding(0, 45, 0, 0);
-            this.guna2Panel1.Location = new System.Drawing.Point(12, 3);
+            this.guna2Panel1.Location = new System.Drawing.Point(3, 3);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(630, 586);
             this.guna2Panel1.TabIndex = 0;
-            // 
-            // guna2Panel2
-            // 
-            this.guna2Panel2.BorderColor = System.Drawing.Color.Teal;
-            this.guna2Panel2.BorderRadius = 30;
-            this.guna2Panel2.BorderThickness = 2;
-            this.guna2Panel2.Controls.Add(this.label2);
-            this.guna2Panel2.CustomBorderColor = System.Drawing.Color.Teal;
-            this.guna2Panel2.CustomBorderThickness = new System.Windows.Forms.Padding(0, 45, 0, 0);
-            this.guna2Panel2.Location = new System.Drawing.Point(648, 3);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(630, 586);
-            this.guna2Panel2.TabIndex = 1;
-            // 
-            // guna2Panel3
-            // 
-            this.guna2Panel3.Controls.Add(this.guna2Panel1);
-            this.guna2Panel3.Controls.Add(this.guna2Panel2);
-            this.guna2Panel3.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(1293, 592);
-            this.guna2Panel3.TabIndex = 2;
             // 
             // label1
             // 
@@ -85,6 +63,19 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Biểu đồ ngày";
             // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.BorderColor = System.Drawing.Color.Teal;
+            this.guna2Panel2.BorderRadius = 30;
+            this.guna2Panel2.BorderThickness = 2;
+            this.guna2Panel2.Controls.Add(this.label2);
+            this.guna2Panel2.CustomBorderColor = System.Drawing.Color.Teal;
+            this.guna2Panel2.CustomBorderThickness = new System.Windows.Forms.Padding(0, 45, 0, 0);
+            this.guna2Panel2.Location = new System.Drawing.Point(639, 3);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.Size = new System.Drawing.Size(630, 586);
+            this.guna2Panel2.TabIndex = 1;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -96,6 +87,15 @@
             this.label2.Size = new System.Drawing.Size(123, 22);
             this.label2.TabIndex = 1;
             this.label2.Text = "Biểu đồ tuần";
+            // 
+            // guna2Panel3
+            // 
+            this.guna2Panel3.Controls.Add(this.guna2Panel1);
+            this.guna2Panel3.Controls.Add(this.guna2Panel2);
+            this.guna2Panel3.Location = new System.Drawing.Point(3, 3);
+            this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.Size = new System.Drawing.Size(1293, 592);
+            this.guna2Panel3.TabIndex = 2;
             // 
             // BDNgayTuan
             // 

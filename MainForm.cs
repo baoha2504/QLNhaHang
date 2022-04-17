@@ -50,7 +50,7 @@ namespace QLnhahang_anhttt
         {
             sidePanel.Height = guna2GradientTileWarehouse.Height;
             sidePanel.Top = guna2GradientTileWarehouse.Top;
-            
+            nguyenLieu1.BringToFront();
         }
         // introduce
         private void guna2GradientTileBtnIntroduce_Click(object sender, EventArgs e)
@@ -63,6 +63,7 @@ namespace QLnhahang_anhttt
         {
             sidePanel.Height = guna2GradientTileBtnStatistical.Height;
             sidePanel.Top = guna2GradientTileBtnStatistical.Top;
+            statistical1.BringToFront();
         }
         // home
         private void guna2GradientTileBtnHome_Click(object sender, EventArgs e)
@@ -84,6 +85,13 @@ namespace QLnhahang_anhttt
             //////
             loginform frm = new loginform();
             frm.Show();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            sidePanel.Height = guna2GradientTileBtnHome.Height;
+            sidePanel.Top = guna2GradientTileBtnHome.Top;
+            mainPage1.BringToFront();
         }
     }
 }
