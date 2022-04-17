@@ -63,7 +63,7 @@ namespace QLnhahang_anhttt
         {
             sidePanel.Height = guna2GradientTileBtnStatistical.Height;
             sidePanel.Top = guna2GradientTileBtnStatistical.Top;
-            statistical1.BringToFront();
+            statisticals2.BringToFront();
         }
         // home
         private void guna2GradientTileBtnHome_Click(object sender, EventArgs e)

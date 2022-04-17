@@ -155,6 +155,12 @@
     <Compile Include="Statistical\Statistical.Designer.cs">
       <DependentUpon>Statistical.cs</DependentUpon>
     </Compile>
+    <Compile Include="Statistical\Statisticals.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Statistical\Statisticals.Designer.cs">
+      <DependentUpon>Statisticals.cs</DependentUpon>
+    </Compile>
     <Compile Include="Statistical\ThongKeLuaChon.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -276,6 +282,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Statistical\Statistical.resx">
       <DependentUpon>Statistical.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistical\Statisticals.resx">
+      <DependentUpon>Statisticals.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Statistical\ThongKeLuaChon.resx">
       <DependentUpon>ThongKeLuaChon.cs</DependentUpon>

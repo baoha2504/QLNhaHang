@@ -44,7 +44,7 @@
             this.guna2Panel3.Controls.Add(this.guna2Panel2);
             this.guna2Panel3.Location = new System.Drawing.Point(0, 1);
             this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(1293, 592);
+            this.guna2Panel3.Size = new System.Drawing.Size(1193, 592);
             this.guna2Panel3.TabIndex = 3;
             // 
             // guna2Panel1
@@ -55,9 +55,9 @@
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.CustomBorderColor = System.Drawing.Color.Teal;
             this.guna2Panel1.CustomBorderThickness = new System.Windows.Forms.Padding(0, 45, 0, 0);
-            this.guna2Panel1.Location = new System.Drawing.Point(12, 3);
+            this.guna2Panel1.Location = new System.Drawing.Point(3, 3);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(630, 586);
+            this.guna2Panel1.Size = new System.Drawing.Size(580, 586);
             this.guna2Panel1.TabIndex = 0;
             // 
             // label1
@@ -66,7 +66,7 @@
             this.label1.BackColor = System.Drawing.Color.Teal;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(252, 13);
+            this.label1.Location = new System.Drawing.Point(222, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(134, 22);
             this.label1.TabIndex = 0;
@@ -80,9 +80,9 @@
             this.guna2Panel2.Controls.Add(this.label2);
             this.guna2Panel2.CustomBorderColor = System.Drawing.Color.Teal;
             this.guna2Panel2.CustomBorderThickness = new System.Windows.Forms.Padding(0, 45, 0, 0);
-            this.guna2Panel2.Location = new System.Drawing.Point(648, 3);
+            this.guna2Panel2.Location = new System.Drawing.Point(589, 3);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(630, 586);
+            this.guna2Panel2.Size = new System.Drawing.Size(601, 586);
             this.guna2Panel2.TabIndex = 1;
             // 
             // label2
@@ -103,7 +103,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.guna2Panel3);
             this.Name = "BDThangNam";
-            this.Size = new System.Drawing.Size(1293, 595);
+            this.Size = new System.Drawing.Size(1193, 595);
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();

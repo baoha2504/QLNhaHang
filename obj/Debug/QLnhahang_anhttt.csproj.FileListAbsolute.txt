@@ -31,7 +31,6 @@ D:\QLNhaHang\bin\Debug\QLnhahang_anhttt.exe.config
 D:\QLNhaHang\bin\Debug\QLnhahang_anhttt.exe
 D:\QLNhaHang\bin\Debug\QLnhahang_anhttt.pdb
 D:\QLNhaHang\bin\Debug\Guna.UI2.dll
-D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.csproj.AssemblyReference.cache
 D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.csproj.SuggestedBindingRedirects.cache
 D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Food.AddCustomer.resources
 D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Food.AddFood.resources
@@ -117,3 +116,4 @@ D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Statistical.ThongKeLuaChon.resources
 D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Statistical.ThongKeTheoNam.resources
 D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Statistical.ThongKeTheoNgay.resources
 D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Statistical.ThongKeTheoThang.resources
+D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Statistical.Statisticals.resources
