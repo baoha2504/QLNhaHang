@@ -66,9 +66,10 @@ namespace QLnhahang_anhttt.Food
             this.guna2PnlAddFood.Controls.Add(this.label4);
             this.guna2PnlAddFood.Controls.Add(this.label3);
             this.guna2PnlAddFood.Controls.Add(this.label2);
-            this.guna2PnlAddFood.Location = new System.Drawing.Point(304, 176);
+            this.guna2PnlAddFood.Location = new System.Drawing.Point(203, 114);
+            this.guna2PnlAddFood.Margin = new System.Windows.Forms.Padding(2);
             this.guna2PnlAddFood.Name = "guna2PnlAddFood";
-            this.guna2PnlAddFood.Size = new System.Drawing.Size(568, 428);
+            this.guna2PnlAddFood.Size = new System.Drawing.Size(379, 278);
             this.guna2PnlAddFood.TabIndex = 0;
             // 
             // guna2GradientBtnBrowse
@@ -86,12 +87,13 @@ namespace QLnhahang_anhttt.Food
             this.guna2GradientBtnBrowse.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
             this.guna2GradientBtnBrowse.Image = global::QLnhahang_anhttt.Properties.Resources.browser;
             this.guna2GradientBtnBrowse.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientBtnBrowse.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2GradientBtnBrowse.Location = new System.Drawing.Point(125, 197);
+            this.guna2GradientBtnBrowse.ImageSize = new System.Drawing.Size(25, 25);
+            this.guna2GradientBtnBrowse.Location = new System.Drawing.Point(83, 128);
+            this.guna2GradientBtnBrowse.Margin = new System.Windows.Forms.Padding(2);
             this.guna2GradientBtnBrowse.Name = "guna2GradientBtnBrowse";
-            this.guna2GradientBtnBrowse.Size = new System.Drawing.Size(180, 45);
+            this.guna2GradientBtnBrowse.Size = new System.Drawing.Size(120, 29);
             this.guna2GradientBtnBrowse.TabIndex = 13;
-            this.guna2GradientBtnBrowse.Text = "      Browser";
+            this.guna2GradientBtnBrowse.Text = "        Browser";
             // 
             // guna2TextBox2
             // 
@@ -105,12 +107,13 @@ namespace QLnhahang_anhttt.Food
             this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(370, 276);
+            this.guna2TextBox2.Location = new System.Drawing.Point(247, 179);
+            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
             this.guna2TextBox2.PlaceholderText = "";
             this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(172, 30);
+            this.guna2TextBox2.Size = new System.Drawing.Size(115, 19);
             this.guna2TextBox2.TabIndex = 12;
             // 
             // guna2TextBox1
@@ -125,13 +128,13 @@ namespace QLnhahang_anhttt.Food
             this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(125, 270);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.guna2TextBox1.Location = new System.Drawing.Point(83, 175);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "";
             this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(148, 36);
+            this.guna2TextBox1.Size = new System.Drawing.Size(99, 23);
             this.guna2TextBox1.TabIndex = 11;
             // 
             // guna2TxtDish
@@ -146,13 +149,13 @@ namespace QLnhahang_anhttt.Food
             this.guna2TxtDish.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TxtDish.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TxtDish.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TxtDish.Location = new System.Drawing.Point(125, 116);
-            this.guna2TxtDish.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.guna2TxtDish.Location = new System.Drawing.Point(83, 75);
+            this.guna2TxtDish.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2TxtDish.Name = "guna2TxtDish";
             this.guna2TxtDish.PasswordChar = '\0';
             this.guna2TxtDish.PlaceholderText = "";
             this.guna2TxtDish.SelectedText = "";
-            this.guna2TxtDish.Size = new System.Drawing.Size(180, 36);
+            this.guna2TxtDish.Size = new System.Drawing.Size(120, 23);
             this.guna2TxtDish.TabIndex = 10;
             // 
             // guna2btnCancel
@@ -165,9 +168,10 @@ namespace QLnhahang_anhttt.Food
             this.guna2btnCancel.FillColor = System.Drawing.Color.DarkOrange;
             this.guna2btnCancel.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2btnCancel.ForeColor = System.Drawing.Color.White;
-            this.guna2btnCancel.Location = new System.Drawing.Point(327, 355);
+            this.guna2btnCancel.Location = new System.Drawing.Point(218, 231);
+            this.guna2btnCancel.Margin = new System.Windows.Forms.Padding(2);
             this.guna2btnCancel.Name = "guna2btnCancel";
-            this.guna2btnCancel.Size = new System.Drawing.Size(180, 45);
+            this.guna2btnCancel.Size = new System.Drawing.Size(120, 29);
             this.guna2btnCancel.TabIndex = 9;
             this.guna2btnCancel.Text = "Cancel";
             // 
@@ -181,9 +185,10 @@ namespace QLnhahang_anhttt.Food
             this.guna2BtnAddFood.FillColor = System.Drawing.Color.DarkCyan;
             this.guna2BtnAddFood.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2BtnAddFood.ForeColor = System.Drawing.Color.White;
-            this.guna2BtnAddFood.Location = new System.Drawing.Point(54, 355);
+            this.guna2BtnAddFood.Location = new System.Drawing.Point(36, 231);
+            this.guna2BtnAddFood.Margin = new System.Windows.Forms.Padding(2);
             this.guna2BtnAddFood.Name = "guna2BtnAddFood";
-            this.guna2BtnAddFood.Size = new System.Drawing.Size(180, 45);
+            this.guna2BtnAddFood.Size = new System.Drawing.Size(120, 29);
             this.guna2BtnAddFood.TabIndex = 8;
             this.guna2BtnAddFood.Text = "Add Food";
             // 
@@ -198,9 +203,10 @@ namespace QLnhahang_anhttt.Food
             this.guna2CbBoxSelect.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.guna2CbBoxSelect.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.guna2CbBoxSelect.ItemHeight = 30;
-            this.guna2CbBoxSelect.Location = new System.Drawing.Point(125, 44);
+            this.guna2CbBoxSelect.Location = new System.Drawing.Point(83, 29);
+            this.guna2CbBoxSelect.Margin = new System.Windows.Forms.Padding(2);
             this.guna2CbBoxSelect.Name = "guna2CbBoxSelect";
-            this.guna2CbBoxSelect.Size = new System.Drawing.Size(345, 36);
+            this.guna2CbBoxSelect.Size = new System.Drawing.Size(231, 36);
             this.guna2CbBoxSelect.TabIndex = 5;
             // 
             // label6
@@ -208,9 +214,10 @@ namespace QLnhahang_anhttt.Food
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label6.Location = new System.Drawing.Point(300, 280);
+            this.label6.Location = new System.Drawing.Point(200, 182);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 26);
+            this.label6.Size = new System.Drawing.Size(45, 18);
             this.label6.TabIndex = 4;
             this.label6.Text = "Price";
             // 
@@ -219,9 +226,10 @@ namespace QLnhahang_anhttt.Food
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label5.Location = new System.Drawing.Point(21, 276);
+            this.label5.Location = new System.Drawing.Point(14, 179);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(51, 26);
+            this.label5.Size = new System.Drawing.Size(35, 18);
             this.label5.TabIndex = 3;
             this.label5.Text = "Unit";
             // 
@@ -230,9 +238,10 @@ namespace QLnhahang_anhttt.Food
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label4.Location = new System.Drawing.Point(17, 206);
+            this.label4.Location = new System.Drawing.Point(11, 134);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 26);
+            this.label4.Size = new System.Drawing.Size(58, 18);
             this.label4.TabIndex = 2;
             this.label4.Text = "Picture";
             // 
@@ -241,9 +250,10 @@ namespace QLnhahang_anhttt.Food
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label3.Location = new System.Drawing.Point(17, 126);
+            this.label3.Location = new System.Drawing.Point(11, 82);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 26);
+            this.label3.Size = new System.Drawing.Size(38, 18);
             this.label3.TabIndex = 1;
             this.label3.Text = "Dish";
             // 
@@ -252,9 +262,10 @@ namespace QLnhahang_anhttt.Food
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label2.Location = new System.Drawing.Point(17, 50);
+            this.label2.Location = new System.Drawing.Point(11, 32);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 26);
+            this.label2.Size = new System.Drawing.Size(54, 18);
             this.label2.TabIndex = 0;
             this.label2.Text = "Select";
             // 
@@ -265,17 +276,19 @@ namespace QLnhahang_anhttt.Food
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(304, 93);
+            this.panel1.Location = new System.Drawing.Point(203, 60);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(569, 77);
+            this.panel1.Size = new System.Drawing.Size(380, 51);
             this.panel1.TabIndex = 1;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::QLnhahang_anhttt.Properties.Resources.add_to_basket;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 15);
+            this.pictureBox1.Location = new System.Drawing.Point(2, 10);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(92, 50);
+            this.pictureBox1.Size = new System.Drawing.Size(61, 32);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -284,21 +297,23 @@ namespace QLnhahang_anhttt.Food
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(211, 26);
+            this.label1.Location = new System.Drawing.Point(141, 17);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 30);
+            this.label1.Size = new System.Drawing.Size(87, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "Add Food";
             // 
             // AddFood
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1200, 710);
+            this.ClientSize = new System.Drawing.Size(800, 461);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.guna2PnlAddFood);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AddFood";
             this.Text = "AddFood";
             this.guna2PnlAddFood.ResumeLayout(false);

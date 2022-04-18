@@ -10,15 +10,11 @@ using System.Windows.Forms;
 
 namespace QLnhahang_anhttt.Food
 {
-    public partial class AddFood : Form
+    public partial class Payment : UserControl
     {
-        string selectFood;
-        // Foods food;
-        public AddFood()
+        public Payment()
         {
             InitializeComponent();
         }
-
-    
     }
 }

@@ -16,5 +16,7 @@ namespace QLnhahang_anhttt.Food
         {
             InitializeComponent();
         }
+
+      
     }
 }
