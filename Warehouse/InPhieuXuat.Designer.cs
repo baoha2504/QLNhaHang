@@ -46,6 +46,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.reportViewer1);
             this.Name = "InPhieuXuat";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InPhieuXuat";
             this.Load += new System.EventHandler(this.InPhieuXuat_Load);
             this.ResumeLayout(false);

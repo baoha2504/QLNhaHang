@@ -16,5 +16,11 @@ namespace QLnhahang_anhttt.Warehouse
         {
             InitializeComponent();
         }
+
+        private void btInPhieuNhap_Click(object sender, EventArgs e)
+        {
+            InPhieuNhap inPhieuNhap = new InPhieuNhap();
+            inPhieuNhap.ShowDialog();
+        }
     }
 }

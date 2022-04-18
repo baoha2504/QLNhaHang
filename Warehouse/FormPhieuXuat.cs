@@ -16,5 +16,17 @@ namespace QLnhahang_anhttt.Warehouse
         {
             InitializeComponent();
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            ChiTietXuat chiTietXuat = new ChiTietXuat();
+            chiTietXuat.ShowDialog();
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            ThemPhieuXuat themPhieuXuat = new ThemPhieuXuat();
+            themPhieuXuat.ShowDialog();
+        }
     }
 }

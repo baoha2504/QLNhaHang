@@ -117,3 +117,4 @@ D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Statistical.ThongKeTheoNam.resources
 D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Statistical.ThongKeTheoNgay.resources
 D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Statistical.ThongKeTheoThang.resources
 D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Statistical.Statisticals.resources
+D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.csproj.AssemblyReference.cache

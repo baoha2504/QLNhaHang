@@ -16,5 +16,17 @@ namespace QLnhahang_anhttt.Warehouse
         {
             InitializeComponent();
         }
+
+        private void NhapNguyenLieu_Click(object sender, EventArgs e)
+        {
+            FormPhieuNhap form = new FormPhieuNhap();
+            form.ShowDialog();
+        }
+
+        private void XuatNguyenLieu_Click(object sender, EventArgs e)
+        {
+            FormPhieuXuat form = new FormPhieuXuat();
+            form.ShowDialog();
+        }
     }
 }

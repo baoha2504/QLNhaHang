@@ -298,6 +298,7 @@
             this.btInPhieuNhap.Size = new System.Drawing.Size(180, 45);
             this.btInPhieuNhap.TabIndex = 11;
             this.btInPhieuNhap.Text = "In phiếu nhập";
+            this.btInPhieuNhap.Click += new System.EventHandler(this.btInPhieuNhap_Click);
             // 
             // btChinhSua
             // 
@@ -334,6 +335,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "ChiTietNhap";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ChiTietNhap";
             ((System.ComponentModel.ISupportInitialize)(this.dtgvChiTietInPhieuNhap)).EndInit();
             this.ResumeLayout(false);

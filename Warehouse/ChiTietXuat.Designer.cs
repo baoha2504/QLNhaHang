@@ -55,7 +55,6 @@
             this.label1.Size = new System.Drawing.Size(110, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Số phiếu xuất";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -66,7 +65,6 @@
             this.label2.Size = new System.Drawing.Size(83, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Ngày xuất";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -77,7 +75,6 @@
             this.label3.Size = new System.Drawing.Size(119, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "Nhân viên xuất";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // guna2TextBox1
             // 
@@ -233,6 +230,7 @@
             this.btIn.Size = new System.Drawing.Size(180, 45);
             this.btIn.TabIndex = 7;
             this.btIn.Text = "In phiếu xuất";
+            this.btIn.Click += new System.EventHandler(this.btIn_Click);
             // 
             // btChinhSua
             // 
@@ -265,6 +263,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "ChiTietXuat";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ChiTietXuat";
             ((System.ComponentModel.ISupportInitialize)(this.dtgvChiTietXuat)).EndInit();
             this.ResumeLayout(false);
