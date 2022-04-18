@@ -104,6 +104,12 @@
     <Compile Include="Food\InforDesk.Designer.cs">
       <DependentUpon>InforDesk.cs</DependentUpon>
     </Compile>
+    <Compile Include="Introduce\Introduce.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Introduce\Introduce.Designer.cs">
+      <DependentUpon>Introduce.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -253,6 +259,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Food\InforDesk.resx">
       <DependentUpon>InforDesk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Introduce\Introduce.resx">
+      <DependentUpon>Introduce.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -429,6 +438,12 @@
     <None Include="Resources\bookFood1.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\1.jpg" />
+    <Content Include="Resources\2.jpg" />
+    <Content Include="Resources\3.jpg" />
+    <Content Include="Resources\4.jpg" />
+    <Content Include="Resources\5.jpg" />
+    <Content Include="Resources\6.jpg" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

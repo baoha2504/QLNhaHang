@@ -11,6 +11,7 @@ using System.Data.SqlClient;
 using QLnhahang_anhttt.Data;
 using QLnhahang_anhttt.Statistical;
 using QLnhahang_anhttt.Warehouse;
+using QLnhahang_anhttt.Introduce;
 
 namespace QLnhahang_anhttt
 {
@@ -57,6 +58,7 @@ namespace QLnhahang_anhttt
         {
             sidePanel.Height = guna2GradientTileBtnIntroduce.Height;
             sidePanel.Top = guna2GradientTileBtnIntroduce.Top;
+            introduce1.BringToFront();
         }
         // thong ke
         private void guna2GradientTileBtnStatistical_Click(object sender, EventArgs e)
