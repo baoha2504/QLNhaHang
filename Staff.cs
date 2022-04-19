@@ -35,8 +35,7 @@ namespace QLnhahang_anhttt
             guna2DataGridViewStaff.AutoGenerateColumns = false;
             guna2DataGridViewStaff.AllowUserToAddRows = false;
             guna2DataGridViewStaff.AutoResizeColumns();
-
-           sqlCon.Close();
+            sqlCon.Close();
         }
         // trong bang information
         private void guna2BtnAdd_Click(object sender, EventArgs e)
