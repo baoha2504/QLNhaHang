@@ -26,9 +26,8 @@ namespace QLnhahang_anhttt
         }
         private void connect()
         {
-          
             sqlCon.Open();
-            SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT * FROM NHANVIEN", sqlCon);
+            SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT maNV as 'ID', hoten as 'Name', diachi as 'Address', soDienThoai as 'Phone number', chucvu as 'Position' FROM NHANVIEN", sqlCon);
             DataTable dtb = new DataTable();
             sqlDa.Fill(dtb);
             guna2DataGridViewStaff.DataSource = dtb;
@@ -81,7 +80,6 @@ namespace QLnhahang_anhttt
                     DataTable dtb = new DataTable();
                     sqlDa.Fill(dtb);
                     guna2DataGridViewStaff.DataSource = dtb;  
-
                     guna2DataGridViewStaff.AutoGenerateColumns = false;
                     guna2DataGridViewStaff.AllowUserToAddRows = false;
                     guna2DataGridViewStaff.AutoResizeColumns();

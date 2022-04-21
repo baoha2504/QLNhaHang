@@ -43,47 +43,49 @@ namespace QLnhahang_anhttt.Statistical
 
         private void Statisticals_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
+            txMode.Text = "Statistical";
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             guna2Panel2.BringToFront();
+            txMode.Text = "Statistical";
         }
 
         private void Ngay_Click(object sender, EventArgs e)
         {
             thongKeTheoNgay1.BringToFront();
+            txMode.Text = "Statistics by day";
         }
 
         private void Thang_Click(object sender, EventArgs e)
         {
             thongKeTheoThang1.BringToFront();
+            txMode.Text = "Statistics by month";
         }
 
         private void Nam_Click(object sender, EventArgs e)
         {
             thongKeTheoNam1.BringToFront();
+            txMode.Text = "Statistics by year";
         }
 
         private void LuaChon_Click(object sender, EventArgs e)
         {
             thongKeLuaChon1.BringToFront();
+            txMode.Text = "Statistics by choice";
         }
 
         private void NgayTuan_Click(object sender, EventArgs e)
         {
             bdNgayTuan1.BringToFront();
+            txMode.Text = "Chart by day and week";
         }
 
         private void ThangNam_Click(object sender, EventArgs e)
         {
             bdThangNam1.BringToFront();
+            txMode.Text = "Charts by month and year";
         }
     }
 }
