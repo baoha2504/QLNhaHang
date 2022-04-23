@@ -212,7 +212,7 @@
             // TimKiem
             // 
             this.TimKiem.BackColor = System.Drawing.Color.White;
-            this.TimKiem.BorderRadius = 20;
+            this.TimKiem.BorderRadius = 10;
             this.TimKiem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.TimKiem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.TimKiem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -320,7 +320,7 @@
             // NLMoiXuat
             // 
             this.NLMoiXuat.BackColor = System.Drawing.Color.White;
-            this.NLMoiXuat.BorderRadius = 20;
+            this.NLMoiXuat.BorderRadius = 10;
             this.NLMoiXuat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.NLMoiXuat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.NLMoiXuat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -338,7 +338,7 @@
             // NLMoiNhap
             // 
             this.NLMoiNhap.BackColor = System.Drawing.Color.White;
-            this.NLMoiNhap.BorderRadius = 20;
+            this.NLMoiNhap.BorderRadius = 10;
             this.NLMoiNhap.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.NLMoiNhap.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.NLMoiNhap.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -351,11 +351,12 @@
             this.NLMoiNhap.Size = new System.Drawing.Size(172, 40);
             this.NLMoiNhap.TabIndex = 8;
             this.NLMoiNhap.Text = "Mới nhập";
+            this.NLMoiNhap.Click += new System.EventHandler(this.NLMoiNhap_Click);
             // 
             // NLSapHet
             // 
             this.NLSapHet.BackColor = System.Drawing.Color.White;
-            this.NLSapHet.BorderRadius = 20;
+            this.NLSapHet.BorderRadius = 10;
             this.NLSapHet.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.NLSapHet.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.NLSapHet.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -373,7 +374,7 @@
             // NLThuongXuyen
             // 
             this.NLThuongXuyen.BackColor = System.Drawing.Color.White;
-            this.NLThuongXuyen.BorderRadius = 20;
+            this.NLThuongXuyen.BorderRadius = 10;
             this.NLThuongXuyen.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.NLThuongXuyen.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.NLThuongXuyen.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -402,7 +403,7 @@
             // 
             // NhapNguyenLieu
             // 
-            this.NhapNguyenLieu.BorderRadius = 20;
+            this.NhapNguyenLieu.BorderRadius = 10;
             this.NhapNguyenLieu.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             this.NhapNguyenLieu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.NhapNguyenLieu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -420,7 +421,7 @@
             // 
             // XuatNguyenLieu
             // 
-            this.XuatNguyenLieu.BorderRadius = 20;
+            this.XuatNguyenLieu.BorderRadius = 10;
             this.XuatNguyenLieu.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             this.XuatNguyenLieu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.XuatNguyenLieu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
