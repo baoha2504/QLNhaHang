@@ -185,7 +185,7 @@ namespace QLnhahang_anhttt
             this.guna2ButtonAddNV.FillColor = System.Drawing.Color.Orange;
             this.guna2ButtonAddNV.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2ButtonAddNV.ForeColor = System.Drawing.Color.White;
-            this.guna2ButtonAddNV.Location = new System.Drawing.Point(925, 35);
+            this.guna2ButtonAddNV.Location = new System.Drawing.Point(994, 35);
             this.guna2ButtonAddNV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2ButtonAddNV.Name = "guna2ButtonAddNV";
             this.guna2ButtonAddNV.Size = new System.Drawing.Size(195, 40);
@@ -238,7 +238,7 @@ namespace QLnhahang_anhttt
             this.guna2DataGridViewStaff.RowHeadersWidth = 62;
             this.guna2DataGridViewStaff.RowTemplate.Height = 28;
             this.guna2DataGridViewStaff.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridViewStaff.Size = new System.Drawing.Size(772, 430);
+            this.guna2DataGridViewStaff.Size = new System.Drawing.Size(887, 430);
             this.guna2DataGridViewStaff.TabIndex = 10;
             this.guna2DataGridViewStaff.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridViewStaff.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -285,7 +285,7 @@ namespace QLnhahang_anhttt
             this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.Teal;
             this.guna2GroupBox1.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.White;
-            this.guna2GroupBox1.Location = new System.Drawing.Point(806, 126);
+            this.guna2GroupBox1.Location = new System.Drawing.Point(918, 126);
             this.guna2GroupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
             this.guna2GroupBox1.Size = new System.Drawing.Size(356, 430);
@@ -516,7 +516,7 @@ namespace QLnhahang_anhttt
             this.Controls.Add(this.guna2ShadowPanel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Staff";
-            this.Size = new System.Drawing.Size(1192, 580);
+            this.Size = new System.Drawing.Size(1293, 589);
             this.guna2ShadowPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
