@@ -15,6 +15,8 @@ namespace QLnhahang_anhttt.Statistical
         public ThongKeTheoNam()
         {
             InitializeComponent();
+            guna2DateTimePicker1.Format = DateTimePickerFormat.Custom;
+            guna2DateTimePicker1.CustomFormat = "yyyy";
         }
     }
 }

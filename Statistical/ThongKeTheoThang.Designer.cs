@@ -94,16 +94,16 @@
             // 
             // guna2DateTimePicker1
             // 
-            this.guna2DateTimePicker1.BorderRadius = 15;
+            this.guna2DateTimePicker1.BorderRadius = 7;
             this.guna2DateTimePicker1.Checked = true;
             this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(65, 81);
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(54, 87);
             this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(200, 36);
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(218, 36);
             this.guna2DateTimePicker1.TabIndex = 17;
             this.guna2DateTimePicker1.Value = new System.DateTime(2022, 4, 16, 23, 43, 26, 10);
             // 

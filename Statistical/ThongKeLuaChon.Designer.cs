@@ -29,12 +29,6 @@
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.label16 = new System.Windows.Forms.Label();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -54,9 +48,15 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
+            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.label16 = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
-            this.guna2Panel3.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
+            this.guna2Panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -70,85 +70,6 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(1184, 586);
             this.guna2Panel1.TabIndex = 2;
-            // 
-            // guna2Panel3
-            // 
-            this.guna2Panel3.BorderColor = System.Drawing.Color.Teal;
-            this.guna2Panel3.BorderRadius = 30;
-            this.guna2Panel3.BorderThickness = 2;
-            this.guna2Panel3.Controls.Add(this.guna2DateTimePicker2);
-            this.guna2Panel3.Controls.Add(this.label20);
-            this.guna2Panel3.Controls.Add(this.label19);
-            this.guna2Panel3.Controls.Add(this.guna2DateTimePicker1);
-            this.guna2Panel3.Controls.Add(this.label16);
-            this.guna2Panel3.CustomBorderColor = System.Drawing.Color.Teal;
-            this.guna2Panel3.CustomBorderThickness = new System.Windows.Forms.Padding(0, 50, 0, 0);
-            this.guna2Panel3.Location = new System.Drawing.Point(839, 39);
-            this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(322, 243);
-            this.guna2Panel3.TabIndex = 8;
-            // 
-            // guna2DateTimePicker2
-            // 
-            this.guna2DateTimePicker2.BorderRadius = 15;
-            this.guna2DateTimePicker2.Checked = true;
-            this.guna2DateTimePicker2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.guna2DateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker2.Location = new System.Drawing.Point(135, 160);
-            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
-            this.guna2DateTimePicker2.Size = new System.Drawing.Size(175, 36);
-            this.guna2DateTimePicker2.TabIndex = 20;
-            this.guna2DateTimePicker2.Value = new System.DateTime(2022, 4, 16, 23, 43, 26, 10);
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(17, 160);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(79, 20);
-            this.label20.TabIndex = 19;
-            this.label20.Text = "Đến ngày";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(17, 81);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(68, 20);
-            this.label19.TabIndex = 18;
-            this.label19.Text = "Từ ngày";
-            // 
-            // guna2DateTimePicker1
-            // 
-            this.guna2DateTimePicker1.BorderRadius = 15;
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(135, 81);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(175, 36);
-            this.guna2DateTimePicker1.TabIndex = 17;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2022, 4, 16, 23, 43, 26, 10);
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Teal;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(121, 16);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(88, 20);
-            this.label16.TabIndex = 16;
-            this.label16.Text = "Chọn ngày";
             // 
             // guna2Panel2
             // 
@@ -367,6 +288,85 @@
             this.label22.TabIndex = 5;
             this.label22.Text = "Số lượt phiếu nhập";
             // 
+            // guna2Panel3
+            // 
+            this.guna2Panel3.BorderColor = System.Drawing.Color.Teal;
+            this.guna2Panel3.BorderRadius = 30;
+            this.guna2Panel3.BorderThickness = 2;
+            this.guna2Panel3.Controls.Add(this.guna2DateTimePicker2);
+            this.guna2Panel3.Controls.Add(this.label20);
+            this.guna2Panel3.Controls.Add(this.label19);
+            this.guna2Panel3.Controls.Add(this.guna2DateTimePicker1);
+            this.guna2Panel3.Controls.Add(this.label16);
+            this.guna2Panel3.CustomBorderColor = System.Drawing.Color.Teal;
+            this.guna2Panel3.CustomBorderThickness = new System.Windows.Forms.Padding(0, 50, 0, 0);
+            this.guna2Panel3.Location = new System.Drawing.Point(824, 39);
+            this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.Size = new System.Drawing.Size(357, 243);
+            this.guna2Panel3.TabIndex = 8;
+            // 
+            // guna2DateTimePicker2
+            // 
+            this.guna2DateTimePicker2.BorderRadius = 7;
+            this.guna2DateTimePicker2.Checked = true;
+            this.guna2DateTimePicker2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.guna2DateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker2.Location = new System.Drawing.Point(113, 160);
+            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
+            this.guna2DateTimePicker2.Size = new System.Drawing.Size(218, 36);
+            this.guna2DateTimePicker2.TabIndex = 20;
+            this.guna2DateTimePicker2.Value = new System.DateTime(2022, 4, 16, 23, 43, 26, 10);
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(17, 160);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(79, 20);
+            this.label20.TabIndex = 19;
+            this.label20.Text = "Đến ngày";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(17, 81);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(68, 20);
+            this.label19.TabIndex = 18;
+            this.label19.Text = "Từ ngày";
+            // 
+            // guna2DateTimePicker1
+            // 
+            this.guna2DateTimePicker1.BorderRadius = 7;
+            this.guna2DateTimePicker1.Checked = true;
+            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(113, 81);
+            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(218, 36);
+            this.guna2DateTimePicker1.TabIndex = 17;
+            this.guna2DateTimePicker1.Value = new System.DateTime(2022, 4, 16, 23, 43, 26, 10);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Teal;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(121, 16);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(88, 20);
+            this.label16.TabIndex = 16;
+            this.label16.Text = "Chọn ngày";
+            // 
             // ThongKeLuaChon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -375,10 +375,10 @@
             this.Name = "ThongKeLuaChon";
             this.Size = new System.Drawing.Size(1193, 595);
             this.guna2Panel1.ResumeLayout(false);
-            this.guna2Panel3.ResumeLayout(false);
-            this.guna2Panel3.PerformLayout();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
+            this.guna2Panel3.ResumeLayout(false);
+            this.guna2Panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }

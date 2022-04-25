@@ -34,6 +34,8 @@
             this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label16 = new System.Windows.Forms.Label();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -50,8 +52,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
@@ -94,16 +94,16 @@
             // 
             // guna2DateTimePicker1
             // 
-            this.guna2DateTimePicker1.BorderRadius = 15;
+            this.guna2DateTimePicker1.BorderRadius = 7;
             this.guna2DateTimePicker1.Checked = true;
             this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(65, 81);
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(57, 85);
             this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(200, 36);
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(218, 36);
             this.guna2DateTimePicker1.TabIndex = 17;
             this.guna2DateTimePicker1.Value = new System.DateTime(2022, 4, 16, 23, 43, 26, 10);
             // 
@@ -146,6 +146,27 @@
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(815, 580);
             this.guna2Panel2.TabIndex = 7;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label19.Location = new System.Drawing.Point(484, 472);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(53, 20);
+            this.label19.TabIndex = 19;
+            this.label19.Text = "value";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(23, 472);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(73, 20);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "Tổng chi";
             // 
             // label18
             // 
@@ -314,27 +335,6 @@
             this.label5.Size = new System.Drawing.Size(147, 20);
             this.label5.TabIndex = 5;
             this.label5.Text = "Số lượt phiếu nhập";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(23, 472);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 20);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "Tổng chi";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label19.Location = new System.Drawing.Point(484, 472);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(53, 20);
-            this.label19.TabIndex = 19;
-            this.label19.Text = "value";
             // 
             // ThongKeTheoNgay
             // 
