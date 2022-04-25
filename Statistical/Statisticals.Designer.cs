@@ -243,7 +243,7 @@
             this.ThangNam.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ThangNam.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ThangNam.ForeColor = System.Drawing.Color.White;
-            this.ThangNam.Location = new System.Drawing.Point(743, 249);
+            this.ThangNam.Location = new System.Drawing.Point(743, 233);
             this.ThangNam.Name = "ThangNam";
             this.ThangNam.Size = new System.Drawing.Size(260, 65);
             this.ThangNam.TabIndex = 4;
@@ -297,7 +297,7 @@
             this.Thang.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Thang.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Thang.ForeColor = System.Drawing.Color.White;
-            this.Thang.Location = new System.Drawing.Point(162, 249);
+            this.Thang.Location = new System.Drawing.Point(162, 233);
             this.Thang.Name = "Thang";
             this.Thang.Size = new System.Drawing.Size(260, 65);
             this.Thang.TabIndex = 1;

@@ -37,14 +37,6 @@ namespace QLnhahang_anhttt.Warehouse
             dtgvInChiTietXuat.AutoResizeColumns();
             sqlCon.Close();
         }
-
-        private void CapNhat(string query)
-        {
-            sqlCon.Open();
-            SqlCommand cmd = new SqlCommand(query + soPX + "'", sqlCon);
-            cmd.ExecuteNonQuery();
-            sqlCon.Close();
-        }
         private void btIn_Click(object sender, EventArgs e)
         {
             InPhieuXuat inPhieuXuat = new InPhieuXuat();
@@ -68,28 +60,14 @@ namespace QLnhahang_anhttt.Warehouse
                 sqlCon.Open();
                 DateTime dateEdit = Convert.ToDateTime(ngayXuat);
                 string query = "UPDATE PHIEUXUAT SET SoPX = '" + txtSPX.Text + "', NgayXuat = '" + dateEdit.ToString("yyyy-MM-dd") + "', MaNV = '" + txtMaNV.Text + "' WHERE soPX = '";
-                CapNhat(query);
+                SqlCommand cmd = new SqlCommand(query + soPX + "'", sqlCon);
+                cmd.ExecuteNonQuery();
+                sqlCon.Close();
                 MessageBox.Show("Bạn đã chỉnh sửa thành công phiếu xuất", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Chỉnh sửa không thành công", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void txtXoa_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Bạn có thục sự muốn xóa phiếu nhập?", "Thông báo", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
-            {
-                string query = "DELETE FROM CHITIETXUAT WHERE SoPX = '";
-                CapNhat(query);
-                query = "DELETE FROM PHIEUXUAT WHERE SoPX = '";
-                CapNhat(query);
-                MessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                txtSPX.Text = string.Empty;
-                txtMaNV.Text = string.Empty;
-                txtNgayXuat.Text = string.Empty;
-                txtHoTen.Text = string.Empty;
             }
         }
     }

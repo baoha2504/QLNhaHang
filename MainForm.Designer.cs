@@ -52,13 +52,13 @@ namespace QLnhahang_anhttt
             this.guna2GradientTileWarehouse = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.guna2GradientTileBtnStaff = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.introduce1 = new QLnhahang_anhttt.Introduce.Introduce();
             this.statisticals2 = new QLnhahang_anhttt.Statistical.Statisticals();
             this.nguyenLieu1 = new QLnhahang_anhttt.Warehouse.NguyenLieu();
             this.mainPage1 = new QLnhahang_anhttt.MainPage();
             this.staff1 = new QLnhahang_anhttt.Staff();
             this.MainPage = new QLnhahang_anhttt.MainPage();
             this.statisticals1 = new QLnhahang_anhttt.Statistical.Statisticals();
+            this.introduce1 = new QLnhahang_anhttt.Introduce.Introduce();
             this.pnl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -474,13 +474,6 @@ namespace QLnhahang_anhttt
             this.panel1.Size = new System.Drawing.Size(1299, 598);
             this.panel1.TabIndex = 3;
             // 
-            // introduce1
-            // 
-            this.introduce1.Location = new System.Drawing.Point(3, 3);
-            this.introduce1.Name = "introduce1";
-            this.introduce1.Size = new System.Drawing.Size(1293, 595);
-            this.introduce1.TabIndex = 5;
-            // 
             // statisticals2
             // 
             this.statisticals2.BackColor = System.Drawing.Color.White;
@@ -530,6 +523,13 @@ namespace QLnhahang_anhttt
             this.statisticals1.Name = "statisticals1";
             this.statisticals1.Size = new System.Drawing.Size(1293, 595);
             this.statisticals1.TabIndex = 4;
+            // 
+            // introduce1
+            // 
+            this.introduce1.Location = new System.Drawing.Point(0, 1);
+            this.introduce1.Name = "introduce1";
+            this.introduce1.Size = new System.Drawing.Size(1293, 595);
+            this.introduce1.TabIndex = 5;
             // 
             // MainForm
             // 
