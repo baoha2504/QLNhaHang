@@ -1,4 +1,4 @@
-﻿
+
 namespace QLnhahang_anhttt.Food
 {
     partial class Menu
@@ -29,150 +29,114 @@ namespace QLnhahang_anhttt.Food
         /// </summary>
         private void InitializeComponent()
         {
-            this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.guna2GradienbtnCheck = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.panelSelectFood = new System.Windows.Forms.Panel();
-            this.guna2GradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.guna2GradientPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lblPrice = new System.Windows.Forms.Label();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblFoodName = new System.Windows.Forms.Label();
+            this.guna2Panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // guna2GradientPanel1
+            // guna2Panel1
             // 
-            this.guna2GradientPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientPanel1.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2GradientPanel1.BorderRadius = 15;
-            this.guna2GradientPanel1.Controls.Add(this.pictureBox1);
-            this.guna2GradientPanel1.Controls.Add(this.label1);
-            this.guna2GradientPanel1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.Transparent;
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(3, 3);
-            this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(163, 42);
-            this.guna2GradientPanel1.TabIndex = 2;
+            this.guna2Panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.guna2Panel1.BorderColor = System.Drawing.Color.Goldenrod;
+            this.guna2Panel1.BorderThickness = 3;
+            this.guna2Panel1.Controls.Add(this.panel2);
+            this.guna2Panel1.Controls.Add(this.guna2Button1);
+            this.guna2Panel1.Controls.Add(this.panel1);
+            this.guna2Panel1.CustomBorderColor = System.Drawing.Color.Teal;
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(332, 327);
+            this.guna2Panel1.TabIndex = 1;
+            this.guna2Panel1.Visible = false;
             // 
-            // pictureBox1
+            // panel2
             // 
-            this.pictureBox1.Image = global::QLnhahang_anhttt.Properties.Resources.best_price;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.panel2.BackColor = System.Drawing.Color.NavajoWhite;
+            this.panel2.Controls.Add(this.lblPrice);
+            this.panel2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.panel2.Location = new System.Drawing.Point(231, 279);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(98, 45);
+            this.panel2.TabIndex = 2;
             // 
-            // label1
+            // lblPrice
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(54, 8);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 23);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Price";
+            this.lblPrice.AutoSize = true;
+            this.lblPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrice.Location = new System.Drawing.Point(14, 12);
+            this.lblPrice.Name = "lblPrice";
+            this.lblPrice.Size = new System.Drawing.Size(56, 25);
+            this.lblPrice.TabIndex = 0;
+            this.lblPrice.Text = "Price";
             // 
-            // guna2GradientPanel2
+            // guna2Button1
             // 
-            this.guna2GradientPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientPanel2.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.guna2GradientPanel2.BorderRadius = 15;
-            this.guna2GradientPanel2.BorderThickness = 1;
-            this.guna2GradientPanel2.Controls.Add(this.pictureBox2);
-            this.guna2GradientPanel2.Controls.Add(this.label2);
-            this.guna2GradientPanel2.FillColor = System.Drawing.Color.Transparent;
-            this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.Transparent;
-            this.guna2GradientPanel2.Location = new System.Drawing.Point(43, 213);
-            this.guna2GradientPanel2.Name = "guna2GradientPanel2";
-            this.guna2GradientPanel2.Size = new System.Drawing.Size(201, 43);
-            this.guna2GradientPanel2.TabIndex = 3;
+            this.guna2Button1.BackColor = System.Drawing.SystemColors.Control;
+            this.guna2Button1.BorderRadius = 20;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.Orange;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.Location = new System.Drawing.Point(281, 16);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(42, 43);
+            this.guna2Button1.TabIndex = 0;
             // 
-            // pictureBox2
+            // panel1
             // 
-            this.pictureBox2.Image = global::QLnhahang_anhttt.Properties.Resources.nameFood;
-            this.pictureBox2.Location = new System.Drawing.Point(11, 8);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(45, 32);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.panel1.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.panel1.Controls.Add(this.lblFoodName);
+            this.panel1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.panel1.Location = new System.Drawing.Point(3, 16);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(272, 43);
+            this.panel1.TabIndex = 1;
             // 
-            // label2
+            // lblFoodName
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(62, 13);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 21);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Name Food";
-            // 
-            // guna2GradienbtnCheck
-            // 
-            this.guna2GradienbtnCheck.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradienbtnCheck.BorderRadius = 10;
-            this.guna2GradienbtnCheck.BorderThickness = 1;
-            this.guna2GradienbtnCheck.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradienbtnCheck.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradienbtnCheck.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradienbtnCheck.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradienbtnCheck.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradienbtnCheck.FillColor = System.Drawing.Color.Transparent;
-            this.guna2GradienbtnCheck.FillColor2 = System.Drawing.Color.Transparent;
-            this.guna2GradienbtnCheck.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GradienbtnCheck.ForeColor = System.Drawing.Color.White;
-            this.guna2GradienbtnCheck.Image = global::QLnhahang_anhttt.Properties.Resources.check;
-            this.guna2GradienbtnCheck.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2GradienbtnCheck.Location = new System.Drawing.Point(232, 5);
-            this.guna2GradienbtnCheck.Name = "guna2GradienbtnCheck";
-            this.guna2GradienbtnCheck.Size = new System.Drawing.Size(38, 40);
-            this.guna2GradienbtnCheck.TabIndex = 4;
-            // 
-            // panelSelectFood
-            // 
-            this.panelSelectFood.BackColor = System.Drawing.Color.Orange;
-            this.panelSelectFood.Location = new System.Drawing.Point(6, 259);
-            this.panelSelectFood.Name = "panelSelectFood";
-            this.panelSelectFood.Size = new System.Drawing.Size(264, 12);
-            this.panelSelectFood.TabIndex = 5;
+            this.lblFoodName.AutoSize = true;
+            this.lblFoodName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFoodName.Location = new System.Drawing.Point(13, 9);
+            this.lblFoodName.Name = "lblFoodName";
+            this.lblFoodName.Size = new System.Drawing.Size(64, 25);
+            this.lblFoodName.TabIndex = 0;
+            this.lblFoodName.Text = "Name";
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Controls.Add(this.panelSelectFood);
-            this.Controls.Add(this.guna2GradienbtnCheck);
-            this.Controls.Add(this.guna2GradientPanel2);
-            this.Controls.Add(this.guna2GradientPanel1);
+
+            this.Controls.Add(this.guna2Panel1);
             this.Name = "Menu";
-            this.Size = new System.Drawing.Size(277, 277);
-            this.guna2GradientPanel1.ResumeLayout(false);
-            this.guna2GradientPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.guna2GradientPanel2.ResumeLayout(false);
-            this.guna2GradientPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.Size = new System.Drawing.Size(332, 327);
+            this.guna2Panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradienbtnCheck;
-        private System.Windows.Forms.Panel panelSelectFood;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label lblPrice;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblFoodName;
+
     }
 }

@@ -32,6 +32,7 @@ namespace QLnhahang_anhttt
         {
             sidePanel.Height = guna2GradientTileBtnFood.Height;
             sidePanel.Top = guna2GradientTileBtnFood.Top;
+            foods1.BringToFront();
         }
         //staff
         private void guna2GradientTileBtnStaff_Click(object sender, EventArgs e)

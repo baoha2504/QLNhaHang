@@ -124,3 +124,5 @@ D:\QLNhaHang\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
 D:\QLNhaHang\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
 D:\QLNhaHang\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
 D:\QLNhaHang\bin\Debug\Microsoft.MSXML.dll
+D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Food.Menu.resources
+D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Food.Payment.resources

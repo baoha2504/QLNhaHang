@@ -19,6 +19,14 @@ namespace QLnhahang_anhttt.Food
             InitializeComponent();
         }
 
-       
+        private void guna2BtnAddFood_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

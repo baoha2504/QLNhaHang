@@ -42,7 +42,7 @@ namespace QLnhahang_anhttt.Food
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(102, 41);
+            this.label1.Location = new System.Drawing.Point(24, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(125, 23);
             this.label1.TabIndex = 5;
@@ -55,9 +55,9 @@ namespace QLnhahang_anhttt.Food
             this.guna2NumericUpDown1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2NumericUpDown1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2NumericUpDown1.ForeColor = System.Drawing.Color.Black;
-            this.guna2NumericUpDown1.Location = new System.Drawing.Point(240, 34);
+            this.guna2NumericUpDown1.Location = new System.Drawing.Point(75, 54);
             this.guna2NumericUpDown1.Name = "guna2NumericUpDown1";
-            this.guna2NumericUpDown1.Size = new System.Drawing.Size(100, 36);
+            this.guna2NumericUpDown1.Size = new System.Drawing.Size(100, 33);
             this.guna2NumericUpDown1.TabIndex = 6;
             this.guna2NumericUpDown1.UpDownButtonFillColor = System.Drawing.Color.Orange;
             // 
@@ -66,7 +66,7 @@ namespace QLnhahang_anhttt.Food
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(380, 40);
+            this.label2.Location = new System.Drawing.Point(228, 64);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 23);
             this.label2.TabIndex = 7;
@@ -75,7 +75,7 @@ namespace QLnhahang_anhttt.Food
             // pictureBox1
             // 
             this.pictureBox1.Image = global::QLnhahang_anhttt.Properties.Resources.deleteNamFood;
-            this.pictureBox1.Location = new System.Drawing.Point(17, 18);
+            this.pictureBox1.Location = new System.Drawing.Point(378, 9);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(76, 78);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
