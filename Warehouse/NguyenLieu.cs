@@ -92,18 +92,7 @@ namespace QLnhahang_anhttt.Warehouse
 
         private void NLVuaXuat_Click(object sender, EventArgs e)
         {
-            DateTime date = DateTime.Now;
-            DateTime dt = Convert.ToDateTime(date.AddDays(-27));
-            string query = "SELECT NL.MaNL as 'Mã nguyên liệu', NL.TenNL as 'Tên nguyên liệu', NL.SoLuong as 'Số lượng', NL.DonVi as 'Đơn vị' FROM NGUYENLIEU AS NL, PHIEUXUAT AS PX, CHITIETXUAT AS CTX WHERE NL.MaNL = CTX.MaNL AND CTX.SoPX = PX.SoPX AND PX.NgayXuat = '";
-            connect(query + dt.ToString("yyyy-MM-dd") + "'");
-        }
 
-        private void NLMoiNhap_Click(object sender, EventArgs e)
-        {
-            DateTime date = DateTime.Now;
-            DateTime dt = Convert.ToDateTime(date.AddDays(-27));
-            string query = "SELECT NL.MaNL as 'Mã nguyên liệu', NL.TenNL as 'Tên nguyên liệu', NL.SoLuong as 'Số lượng', NL.DonVi as 'Đơn vị' FROM NGUYENLIEU AS NL, PHIEUNHAP AS PN, CHITIETNHAP AS CTN WHERE NL.MaNL = CTN.MaNL AND CTN.SoPN = PN.SoPN AND PN.NgayNhap = '";
-            
         }
     }
 }

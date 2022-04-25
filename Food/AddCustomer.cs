@@ -9,17 +9,79 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
 using QLnhahang_anhttt.Data;
+using System.Data.SqlClient;
+
 
 namespace QLnhahang_anhttt.Food
 {
     public partial class AddCustomer : Form
     {
-      //  Foods food;
+
+
+        SqlConnection sqlCon = new SqlConnection(Data_Provider.connectionSTR);
+        // Foods food;
         public AddCustomer(/*Foods frm */)
         {
             InitializeComponent();
-         //   this.food = frm;
+        //   this.food = frm;
+        }
+        public bool CheckData()
+        {
+            if (string.IsNullOrEmpty(txtName_add.Text))
+            {
+                MessageBox.Show("Bạn chưa nhập tên khách hàng.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtName_add.Focus();
+                return false;
+            }
+            if (string.IsNullOrEmpty(txtAdd_add.Text))
+            {
+                MessageBox.Show("Bạn chưa nhập địa chỉ khách hàng.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtAdd_add.Focus();
+                return false;
+            }
+            if (string.IsNullOrEmpty(txtPhone_add.Text))
+            {
+                MessageBox.Show("Bạn chưa nhập số điện thoại khách hàng.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtPhone_add.Focus();
+                return false;
+            }
+            return true;
         }
 
+        private void guna2BtnAddcustomer_Click(object sender, EventArgs e)
+        {
+            CheckData();
+            try
+            {
+                sqlCon.Open();
+                string query = "INSERT INTO KHACHHANG (MaKH,TenKH, DiaChi, SoDienThoai) VALUES (N'" + txtID_add.Text + "',N'" + txtName_add.Text + "', N'" + txtAdd_add.Text + "', '" + txtPhone_add.Text + "')";
+                SqlCommand cmd = new SqlCommand(query, sqlCon);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Update success");
+                sqlCon.Close();
+
+               
+                
+            }
+            catch
+            {
+
+                // if (CheckData() == true)
+                // {
+                string message = "Lỗi";
+                string title = "Thông báo";
+                DialogResult dialogResult = MessageBox.Show(message, title, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                // }
+            
+
+        }
+    }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+
+            this.Hide();
+
+        }
     }
 }

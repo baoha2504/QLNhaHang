@@ -24,14 +24,6 @@ namespace QLnhahang_anhttt.Warehouse
             InitializeComponent();
         }
 
-        private void CapNhat(string query)
-        {
-            sqlCon.Open();
-            SqlCommand cmd = new SqlCommand(query + soPN + "'", sqlCon);
-            cmd.ExecuteNonQuery();
-            sqlCon.Close();
-        }
-
         SqlConnection sqlCon = new SqlConnection(Data_Provider.connectionSTR);
         private void connect(string query)
         {
@@ -67,30 +59,17 @@ namespace QLnhahang_anhttt.Warehouse
         {
             try
             {
+                sqlCon.Open();
                 DateTime dateEdit = Convert.ToDateTime(ngayNhap);
                 string query = "UPDATE PHIEUNHAP SET SoPN = '" + txtPhieuNhap.Text + "', NgayNhap = '" + dateEdit.ToString("yyyy-MM-dd") + "', TongTien = " + txtTongTien.Text + ", MaNV = '" + txtNhanVien.Text + "', MaNCC = '" + txtNCC.Text + "' WHERE soPN = '";
-                CapNhat(query);
+                //connect(query + soPN + "'");
+                SqlCommand cmd = new SqlCommand(query + soPN + "'", sqlCon);
+                cmd.ExecuteNonQuery();
+                sqlCon.Close();
                 MessageBox.Show("Bạn đã chỉnh sửa thành công phiếu nhập", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             } catch (Exception ex)
             {
                 MessageBox.Show("Chỉnh sửa không thành công", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void btXoa_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Bạn có thục sự muốn xóa phiếu nhập?", "Thông báo", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
-            {
-                string query = "DELETE FROM CHITIETNHAP WHERE SoPN = '";
-                CapNhat(query);
-                query = "DELETE FROM PHIEUNHAP WHERE SoPN = '";
-                CapNhat(query);
-                MessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                txtPhieuNhap.Text = string.Empty;
-                txtNhanVien.Text = string.Empty;
-                txtNgayNhap.Text = string.Empty;
-                txtTongTien.Text = string.Empty;
-                txtNCC.Text = string.Empty;
             }
         }
     }

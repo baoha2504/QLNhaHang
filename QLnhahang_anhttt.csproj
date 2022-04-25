@@ -104,6 +104,18 @@
     <Compile Include="Food\InforDesk.Designer.cs">
       <DependentUpon>InforDesk.cs</DependentUpon>
     </Compile>
+    <Compile Include="Food\Menu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Food\Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Food\Payment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Food\Payment.Designer.cs">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Introduce\Introduce.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -259,6 +271,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Food\InforDesk.resx">
       <DependentUpon>InforDesk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Food\Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Food\Payment.resx">
+      <DependentUpon>Payment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Introduce\Introduce.resx">
       <DependentUpon>Introduce.cs</DependentUpon>
@@ -444,6 +462,12 @@
     <Content Include="Resources\4.jpg" />
     <Content Include="Resources\5.jpg" />
     <Content Include="Resources\6.jpg" />
+    <None Include="Resources\best-price.png" />
+    <None Include="Resources\nameFood.png" />
+    <None Include="Resources\check.png" />
+    <None Include="Resources\deleteNamFood.png" />
+    <None Include="Resources\inforDesk.png" />
+    <None Include="Resources\bill.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
