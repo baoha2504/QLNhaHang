@@ -10,23 +10,17 @@ using System.Windows.Forms;
 
 namespace QLnhahang_anhttt.Food
 {
-    public partial class AddFood : Form
+    public partial class Menu : UserControl
     {
-        string selectFood;
-        // Foods food;
-        public AddFood()
+
+        public Menu(Foods foods)
         {
             InitializeComponent();
         }
 
-        private void guna2BtnAddFood_Click(object sender, EventArgs e)
-        {
+        public string Price { get; internal set; }
+        public string name { get; internal set; }
+        public Image Background { get; internal set; }
 
-        }
-
-        private void guna2btnCancel_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-        }
     }
 }
