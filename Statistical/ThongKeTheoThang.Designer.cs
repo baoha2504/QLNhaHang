@@ -30,6 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.start = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label16 = new System.Windows.Forms.Label();
@@ -70,6 +71,7 @@
             // 
             this.guna2Panel1.BorderColor = System.Drawing.Color.Teal;
             this.guna2Panel1.BorderThickness = 2;
+            this.guna2Panel1.Controls.Add(this.start);
             this.guna2Panel1.Controls.Add(this.guna2Panel3);
             this.guna2Panel1.Controls.Add(this.guna2Panel2);
             this.guna2Panel1.CustomBorderColor = System.Drawing.Color.Teal;
@@ -77,6 +79,23 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(1187, 586);
             this.guna2Panel1.TabIndex = 1;
+            // 
+            // start
+            // 
+            this.start.BorderRadius = 10;
+            this.start.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.start.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.start.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.start.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.start.FillColor = System.Drawing.Color.Teal;
+            this.start.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.start.ForeColor = System.Drawing.Color.White;
+            this.start.Location = new System.Drawing.Point(907, 244);
+            this.start.Name = "start";
+            this.start.Size = new System.Drawing.Size(200, 45);
+            this.start.TabIndex = 10;
+            this.start.Text = "Thống kê";
+            this.start.Click += new System.EventHandler(this.start_Click);
             // 
             // guna2Panel3
             // 
@@ -379,5 +398,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private Guna.UI2.WinForms.Guna2Button start;
     }
 }

@@ -52,6 +52,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.start = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
@@ -70,6 +71,7 @@
             // 
             this.guna2Panel1.BorderColor = System.Drawing.Color.Teal;
             this.guna2Panel1.BorderThickness = 2;
+            this.guna2Panel1.Controls.Add(this.start);
             this.guna2Panel1.Controls.Add(this.guna2Panel3);
             this.guna2Panel1.Controls.Add(this.guna2Panel2);
             this.guna2Panel1.CustomBorderColor = System.Drawing.Color.Teal;
@@ -336,6 +338,23 @@
             this.label5.TabIndex = 5;
             this.label5.Text = "Số lượt phiếu nhập";
             // 
+            // start
+            // 
+            this.start.BorderRadius = 10;
+            this.start.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.start.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.start.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.start.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.start.FillColor = System.Drawing.Color.Teal;
+            this.start.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.start.ForeColor = System.Drawing.Color.White;
+            this.start.Location = new System.Drawing.Point(907, 226);
+            this.start.Name = "start";
+            this.start.Size = new System.Drawing.Size(200, 45);
+            this.start.TabIndex = 11;
+            this.start.Text = "Thống kê";
+            this.start.Click += new System.EventHandler(this.start_Click);
+            // 
             // ThongKeTheoNam
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -379,5 +398,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private Guna.UI2.WinForms.Guna2Button start;
     }
 }
