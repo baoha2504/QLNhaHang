@@ -95,5 +95,10 @@ namespace QLnhahang_anhttt
             sidePanel.Top = guna2GradientTileBtnHome.Top;
             mainPage1.BringToFront();
         }
+
+        private void guna2TextBoxSearch_Click(object sender, EventArgs e)
+        {
+            guna2TextBoxSearch.Text = String.Empty;
+        }
     }
 }

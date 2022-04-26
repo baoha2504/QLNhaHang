@@ -14,8 +14,8 @@ namespace QLnhahang_anhttt
 {
     public partial class loginform : Form
     {
-       // SqlConnection sqlCon = new SqlConnection(Data_Provider.connectionSTR);
-      //  DataTable dtbl;
+        SqlConnection sqlCon = new SqlConnection(Data_Provider.connectionSTR);
+        DataTable dtbl;
 
         public static string position;
         public static string name;
@@ -42,10 +42,9 @@ namespace QLnhahang_anhttt
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            /*
+
             sqlCon.Open();
-            string query = "Select * from NHANVIEN where MaNV= '" + textPass.Text.Trim().ToUpper() +
-                "' and hoTen=N'" + textUser.Text.Trim() + "'";
+            string query = "Select * from NHANVIEN where MaNV= '" + textPass.Text + "' and hoTen= N'" + textUser.Text + "'";
             SqlDataAdapter sqlDa = new SqlDataAdapter(query, sqlCon);
 
             // Create a DataSet.
@@ -60,15 +59,15 @@ namespace QLnhahang_anhttt
                     name = dr["hoTen"].ToString();
                     position = dr["chucVu"].ToString();
                 }
-            */
+
                 MainForm frm = new MainForm();
                 frm.Show();
                 this.Hide();
-      /*      }
+            }
             else
             {
                 MessageBox.Show("Check your Username and Password!");
-            } */ 
+            }
         }
     }
 }

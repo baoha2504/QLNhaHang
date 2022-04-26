@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.start = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -54,7 +55,6 @@
             this.label19 = new System.Windows.Forms.Label();
             this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label16 = new System.Windows.Forms.Label();
-            this.start = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
@@ -72,6 +72,23 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(1184, 586);
             this.guna2Panel1.TabIndex = 2;
+            // 
+            // start
+            // 
+            this.start.BorderRadius = 10;
+            this.start.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.start.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.start.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.start.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.start.FillColor = System.Drawing.Color.Teal;
+            this.start.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.start.ForeColor = System.Drawing.Color.White;
+            this.start.Location = new System.Drawing.Point(912, 314);
+            this.start.Name = "start";
+            this.start.Size = new System.Drawing.Size(180, 45);
+            this.start.TabIndex = 20;
+            this.start.Text = "Thống kê";
+            this.start.Click += new System.EventHandler(this.start_Click);
             // 
             // guna2Panel2
             // 
@@ -309,16 +326,16 @@
             // 
             // guna2DateTimePicker2
             // 
-            this.guna2DateTimePicker2.BorderRadius = 15;
+            this.guna2DateTimePicker2.BorderRadius = 10;
             this.guna2DateTimePicker2.Checked = true;
             this.guna2DateTimePicker2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.guna2DateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker2.Location = new System.Drawing.Point(135, 160);
+            this.guna2DateTimePicker2.Location = new System.Drawing.Point(116, 160);
             this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
-            this.guna2DateTimePicker2.Size = new System.Drawing.Size(175, 36);
+            this.guna2DateTimePicker2.Size = new System.Drawing.Size(194, 36);
             this.guna2DateTimePicker2.TabIndex = 20;
             this.guna2DateTimePicker2.Value = new System.DateTime(2022, 4, 16, 23, 43, 26, 10);
             // 
@@ -344,16 +361,16 @@
             // 
             // guna2DateTimePicker1
             // 
-            this.guna2DateTimePicker1.BorderRadius = 15;
+            this.guna2DateTimePicker1.BorderRadius = 10;
             this.guna2DateTimePicker1.Checked = true;
             this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(135, 81);
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(116, 81);
             this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(175, 36);
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(194, 36);
             this.guna2DateTimePicker1.TabIndex = 17;
             this.guna2DateTimePicker1.Value = new System.DateTime(2022, 4, 16, 23, 43, 26, 10);
             // 
@@ -368,23 +385,6 @@
             this.label16.Size = new System.Drawing.Size(88, 20);
             this.label16.TabIndex = 16;
             this.label16.Text = "Chọn ngày";
-            // 
-            // start
-            // 
-            this.start.BorderRadius = 10;
-            this.start.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.start.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.start.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.start.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.start.FillColor = System.Drawing.Color.Teal;
-            this.start.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.start.ForeColor = System.Drawing.Color.White;
-            this.start.Location = new System.Drawing.Point(912, 314);
-            this.start.Name = "start";
-            this.start.Size = new System.Drawing.Size(180, 45);
-            this.start.TabIndex = 20;
-            this.start.Text = "Thống kê";
-            this.start.Click += new System.EventHandler(this.start_Click);
             // 
             // ThongKeLuaChon
             // 
