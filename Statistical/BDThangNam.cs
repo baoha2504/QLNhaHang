@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 using QLnhahang_anhttt.Data;
 
 namespace QLnhahang_anhttt.Statistical
@@ -127,7 +121,7 @@ namespace QLnhahang_anhttt.Statistical
             label13.Text += " VNĐ";
             label14.Text += " VNĐ";
 
-            
+
         }
 
         private void BDNam()

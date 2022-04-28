@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using QLnhahang_anhttt.Data;
+using System.Security.Cryptography;
 
 namespace QLnhahang_anhttt
 {
@@ -24,6 +25,25 @@ namespace QLnhahang_anhttt
         {
             InitializeComponent();
         }
+
+        static string ComputeSha256Hash(string rawData)
+        {
+            // Create a SHA256   
+            using (SHA256 sha256Hash = SHA256.Create())
+            {
+                // ComputeHash - returns byte array  
+                byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(rawData));
+
+                // Convert byte array to a string   
+                StringBuilder builder = new StringBuilder();
+                for (int i = 0; i < bytes.Length; i++)
+                {
+                    builder.Append(bytes[i].ToString("x2"));
+                }
+                return builder.ToString();
+            }
+        }
+
         // close project 
         private void btnClose_Click(object sender, EventArgs e)
         {
@@ -44,7 +64,8 @@ namespace QLnhahang_anhttt
         {
 
             sqlCon.Open();
-            string query = "Select * from NHANVIEN where MaNV= '" + textPass.Text + "' and hoTen= N'" + textUser.Text + "'";
+            string query = "Select * from NHANVIEN where matkhau= '" + ComputeSha256Hash(textPass.Text) + "' and manv= N'" + textUser.Text + "'";
+            //string query = "Select * from NHANVIEN where matkhau= '" + textPass.Text + "' and manv= N'" + textUser.Text + "'";
             SqlDataAdapter sqlDa = new SqlDataAdapter(query, sqlCon);
 
             // Create a DataSet.
