@@ -1,15 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using QLnhahang_anhttt.Data;
-using System.Security.Cryptography;
 
 namespace QLnhahang_anhttt
 {
@@ -21,6 +16,7 @@ namespace QLnhahang_anhttt
         public static string position;
         public static string name;
         public static string manv;
+        public static int permission;
         public loginform()
         {
             InitializeComponent();
@@ -79,6 +75,18 @@ namespace QLnhahang_anhttt
                 {
                     name = dr["hoTen"].ToString();
                     position = dr["chucVu"].ToString();
+                    if (position == "Quản lý")
+                    {
+                        permission = 1;
+                    }
+                    else if (position == "Phụ trách kho" || position == "Nhân viên kho")
+                    {
+                        permission = 2;
+                    }
+                    else
+                    {
+                        permission = 3;
+                    }
                 }
 
                 MainForm frm = new MainForm();
