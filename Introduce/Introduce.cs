@@ -35,7 +35,7 @@ namespace QLnhahang_anhttt.Introduce
         {
             timer1.Start();
             ImageNumber--;
-            if (ImageNumber < 0)
+            if (ImageNumber < 1)
             {
                 ImageNumber = 6;
             }
