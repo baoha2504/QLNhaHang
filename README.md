@@ -1,5 +1,5 @@
 # QLNhaHang
-bao push code lần cuối 23:20 ngay 28/4,
+bao push code lần cuối 00:10 ngay 4/5,
 xong statistical,
 code xong phần login,
 designer lại formmain,

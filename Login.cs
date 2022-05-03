@@ -20,6 +20,7 @@ namespace QLnhahang_anhttt
         public loginform()
         {
             InitializeComponent();
+            textPass.UseSystemPasswordChar = false;
         }
 
         static string ComputeSha256Hash(string rawData)
@@ -48,12 +49,12 @@ namespace QLnhahang_anhttt
         // show password 
         private void picPassword_MouseDown(object sender, MouseEventArgs e)
         {
-            textPass.UseSystemPasswordChar = false;
+            textPass.UseSystemPasswordChar = true;
         }
 
         private void picPassword_MouseUp(object sender, MouseEventArgs e)
         {
-            textPass.UseSystemPasswordChar = true;
+            textPass.UseSystemPasswordChar = false;
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
