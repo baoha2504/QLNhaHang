@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using QLnhahang_anhttt.Data;
-
+using Microsoft.Reporting.WinForms;
 
 namespace QLnhahang_anhttt.Warehouse
 {
@@ -48,6 +48,7 @@ namespace QLnhahang_anhttt.Warehouse
         private void btIn_Click(object sender, EventArgs e)
         {
             InPhieuXuat inPhieuXuat = new InPhieuXuat();
+            inPhieuXuat.sopx = soPX;
             inPhieuXuat.ShowDialog();
         }
 
@@ -65,7 +66,6 @@ namespace QLnhahang_anhttt.Warehouse
         {
             try
             {
-                sqlCon.Open();
                 DateTime dateEdit = Convert.ToDateTime(ngayXuat);
                 string query = "UPDATE PHIEUXUAT SET SoPX = '" + txtSPX.Text + "', NgayXuat = '" + dateEdit.ToString("yyyy-MM-dd") + "', MaNV = '" + txtMaNV.Text + "' WHERE soPX = '";
                 CapNhat(query);

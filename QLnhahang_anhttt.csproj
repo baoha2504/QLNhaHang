@@ -204,6 +204,19 @@
     <Compile Include="Warehouse\ChiTietXuat.Designer.cs">
       <DependentUpon>ChiTietXuat.cs</DependentUpon>
     </Compile>
+    <Compile Include="Warehouse\DataSetNhap.cs">
+      <DependentUpon>DataSetNhap.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Warehouse\DataSetNhap.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetNhap.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Warehouse\DataSetXuat.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetXuat.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Warehouse\FormPhieuNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -329,6 +342,8 @@
     <EmbeddedResource Include="Warehouse\NguyenLieu.resx">
       <DependentUpon>NguyenLieu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Warehouse\PhieuNhap.rdlc" />
+    <EmbeddedResource Include="Warehouse\PhieuXuat.rdlc" />
     <EmbeddedResource Include="Warehouse\ThemPhieuNhap.resx">
       <DependentUpon>ThemPhieuNhap.cs</DependentUpon>
     </EmbeddedResource>
@@ -336,6 +351,40 @@
       <DependentUpon>ThemPhieuXuat.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Customer.datasource" />
+    <None Include="Properties\DataSources\loginform.datasource" />
+    <None Include="Properties\DataSources\MainForm.datasource" />
+    <None Include="Properties\DataSources\MainPage.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\QLnhahang_anhttt.Data.Data_Provider.datasource" />
+    <None Include="Properties\DataSources\QLnhahang_anhttt.Food.AddCustomer.datasource" />
+    <None Include="Properties\DataSources\QLnhahang_anhttt.Food.AddFood.datasource" />
+    <None Include="Properties\DataSources\QLnhahang_anhttt.Food.Bill.datasource" />
+    <None Include="Properties\DataSources\QLnhahang_anhttt.Food.Foods.datasource" />
+    <None Include="Properties\DataSources\QLnhahang_anhttt.Food.InforDesk.datasource" />
+    <None Include="Properties\DataSources\QLnhahang_anhttt.Introduce.Introduce.datasource" />
+    <None Include="Properties\DataSources\QLnhahang_anhttt.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\QLnhahang_anhttt.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\QLnhahang_anhttt.Statistical.BDNgayTuan.datasource" />
+    <None Include="Properties\DataSources\QLnhahang_anhttt.Statistical.BDThangNam.datasource" />
+    <None Include="Properties\DataSources\QLnhahang_anhttt.Statistical.Statistical.datasource" />
+    <None Include="Properties\DataSources\QLnhahang_anhttt.Statistical.Statisticals.datasource" />
+    <None Include="Properties\DataSources\QLnhahang_anhttt.Statistical.ThongKeLuaChon.datasource" />
+    <None Include="Properties\DataSources\QLnhahang_anhttt.Statistical.ThongKeTheoNam.datasource" />
+    <None Include="Properties\DataSources\QLnhahang_anhttt.Statistical.ThongKeTheoNgay.datasource" />
+    <None Include="Properties\DataSources\QLnhahang_anhttt.Statistical.ThongKeTheoThang.datasource" />
+    <None Include="Properties\DataSources\QLnhahang_anhttt.Warehouse.ChiTietNhap.datasource" />
+    <None Include="Properties\DataSources\QLnhahang_anhttt.Warehouse.ChiTietXuat.datasource" />
+    <None Include="Properties\DataSources\QLnhahang_anhttt.Warehouse.FormPhieuNhap.datasource" />
+    <None Include="Properties\DataSources\QLnhahang_anhttt.Warehouse.FormPhieuXuat.datasource" />
+    <None Include="Properties\DataSources\QLnhahang_anhttt.Warehouse.InPhieuNhap.datasource" />
+    <None Include="Properties\DataSources\QLnhahang_anhttt.Warehouse.InPhieuXuat.datasource" />
+    <None Include="Properties\DataSources\QLnhahang_anhttt.Warehouse.NguyenLieu.datasource" />
+    <None Include="Properties\DataSources\QLnhahang_anhttt.Warehouse.ThemPhieuNhap.datasource" />
+    <None Include="Properties\DataSources\QLnhahang_anhttt.Warehouse.ThemPhieuXuat.datasource" />
+    <None Include="Properties\DataSources\Registerform.datasource" />
+    <None Include="Properties\DataSources\SqlServerTypes.Utilities.datasource" />
+    <None Include="Properties\DataSources\Staff.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -350,6 +399,28 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Warehouse\DataSetNhap.xsc">
+      <DependentUpon>DataSetNhap.xsd</DependentUpon>
+    </None>
+    <None Include="Warehouse\DataSetNhap.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetNhap.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Warehouse\DataSetNhap.xss">
+      <DependentUpon>DataSetNhap.xsd</DependentUpon>
+    </None>
+    <None Include="Warehouse\DataSetXuat.xsc">
+      <DependentUpon>DataSetXuat.xsd</DependentUpon>
+    </None>
+    <None Include="Warehouse\DataSetXuat.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetXuat.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Warehouse\DataSetXuat.xss">
+      <DependentUpon>DataSetXuat.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

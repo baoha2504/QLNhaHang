@@ -32,16 +32,16 @@ namespace QLnhahang_anhttt
             this.pnl1 = new System.Windows.Forms.Panel();
             this.btnSignOut = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2GradientPanelInfo = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.lbPosition = new System.Windows.Forms.Label();
+            this.lbName = new System.Windows.Forms.Label();
+            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2TextBoxSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2ControlBoxMinScreen = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBoxMaxScreen = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBoxClose = new Guna.UI2.WinForms.Guna2ControlBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.guna2GradientPanelInfo = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.lbPosition = new System.Windows.Forms.Label();
-            this.lbName = new System.Windows.Forms.Label();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.barMenu = new Guna.UI2.WinForms.Guna2Panel();
             this.sidePanel = new System.Windows.Forms.Panel();
             this.guna2GradientTileBtnHome = new Guna.UI2.WinForms.Guna2GradientTileButton();
@@ -61,9 +61,9 @@ namespace QLnhahang_anhttt
             this.statisticals1 = new QLnhahang_anhttt.Statistical.Statisticals();
             this.pnl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2GradientPanelInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.barMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -119,6 +119,66 @@ namespace QLnhahang_anhttt
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 8;
             this.guna2PictureBox1.TabStop = false;
+            // 
+            // guna2GradientPanelInfo
+            // 
+            this.guna2GradientPanelInfo.BackColor = System.Drawing.Color.Gold;
+            this.guna2GradientPanelInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.guna2GradientPanelInfo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.guna2GradientPanelInfo.BorderRadius = 10;
+            this.guna2GradientPanelInfo.Controls.Add(this.lbPosition);
+            this.guna2GradientPanelInfo.Controls.Add(this.lbName);
+            this.guna2GradientPanelInfo.Controls.Add(this.guna2CirclePictureBox1);
+            this.guna2GradientPanelInfo.FillColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanelInfo.FillColor2 = System.Drawing.Color.Transparent;
+            this.guna2GradientPanelInfo.ForeColor = System.Drawing.Color.Gold;
+            this.guna2GradientPanelInfo.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.guna2GradientPanelInfo.Location = new System.Drawing.Point(887, 10);
+            this.guna2GradientPanelInfo.Name = "guna2GradientPanelInfo";
+            this.guna2GradientPanelInfo.Size = new System.Drawing.Size(309, 75);
+            this.guna2GradientPanelInfo.TabIndex = 3;
+            // 
+            // lbPosition
+            // 
+            this.lbPosition.AutoSize = true;
+            this.lbPosition.BackColor = System.Drawing.Color.Transparent;
+            this.lbPosition.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lbPosition.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbPosition.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPosition.ForeColor = System.Drawing.Color.OrangeRed;
+            this.lbPosition.Location = new System.Drawing.Point(49, 41);
+            this.lbPosition.Name = "lbPosition";
+            this.lbPosition.Size = new System.Drawing.Size(21, 23);
+            this.lbPosition.TabIndex = 5;
+            this.lbPosition.Text = "_";
+            // 
+            // lbName
+            // 
+            this.lbName.AutoSize = true;
+            this.lbName.BackColor = System.Drawing.Color.Transparent;
+            this.lbName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lbName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbName.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName.ForeColor = System.Drawing.Color.OrangeRed;
+            this.lbName.Location = new System.Drawing.Point(49, 7);
+            this.lbName.Name = "lbName";
+            this.lbName.Size = new System.Drawing.Size(21, 23);
+            this.lbName.TabIndex = 4;
+            this.lbName.Text = "_";
+            // 
+            // guna2CirclePictureBox1
+            // 
+            this.guna2CirclePictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CirclePictureBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.guna2CirclePictureBox1.Image = global::QLnhahang_anhttt.Properties.Resources.user;
+            this.guna2CirclePictureBox1.ImageRotate = 0F;
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(3, 12);
+            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
+            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(40, 35);
+            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2CirclePictureBox1.TabIndex = 3;
+            this.guna2CirclePictureBox1.TabStop = false;
             // 
             // guna2TextBoxSearch
             // 
@@ -199,66 +259,6 @@ namespace QLnhahang_anhttt
             this.pictureBox1.Size = new System.Drawing.Size(86, 84);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // guna2GradientPanelInfo
-            // 
-            this.guna2GradientPanelInfo.BackColor = System.Drawing.Color.Gold;
-            this.guna2GradientPanelInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.guna2GradientPanelInfo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.guna2GradientPanelInfo.BorderRadius = 10;
-            this.guna2GradientPanelInfo.Controls.Add(this.lbPosition);
-            this.guna2GradientPanelInfo.Controls.Add(this.lbName);
-            this.guna2GradientPanelInfo.Controls.Add(this.guna2CirclePictureBox1);
-            this.guna2GradientPanelInfo.FillColor = System.Drawing.Color.Transparent;
-            this.guna2GradientPanelInfo.FillColor2 = System.Drawing.Color.Transparent;
-            this.guna2GradientPanelInfo.ForeColor = System.Drawing.Color.Gold;
-            this.guna2GradientPanelInfo.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.guna2GradientPanelInfo.Location = new System.Drawing.Point(887, 10);
-            this.guna2GradientPanelInfo.Name = "guna2GradientPanelInfo";
-            this.guna2GradientPanelInfo.Size = new System.Drawing.Size(309, 75);
-            this.guna2GradientPanelInfo.TabIndex = 3;
-            // 
-            // lbPosition
-            // 
-            this.lbPosition.AutoSize = true;
-            this.lbPosition.BackColor = System.Drawing.Color.Transparent;
-            this.lbPosition.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbPosition.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lbPosition.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPosition.ForeColor = System.Drawing.Color.OrangeRed;
-            this.lbPosition.Location = new System.Drawing.Point(49, 41);
-            this.lbPosition.Name = "lbPosition";
-            this.lbPosition.Size = new System.Drawing.Size(21, 23);
-            this.lbPosition.TabIndex = 5;
-            this.lbPosition.Text = "_";
-            // 
-            // lbName
-            // 
-            this.lbName.AutoSize = true;
-            this.lbName.BackColor = System.Drawing.Color.Transparent;
-            this.lbName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lbName.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbName.ForeColor = System.Drawing.Color.OrangeRed;
-            this.lbName.Location = new System.Drawing.Point(49, 7);
-            this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(21, 23);
-            this.lbName.TabIndex = 4;
-            this.lbName.Text = "_";
-            // 
-            // guna2CirclePictureBox1
-            // 
-            this.guna2CirclePictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CirclePictureBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.guna2CirclePictureBox1.Image = global::QLnhahang_anhttt.Properties.Resources.user;
-            this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(3, 12);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(40, 35);
-            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2CirclePictureBox1.TabIndex = 3;
-            this.guna2CirclePictureBox1.TabStop = false;
             // 
             // barMenu
             // 
@@ -551,10 +551,10 @@ namespace QLnhahang_anhttt
             this.pnl1.ResumeLayout(false);
             this.pnl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.guna2GradientPanelInfo.ResumeLayout(false);
             this.guna2GradientPanelInfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.barMenu.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);

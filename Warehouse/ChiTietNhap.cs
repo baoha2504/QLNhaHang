@@ -9,9 +9,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using QLnhahang_anhttt.Data;
+using Microsoft.Reporting.WinForms;
 
 namespace QLnhahang_anhttt.Warehouse
 {
+
     public partial class ChiTietNhap : Form
     {
         public string soPN;
@@ -19,6 +21,7 @@ namespace QLnhahang_anhttt.Warehouse
         public string tongTien;
         public string nhanVien;
         public string nhaCC;
+        DataTable dtb = new DataTable();
         public ChiTietNhap()
         {
             InitializeComponent();
@@ -37,7 +40,6 @@ namespace QLnhahang_anhttt.Warehouse
         {
             sqlCon.Open();
             SqlDataAdapter sqlDa = new SqlDataAdapter(query, sqlCon);
-            DataTable dtb = new DataTable();
             sqlDa.Fill(dtb);
             dtgvChiTietInPhieuNhap.DataSource = dtb;
             dtgvChiTietInPhieuNhap.AutoGenerateColumns = false;
@@ -49,6 +51,17 @@ namespace QLnhahang_anhttt.Warehouse
         private void btInPhieuNhap_Click(object sender, EventArgs e)
         {
             InPhieuNhap inPhieuNhap = new InPhieuNhap();
+            inPhieuNhap.sopn = soPN;
+            ReportParameterCollection rpc = new ReportParameterCollection();
+            rpc.Add(new ReportParameter("date", DateTime.Today.ToString("dd-MM-yyyy")));
+            rpc.Add(new ReportParameter("ngaynhap", txtNgayNhap.Text));
+            rpc.Add(new ReportParameter("sopn", soPN));
+            rpc.Add(new ReportParameter("manv", nhanVien));
+            rpc.Add(new ReportParameter("ncc", nhaCC));
+            rpc.Add(new ReportParameter("tongtien", tongTien));
+            inPhieuNhap.rpc = rpc;
+            /*inPhieuNhap.dt = dtb;*/
+
             inPhieuNhap.ShowDialog();
         }
 
@@ -59,7 +72,7 @@ namespace QLnhahang_anhttt.Warehouse
             txtTongTien.Text = tongTien;
             txtNhanVien.Text = nhanVien;
             txtNCC.Text = nhaCC;
-            string query = "SELECT NL.MaNL AS N'Mã nguyên liệu', NL.TenNL AS N'Tên nguyên liệu', NL.SoLuong AS N'Số lượng', NL.DonVi AS N'Đơn vị', CTN.DonGia AS N'Đơn giá' FROM CHITIETNHAP AS CTN, NGUYENLIEU AS NL WHERE CTN.MaNL = NL.MaNL AND CTN.SoPN = '";
+            string query = "SELECT NL.MaNL AS N'Mã nguyên liệu', NL.TenNL AS N'Tên nguyên liệu', CTN.SoLuong AS N'Số lượng', NL.DonVi AS N'Đơn vị', CTN.DonGia AS N'Đơn giá' FROM CHITIETNHAP AS CTN, NGUYENLIEU AS NL WHERE CTN.MaNL = NL.MaNL AND CTN.SoPN = '";
             connect(query + soPN + "'");
         }
 
