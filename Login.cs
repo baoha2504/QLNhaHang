@@ -92,6 +92,7 @@ namespace QLnhahang_anhttt
 
                 MainForm frm = new MainForm();
                 frm.Show();
+                frm.permission = permission;
                 this.Hide();
             }
             else

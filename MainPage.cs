@@ -12,9 +12,20 @@ namespace QLnhahang_anhttt
 {
     public partial class MainPage : UserControl
     {
+        public int hienthi = 0;
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            hienthi = 1;
+        }
+
+        private void MainPage_Load(object sender, EventArgs e)
+        {
+            hienthi = 0;
         }
     }
 }

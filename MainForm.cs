@@ -17,6 +17,11 @@ namespace QLnhahang_anhttt
 {
     public partial class MainForm : Form
     {
+        public int permission;
+        //1: quản lý nhà hàng
+        //2: nhân viên quản lý kho
+        //3: đối tượng còn lại
+
         public MainForm()
         {
             InitializeComponent();
@@ -45,6 +50,7 @@ namespace QLnhahang_anhttt
         {
             sidePanel.Height = guna2GradientTileBtnCustomer.Height;
             sidePanel.Top = guna2GradientTileBtnCustomer.Top;
+            customer1.BringToFront();
         }
         //warehouse
         private void guna2GradientTileWarehouse_Click(object sender, EventArgs e)
@@ -63,9 +69,7 @@ namespace QLnhahang_anhttt
         // thong ke
         private void guna2GradientTileBtnStatistical_Click(object sender, EventArgs e)
         {
-            sidePanel.Height = guna2GradientTileBtnStatistical.Height;
-            sidePanel.Top = guna2GradientTileBtnStatistical.Top;
-            statisticals2.BringToFront();
+                statisticals2.BringToFront();
         }
         // home
         private void guna2GradientTileBtnHome_Click(object sender, EventArgs e)
@@ -83,7 +87,6 @@ namespace QLnhahang_anhttt
         private void btnSignOut_Click(object sender, EventArgs e)
         {
             this.Close();
-
             //////
             loginform frm = new loginform();
             frm.Show();

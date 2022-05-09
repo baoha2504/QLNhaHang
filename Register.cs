@@ -22,7 +22,7 @@ namespace QLnhahang_anhttt
             InitializeComponent();
             this.staff = fg;
         }
-
+ 
         #region Methods
         // be new thong tin cua nguoi muon dang ky
         private void clear()
@@ -51,6 +51,7 @@ namespace QLnhahang_anhttt
 
         #endregion
         // nut add
+        string gender;
         private void btnThem_Click(object sender, EventArgs e)
         {
             try
@@ -61,16 +62,22 @@ namespace QLnhahang_anhttt
                     string id = row.Cells[0].Value.ToString();
                     if (txtAddManv.Text == id)
                     {
-                        MessageBox.Show("Mã sinh viên đã tồn tại!!! Xin vui lòng nhập lại", "An error occurred", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        // mã nv đã tồn tại 
+                        MessageBox.Show("Employee ID already exists!!! Please re-enter ", "An error occurred", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         check = false;
                         txtAddManv.Focus();
                     }
                 }
                 if (check == true)
                 {
+                    if (guna2RadioBtnNam.Checked == true)
+                    {
+                        gender = "Nam";
+                    }
+                    else gender = "Nu";
                     sqlCon.Open();
-                    String query = "INSERT INTO NHANVIEN (maNV,hoTen,diaChi,soDienThoai,chucVu) VALUES('" + txtAddManv.Text + "',N'" +
-                            txtAddName.Text + "',N'" + txtAddDC.Text + "','" + txtADDsdt.Text + "',N'" + txtAddChucvu.Text + "')";
+                    String query = "INSERT INTO NHANVIEN (maNV,hoTen,NgaySinh,GioiTinh,diaChi,soDienThoai,chucVu, Luong) VALUES('" + txtAddManv.Text + "',N'" +
+                            txtAddName.Text + "',N'" + guna2DateTimePickerBirth.Value.Date + "','" + gender + "','" + txtAddDC.Text + "','" + txtADDsdt.Text + "',N'" + txtAddChucvu.Text + "','" +txtAddSalary.Text + "' )";
                     SqlCommand sqlDa = new SqlCommand(query, sqlCon);
                     sqlDa.ExecuteNonQuery();
                     sqlCon.Close();
@@ -90,6 +97,98 @@ namespace QLnhahang_anhttt
         {
             clear();
             this.Hide();
+        }
+        // position 
+        private void txtAddChucvu_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                try
+                {
+                    bool check = true;
+                    foreach (DataGridViewRow row in staff.guna2DataGridViewStaff.Rows)
+                    {
+                        string id = row.Cells[0].Value.ToString();
+                        if (txtAddManv.Text == id)
+                        {
+                            MessageBox.Show("Employee ID already exists!!! Please re-enter", "An error occurred", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            check = false;
+                            txtAddManv.Focus();
+                        }
+                    }
+                    if (check == true)
+                    {
+                        sqlCon.Open();
+                        String query = "INSERT INTO NHANVIEN (maNV,hoTen,diaChi,soDienThoai,chucVu) VALUES('" + txtAddManv.Text + "',N'" +
+                                txtAddName.Text + "','" + txtAddDC.Text + "','" + txtADDsdt.Text + "',N'" + txtAddChucvu.Text + "')";
+                        SqlCommand sqlDa = new SqlCommand(query, sqlCon);
+                        sqlDa.ExecuteNonQuery();
+                        sqlCon.Close();
+                        connect();
+                        clear();
+                        this.Hide();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString(), "An error occurred", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtAddManv.Focus();
+                }
+            }
+        }
+
+        private void txtAddManv_Validating(object sender, CancelEventArgs e)
+        {
+            Regex CharRegex = new Regex(@"^[A-Z0-9]{5,8}$");
+            string text = txtAddManv.Text;
+            bool result = CharRegex.IsMatch(text);
+            if (result == false)
+            {
+                e.Cancel = true;
+                txtAddManv.Focus();
+                errorProvider1.SetError(txtAddManv, "Only uppercase and numbers!");  // chi co chu in hoa va so
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(txtAddManv, null);
+            }
+        }
+
+        private void txtADDsdt_Validating(object sender, CancelEventArgs e)
+        {
+            Regex CharRegex = new Regex(@"^[0-9]{9,11}$");
+            string text = txtADDsdt.Text;
+            bool result = CharRegex.IsMatch(text);
+            if (result == false)
+            {
+                e.Cancel = true;
+                txtADDsdt.Focus();
+                errorProvider2.SetError(txtADDsdt, "Only number!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider2.SetError(txtADDsdt, null);
+            }
+        }
+
+        private void txtAddSalary_Validating(object sender, CancelEventArgs e)
+        {
+            Regex CharRegex = new Regex(@"^[0-9]{9,11}$");
+            string text = txtAddSalary.Text;
+            bool result = CharRegex.IsMatch(text);
+            if (result == false)
+            {
+                e.Cancel = true;
+                txtAddSalary.Focus();
+                errorProvider2.SetError(txtAddSalary, "Only number!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider2.SetError(txtAddSalary, null);
+            }
         }
     }
 }

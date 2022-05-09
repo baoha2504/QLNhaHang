@@ -52,11 +52,12 @@ namespace QLnhahang_anhttt
             this.guna2GradientTileWarehouse = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.guna2GradientTileBtnStaff = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.customer1 = new QLnhahang_anhttt.Customer();
+            this.staff1 = new QLnhahang_anhttt.Staff();
             this.introduce1 = new QLnhahang_anhttt.Introduce.Introduce();
             this.statisticals2 = new QLnhahang_anhttt.Statistical.Statisticals();
             this.nguyenLieu1 = new QLnhahang_anhttt.Warehouse.NguyenLieu();
             this.mainPage1 = new QLnhahang_anhttt.MainPage();
-            this.staff1 = new QLnhahang_anhttt.Staff();
             this.MainPage = new QLnhahang_anhttt.MainPage();
             this.statisticals1 = new QLnhahang_anhttt.Statistical.Statisticals();
             this.pnl1.SuspendLayout();
@@ -464,35 +465,54 @@ namespace QLnhahang_anhttt
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel1.Controls.Add(this.customer1);
+            this.panel1.Controls.Add(this.staff1);
             this.panel1.Controls.Add(this.introduce1);
             this.panel1.Controls.Add(this.statisticals2);
             this.panel1.Controls.Add(this.nguyenLieu1);
             this.panel1.Controls.Add(this.mainPage1);
-            this.panel1.Controls.Add(this.staff1);
             this.panel1.Location = new System.Drawing.Point(189, 95);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1299, 598);
             this.panel1.TabIndex = 3;
             // 
+            // customer1
+            // 
+            this.customer1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.customer1.Location = new System.Drawing.Point(0, 3);
+            this.customer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.customer1.Name = "customer1";
+            this.customer1.Size = new System.Drawing.Size(1302, 593);
+            this.customer1.TabIndex = 7;
+            // 
+            // staff1
+            // 
+            this.staff1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.staff1.Location = new System.Drawing.Point(3, 3);
+            this.staff1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.staff1.Name = "staff1";
+            this.staff1.Size = new System.Drawing.Size(1302, 599);
+            this.staff1.TabIndex = 6;
+            // 
             // introduce1
             // 
             this.introduce1.Location = new System.Drawing.Point(3, 3);
             this.introduce1.Name = "introduce1";
-            this.introduce1.Size = new System.Drawing.Size(1293, 595);
+            this.introduce1.Size = new System.Drawing.Size(1290, 595);
             this.introduce1.TabIndex = 5;
             // 
             // statisticals2
             // 
             this.statisticals2.BackColor = System.Drawing.Color.White;
-            this.statisticals2.Location = new System.Drawing.Point(3, 3);
+            this.statisticals2.Location = new System.Drawing.Point(0, 2);
             this.statisticals2.Name = "statisticals2";
             this.statisticals2.Size = new System.Drawing.Size(1293, 595);
             this.statisticals2.TabIndex = 4;
             // 
             // nguyenLieu1
             // 
-            this.nguyenLieu1.Location = new System.Drawing.Point(0, 0);
+            this.nguyenLieu1.Location = new System.Drawing.Point(3, 6);
             this.nguyenLieu1.Name = "nguyenLieu1";
             this.nguyenLieu1.Size = new System.Drawing.Size(1299, 598);
             this.nguyenLieu1.TabIndex = 3;
@@ -500,20 +520,11 @@ namespace QLnhahang_anhttt
             // mainPage1
             // 
             this.mainPage1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.mainPage1.Location = new System.Drawing.Point(3, 0);
+            this.mainPage1.Location = new System.Drawing.Point(0, 2);
             this.mainPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mainPage1.Name = "mainPage1";
             this.mainPage1.Size = new System.Drawing.Size(1290, 596);
             this.mainPage1.TabIndex = 1;
-            // 
-            // staff1
-            // 
-            this.staff1.BackColor = System.Drawing.Color.White;
-            this.staff1.Location = new System.Drawing.Point(9, 2);
-            this.staff1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.staff1.Name = "staff1";
-            this.staff1.Size = new System.Drawing.Size(1290, 593);
-            this.staff1.TabIndex = 0;
             // 
             // MainPage
             // 
@@ -587,11 +598,12 @@ namespace QLnhahang_anhttt
         private System.Windows.Forms.Panel panel1;
         private MainPage MainPage;
         private System.Windows.Forms.Panel sidePanel;
-        private Staff staff1;
         private MainPage mainPage1;
         private Warehouse.NguyenLieu nguyenLieu1;
         private Statistical.Statisticals statisticals1;
         private Statistical.Statisticals statisticals2;
         private Introduce.Introduce introduce1;
+        private Staff staff1;
+        private Customer customer1;
     }
 }

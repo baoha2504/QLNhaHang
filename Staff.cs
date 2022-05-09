@@ -27,7 +27,7 @@ namespace QLnhahang_anhttt
         private void connect()
         {
             sqlCon.Open();
-            SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT maNV as 'ID', hoten as 'Name', diachi as 'Address', soDienThoai as 'Phone number', chucvu as 'Position' FROM NHANVIEN", sqlCon);
+            SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT maNV as 'ID', hoten as 'Name', diachi as 'Address', soDienThoai as 'Phone', chucvu as 'Position' FROM NHANVIEN", sqlCon);
             DataTable dtb = new DataTable();
             sqlDa.Fill(dtb);
             guna2DataGridViewStaff.DataSource = dtb;
@@ -37,12 +37,14 @@ namespace QLnhahang_anhttt
             sqlCon.Close();
         }
         // trong bang information
-        private void guna2BtnAdd_Click(object sender, EventArgs e)
+
+        // nút Fix : sua thong tin
+        private void guna2BtnFix_Click(object sender, EventArgs e)
         {
             try
             {
                 sqlCon.Open();
-                String query = "UPDATE NHANVIEN set maNV='" + txtID.Text + "',hoTen=N'" + txtName.Text + "',diaChi=N'" + txtAddress.Text + "',soDienThoai='" + txtPhone.Text + "',chucVu=N'" + txtPosition.Text + "'where maNV='" + txtID.Text + "'";
+                String query = "UPDATE NHANVIEN set maNV=N'" + txtID.Text + "',hoTen=N'" + txtName.Text + "',diaChi=N'" + txtAddress.Text + "',soDienThoai='" + txtPhone.Text + "',chucVu=N'" + txtPosition.Text + "'where maNV=N'" + txtID.Text + "'";
                 SqlCommand cmd = new SqlCommand(query, sqlCon);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Update success");
@@ -54,10 +56,10 @@ namespace QLnhahang_anhttt
                 MessageBox.Show(ex.ToString(), "An error occurred", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtID.Focus();
             }
-
-
         }
 
+
+        // nut delete
         private void guna2BtnDelete_Click(object sender, EventArgs e)
         {
             sqlCon.Open();
@@ -73,15 +75,14 @@ namespace QLnhahang_anhttt
             {
                 if (txtID.Text != "")
                 {
-                    
+                    sqlCon.Close();
                     sqlCon.Open();
-                    string query = "Select * from NHANVIEN where maNV='" + txtID.Text + "'";
+                    string query = "SELECT maNV as 'ID', hoten as 'Name', diachi as 'Address', soDienThoai as 'Phone', chucvu as 'Position' FROM NHANVIEN where maNV='" + txtID.Text + "'";
                     SqlDataAdapter sqlDa = new SqlDataAdapter(query, sqlCon);
                     DataTable dtb = new DataTable();
                     sqlDa.Fill(dtb);
                     guna2DataGridViewStaff.DataSource = dtb;  
-                    guna2DataGridViewStaff.AutoGenerateColumns = false;
-                    guna2DataGridViewStaff.AllowUserToAddRows = false;
+                    guna2DataGridViewStaff.AutoGenerateColumns = true;
                     guna2DataGridViewStaff.AutoResizeColumns();
                     sqlCon.Close();
                 }
@@ -137,7 +138,7 @@ namespace QLnhahang_anhttt
             {
                 e.Cancel = true;
                 txtID.Focus();
-                errorProvider1.SetError(txtID, "Chỉ có chữ hoa và số!");
+                errorProvider1.SetError(txtID, "Only uppercase and numbers!");
             }
             else
             {
@@ -155,7 +156,7 @@ namespace QLnhahang_anhttt
             {
                 e.Cancel = true;
                 txtPhone.Focus();
-                errorProvider2.SetError(txtPhone, "Chỉ có số!");
+                errorProvider2.SetError(txtPhone, "Only numbers!");
             }
             else
             {
@@ -170,8 +171,6 @@ namespace QLnhahang_anhttt
             {
                 if (guna2TextBoxSearch.Text != "")
                 {
-
-                  
                     sqlCon.Open();
                     string query = "Select * from NHANVIEN where maNV='" + guna2TextBoxSearch.Text + "'";
                     SqlDataAdapter sqlDa = new SqlDataAdapter(query, sqlCon);
@@ -179,7 +178,7 @@ namespace QLnhahang_anhttt
                     sqlDa.Fill(dtb);
                     guna2DataGridViewStaff.DataSource = dtb;  
                   
-                    guna2DataGridViewStaff.AutoGenerateColumns = false;
+                    guna2DataGridViewStaff.AutoGenerateColumns = true;
                     guna2DataGridViewStaff.AllowUserToAddRows = false;
                     guna2DataGridViewStaff.AutoResizeColumns();
                     sqlCon.Close();
@@ -202,7 +201,7 @@ namespace QLnhahang_anhttt
                     DataTable dtb = Data_Provider.GetDataTable("select * from SearchNV( N'" + guna2TextBoxSearch.Text + "');");
                     guna2DataGridViewStaff.DataSource = dtb;
 
-                    guna2DataGridViewStaff.AutoGenerateColumns = false;
+                    guna2DataGridViewStaff.AutoGenerateColumns = true;
                     guna2DataGridViewStaff.AllowUserToAddRows = false;
                     guna2DataGridViewStaff.AutoResizeColumns();
                     sqlCon.Close();
