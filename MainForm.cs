@@ -37,27 +37,41 @@ namespace QLnhahang_anhttt
         {
             sidePanel.Height = guna2GradientTileBtnFood.Height;
             sidePanel.Top = guna2GradientTileBtnFood.Top;
+            foods1.BringToFront();
+            if (permission == 1 || permission == 3)
+            {
+                foods1.BringToFront();
+            }
         }
         //staff
         private void guna2GradientTileBtnStaff_Click(object sender, EventArgs e)
         {
             sidePanel.Height = guna2GradientTileBtnStaff.Height;
             sidePanel.Top = guna2GradientTileBtnStaff.Top;
-            staff1.BringToFront();
+            if (permission == 1)
+            {
+                staff1.BringToFront();
+            }
         }
         //customer
         private void guna2GradientTileBtnCustomer_Click(object sender, EventArgs e)
         {
             sidePanel.Height = guna2GradientTileBtnCustomer.Height;
             sidePanel.Top = guna2GradientTileBtnCustomer.Top;
-            customer1.BringToFront();
+            if (permission == 1 || permission == 3)
+            {
+                customer1.BringToFront();
+            }
         }
         //warehouse
         private void guna2GradientTileWarehouse_Click(object sender, EventArgs e)
         {
             sidePanel.Height = guna2GradientTileWarehouse.Height;
             sidePanel.Top = guna2GradientTileWarehouse.Top;
-            nguyenLieu1.BringToFront();
+            if (permission == 1 || permission == 2)
+            {
+                nguyenLieu1.BringToFront();
+            }
         }
         // introduce
         private void guna2GradientTileBtnIntroduce_Click(object sender, EventArgs e)
@@ -69,14 +83,24 @@ namespace QLnhahang_anhttt
         // thong ke
         private void guna2GradientTileBtnStatistical_Click(object sender, EventArgs e)
         {
+            sidePanel.Height = guna2GradientTileBtnStatistical.Height;
+            sidePanel.Top = guna2GradientTileBtnStatistical.Top;
+            if (permission == 1 || permission == 2)
+            {
                 statisticals2.BringToFront();
+            }
         }
         // home
         private void guna2GradientTileBtnHome_Click(object sender, EventArgs e)
         {
             sidePanel.Height = guna2GradientTileBtnHome.Height;
             sidePanel.Top = guna2GradientTileBtnHome.Top;
+
             mainPage1.BringToFront();
+            if(mainPage1.hienthi == 1)
+            {
+                
+            }
         }
         // close
         private void guna2ControlBoxClose_Click(object sender, EventArgs e)

@@ -35,12 +35,12 @@ namespace QLnhahang_anhttt.Warehouse
 
         private void btThem_Click(object sender, EventArgs e)
         {
-            if (txtTenNL.Text != string.Empty && txtSoLuong.Text != string.Empty && txtDonGia.Text != string.Empty)
+            txtSoPX.Enabled = false;
+            txtMaNV.Enabled = false;
+            if (txtTenNL.Text != string.Empty && txtSoLuong.Text != string.Empty)
             {
                 try
                 {
-                    int soluong = int.Parse(txtSoLuong.Text);
-                    int dongia = int.Parse(txtDonGia.Text);
                     string constr = Data_Provider.connectionSTR;
                     string Sql = "select manl from nguyenlieu where tennl = N'" + txtTenNL.Text + "'";
                     using (SqlConnection conn = new SqlConnection(constr))
@@ -57,7 +57,7 @@ namespace QLnhahang_anhttt.Warehouse
                         conn.Close();
                     }
                     DataGridViewRow row = new DataGridViewRow(); //Khai bao row
-                    dtgvThemPhieuXuat.Rows.Add(manlxuat, txtTenNL.Text, txtSoLuong.Text, txtDonGia.Text);
+                    dtgvThemPhieuXuat.Rows.Add(manlxuat, txtTenNL.Text, txtSoLuong.Text);
                 }
                 catch
                 {
@@ -92,7 +92,6 @@ namespace QLnhahang_anhttt.Warehouse
                 while (DR2.Read())
                 {
                     txtTenNL.Items.Add(DR2[0]);
-
                 }
                 DR.Close();
                 conn.Close();
@@ -112,7 +111,6 @@ namespace QLnhahang_anhttt.Warehouse
                         string manl = dtgvThemPhieuXuat.Rows[i].Cells[0].Value.ToString();
                         string tennl = dtgvThemPhieuXuat.Rows[i].Cells[1].Value.ToString();
                         string soluong = dtgvThemPhieuXuat.Rows[i].Cells[2].Value.ToString();
-                        string dongia = dtgvThemPhieuXuat.Rows[i].Cells[3].Value.ToString();
                         string sumSoLuong = "0";
                         
                         string constr = Data_Provider.connectionSTR;
@@ -135,7 +133,7 @@ namespace QLnhahang_anhttt.Warehouse
                                 sumSoLuong = sum.ToString();
                                 string query3 = $"update nguyenlieu set soluong = '{sumSoLuong}' where manl = '{manl}'";
                                 CapNhat(query3);
-                                string query2 = $"insert into chitietxuat values ('{manl}', '{txtSoPX.Text}', '{soluong}', '{dongia}')";
+                                string query2 = $"insert into chitietxuat values ('{manl}', '{txtSoPX.Text}', '{soluong}', '0')";
                                 CapNhat(query2);
                             }
                             else

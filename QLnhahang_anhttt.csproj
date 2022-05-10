@@ -93,6 +93,12 @@
     <Compile Include="Food\Bill.Designer.cs">
       <DependentUpon>Bill.cs</DependentUpon>
     </Compile>
+    <Compile Include="Food\FoodMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Food\FoodMenu.Designer.cs">
+      <DependentUpon>FoodMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Food\Foods.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -104,6 +110,12 @@
     </Compile>
     <Compile Include="Food\InforDesk.Designer.cs">
       <DependentUpon>InforDesk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Food\SelectedFood.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Food\SelectedFood.Designer.cs">
+      <DependentUpon>SelectedFood.cs</DependentUpon>
     </Compile>
     <Compile Include="Introduce\Introduce.cs">
       <SubType>UserControl</SubType>
@@ -130,6 +142,21 @@
     </Compile>
     <Compile Include="MainPage.Designer.cs">
       <DependentUpon>MainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyNhaHangDataSet.Designer.cs">
+      <DependentUpon>QuanLyNhaHangDataSet.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="QuanLyNhaHangDataSet1.Designer.cs">
+      <DependentUpon>QuanLyNhaHangDataSet1.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="QuanLyNhaHangDataSet21.Designer.cs">
+      <DependentUpon>QuanLyNhaHangDataSet21.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="Register.cs">
       <SubType>Form</SubType>
@@ -271,11 +298,17 @@
     <EmbeddedResource Include="Food\Bill.resx">
       <DependentUpon>Bill.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Food\FoodMenu.resx">
+      <DependentUpon>FoodMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Food\Foods.resx">
       <DependentUpon>Foods.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Food\InforDesk.resx">
       <DependentUpon>InforDesk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Food\SelectedFood.resx">
+      <DependentUpon>SelectedFood.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Introduce\Introduce.resx">
       <DependentUpon>Introduce.cs</DependentUpon>
@@ -402,6 +435,39 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="QuanLyNhaHangDataSet.xsc">
+      <DependentUpon>QuanLyNhaHangDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyNhaHangDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyNhaHangDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyNhaHangDataSet.xss">
+      <DependentUpon>QuanLyNhaHangDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyNhaHangDataSet1.xsc">
+      <DependentUpon>QuanLyNhaHangDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyNhaHangDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyNhaHangDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyNhaHangDataSet1.xss">
+      <DependentUpon>QuanLyNhaHangDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyNhaHangDataSet21.xsc">
+      <DependentUpon>QuanLyNhaHangDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyNhaHangDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyNhaHangDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyNhaHangDataSet21.xss">
+      <DependentUpon>QuanLyNhaHangDataSet21.xsd</DependentUpon>
+    </None>
     <None Include="Warehouse\DataSetNhap.xsc">
       <DependentUpon>DataSetNhap.xsd</DependentUpon>
     </None>

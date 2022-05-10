@@ -58,7 +58,7 @@ namespace QLnhahang_anhttt.Warehouse
             txtNgayXuat.Text = ngayXuat;
             txtMaNV.Text = maNV;
             txtHoTen.Text = hoTen;
-            string query = "SELECT NGUYENLIEU.MaNL AS N'Mã nguyên liệu', TenNL AS N'Tên nguyên liệu', CHITIETXUAT.SoLuong AS N'Số lượng', DonGia AS N'Đơn giá' FROM NGUYENLIEU, CHITIETXUAT WHERE NGUYENLIEU.MaNL = CHITIETXUAT.MaNL AND CHITIETXUAT.SoPX = '";
+            string query = "SELECT NGUYENLIEU.MaNL AS N'Mã nguyên liệu', TenNL AS N'Tên nguyên liệu', CHITIETXUAT.SoLuong AS N'Số lượng' FROM NGUYENLIEU, CHITIETXUAT WHERE NGUYENLIEU.MaNL = CHITIETXUAT.MaNL AND CHITIETXUAT.SoPX = '";
             connect(query + soPX + "'");
         }
 

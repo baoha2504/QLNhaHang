@@ -59,7 +59,6 @@ namespace QLnhahang_anhttt
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-
             sqlCon.Open();
             string query = "Select * from NHANVIEN where matkhau= '" + ComputeSha256Hash(textPass.Text) + "' and manv= N'" + textUser.Text + "'";
             //string query = "Select * from NHANVIEN where matkhau= '" + textPass.Text + "' and manv= N'" + textUser.Text + "'";
@@ -76,11 +75,11 @@ namespace QLnhahang_anhttt
                 {
                     name = dr["hoTen"].ToString();
                     position = dr["chucVu"].ToString();
-                    if (position == "Quản lý")
+                    if (position.Trim() == "Administrator")
                     {
                         permission = 1;
                     }
-                    else if (position == "Phụ trách kho" || position == "Nhân viên kho")
+                    else if (position.Trim() == "WarehouseManager" || position.Trim() == "WarehouseStaff")
                     {
                         permission = 2;
                     }

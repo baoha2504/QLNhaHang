@@ -40,6 +40,7 @@ namespace QLnhahang_anhttt.Warehouse
         {
             NgayNhap.Value = DateTime.Now;
             txtTongTien.Text = "0";
+            txtTongTien.Enabled = false;
             string constr = Data_Provider.connectionSTR;
             string Sql = "select mancc from nhacungcap";
             using (SqlConnection conn = new SqlConnection(constr))
@@ -83,6 +84,9 @@ namespace QLnhahang_anhttt.Warehouse
 
         private void btThemNL_Click(object sender, EventArgs e)
         {
+            txtSoPN.Enabled = false;
+            txtMaNV.Enabled = false;
+            txtMaNCC.Enabled = false;
             if (txtTenNL.Text != string.Empty && txtSoLuong.Text != string.Empty && txtDonVi.Text != string.Empty && txtDonGia.Text != string.Empty)
             {
                 try

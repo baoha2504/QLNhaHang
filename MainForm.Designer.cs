@@ -60,6 +60,7 @@ namespace QLnhahang_anhttt
             this.mainPage1 = new QLnhahang_anhttt.MainPage();
             this.MainPage = new QLnhahang_anhttt.MainPage();
             this.statisticals1 = new QLnhahang_anhttt.Statistical.Statisticals();
+            this.foods1 = new QLnhahang_anhttt.Food.Foods();
             this.pnl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2GradientPanelInfo.SuspendLayout();
@@ -465,6 +466,7 @@ namespace QLnhahang_anhttt
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel1.Controls.Add(this.foods1);
             this.panel1.Controls.Add(this.customer1);
             this.panel1.Controls.Add(this.staff1);
             this.panel1.Controls.Add(this.introduce1);
@@ -543,6 +545,15 @@ namespace QLnhahang_anhttt
             this.statisticals1.Size = new System.Drawing.Size(1293, 595);
             this.statisticals1.TabIndex = 4;
             // 
+            // foods1
+            // 
+            this.foods1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.foods1.Location = new System.Drawing.Point(4, 5);
+            this.foods1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.foods1.Name = "foods1";
+            this.foods1.Size = new System.Drawing.Size(1292, 600);
+            this.foods1.TabIndex = 8;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -605,5 +616,6 @@ namespace QLnhahang_anhttt
         private Introduce.Introduce introduce1;
         private Staff staff1;
         private Customer customer1;
+        private Food.Foods foods1;
     }
 }
