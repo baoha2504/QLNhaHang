@@ -38,10 +38,9 @@ namespace QLnhahang_anhttt
         {
             sidePanel.Height = guna2GradientTileBtnFood.Height;
             sidePanel.Top = guna2GradientTileBtnFood.Top;
-            
             if (permission == 1 || permission == 3)
             {
-                
+                foods1.BringToFront();
             }
         }
         //staff

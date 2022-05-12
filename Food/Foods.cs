@@ -114,15 +114,6 @@ namespace QLnhahang_anhttt.Food
                 index += 1;
             }
         }
-       /* public void all()
-        {
-            sqlCon.Open();
-            SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT * FROM MONAN", sqlCon);
-            DataTable dtb = new DataTable();
-            sqlDa.Fill(dtb);
-            sqlCon.Close();
-            HienThi(dtb);
-        }*/
 
         private void reset_panel()
         {
@@ -402,7 +393,6 @@ namespace QLnhahang_anhttt.Food
         {
             DateTime dt = DateTime.Now;
             TimeSpan time = dt.TimeOfDay;
-            string tinhtrang = "";
             string mamon = "";
             if (flowLayoutPnl_Selected.Controls.Count > 0)
             {
@@ -638,7 +628,7 @@ namespace QLnhahang_anhttt.Food
 
 
             //khuyen mai
-            if (cckDis_Bill.Checked = false)
+            if (cckDis_Bill.Checked == false)
             {
                 cbbDiscount.Visible = false;
                 button1.Enabled = false;

@@ -84,7 +84,7 @@ namespace QLnhahang_anhttt.Warehouse
                 string query = "UPDATE PHIEUNHAP SET SoPN = '" + txtPhieuNhap.Text + "', NgayNhap = '" + dateEdit.ToString("yyyy-MM-dd") + "', TongTien = " + txtTongTien.Text + ", MaNV = '" + txtNhanVien.Text + "', MaNCC = '" + txtNCC.Text + "' WHERE soPN = '";
                 CapNhat(query);
                 MessageBox.Show("Bạn đã chỉnh sửa thành công phiếu nhập", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            } catch (Exception ex)
+            } catch 
             {
                 MessageBox.Show("Chỉnh sửa không thành công", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }

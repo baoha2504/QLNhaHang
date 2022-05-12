@@ -71,7 +71,7 @@ namespace QLnhahang_anhttt.Warehouse
                 CapNhat(query);
                 MessageBox.Show("Bạn đã chỉnh sửa thành công phiếu xuất", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            catch (Exception ex)
+            catch
             {
                 MessageBox.Show("Chỉnh sửa không thành công", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
