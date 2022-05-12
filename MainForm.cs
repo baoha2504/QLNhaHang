@@ -12,6 +12,7 @@ using QLnhahang_anhttt.Data;
 using QLnhahang_anhttt.Statistical;
 using QLnhahang_anhttt.Warehouse;
 using QLnhahang_anhttt.Introduce;
+using QLnhahang_anhttt.Food;
 
 namespace QLnhahang_anhttt
 {
@@ -37,10 +38,10 @@ namespace QLnhahang_anhttt
         {
             sidePanel.Height = guna2GradientTileBtnFood.Height;
             sidePanel.Top = guna2GradientTileBtnFood.Top;
-            foods1.BringToFront();
+            
             if (permission == 1 || permission == 3)
             {
-                foods1.BringToFront();
+                
             }
         }
         //staff

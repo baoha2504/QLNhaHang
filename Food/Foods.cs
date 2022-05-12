@@ -1,5 +1,4 @@
-﻿using QLnhahang_anhttt.Data;
-using System;
+﻿using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -7,6 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
+using QLnhahang_anhttt.Data;
 
 
 
@@ -14,11 +14,9 @@ namespace QLnhahang_anhttt.Food
 {
     public partial class Foods : UserControl
     {
-
-
         SqlConnection sqlCon = new SqlConnection(Data_Provider.connectionSTR);
-        static string workingDirectory = Environment.CurrentDirectory;
-        string rootDir = Directory.GetParent(workingDirectory).Parent.Parent.FullName;
+        public static string workingDirectory = Environment.CurrentDirectory;
+        //public string rootDir = Directory.GetParent(workingDirectory).Parent.FullName;
 
         public static SelectedFood[] paymentlist = new SelectedFood[100];
 
@@ -88,7 +86,11 @@ namespace QLnhahang_anhttt.Food
                 menu[index].Price = row["DonGia"].ToString();
                 menu[index].name = row["TenMon"].ToString();
                 string path = row["pathimage"].ToString();
-                try
+                if (path == "")
+                    menu[index].Background = Image.FromFile(@"D:\food\menufood.png"); // Chỉnh tùy máy
+                else
+                    menu[index].Background = Image.FromFile(path);
+                /*try
                 {
                     if (path == "")
                         menu[index].Background = Image.FromFile(@"D:\food\menufood.png"); // Chỉnh tùy máy
@@ -98,7 +100,7 @@ namespace QLnhahang_anhttt.Food
                 catch (Exception ex)
                 {
                     menu[index].Background = Image.FromFile(rootDir + @"D:\food\menufood.png"); // Chỉnh tùy máy
-                }
+                }*/
 
                 if (flowLayoutPnlMenu.Controls.Count < 0)
                 {

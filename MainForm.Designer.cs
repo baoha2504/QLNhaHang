@@ -548,10 +548,10 @@ namespace QLnhahang_anhttt
             // foods1
             // 
             this.foods1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.foods1.Location = new System.Drawing.Point(4, 5);
+            this.foods1.Location = new System.Drawing.Point(3, 6);
             this.foods1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.foods1.Name = "foods1";
-            this.foods1.Size = new System.Drawing.Size(1292, 600);
+            this.foods1.Size = new System.Drawing.Size(2726, 1234);
             this.foods1.TabIndex = 8;
             // 
             // MainForm
@@ -617,5 +617,6 @@ namespace QLnhahang_anhttt
         private Staff staff1;
         private Customer customer1;
         private Food.Foods foods1;
+        //private Food.Foods foods1;
     }
 }

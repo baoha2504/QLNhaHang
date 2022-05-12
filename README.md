@@ -1,5 +1,5 @@
 # QLNhaHang
-bao push code lần cuối 3h:25 ngay 9/5,
-gộp code của Bảo + Hà,
-để chạy được cần sử dụng csdl mới để có mã băm của mật khẩu
+bao push code lần cuối 7h:55 ngay 12/5,
+fix bug
+
 
