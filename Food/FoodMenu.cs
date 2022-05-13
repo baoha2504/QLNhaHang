@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QLnhahang_anhttt;
 
 namespace QLnhahang_anhttt
 {
@@ -42,49 +43,61 @@ namespace QLnhahang_anhttt
         }
         #endregion
 
-        Foods food;
+        public Foods food;
+        public StartForm startForm;
         public static int count = 0;
         public static int sttclicked = -1;
+        public int phanloai;
         public FoodMenu(Foods frm)
         {
             InitializeComponent();
             this.food = frm;
             this.guna2Panel2_valid.Visible = false;
-
+            phanloai = 0;
         }
+
+        public FoodMenu(StartForm startForm)
+        {
+            InitializeComponent();
+            this.startForm = startForm;
+            this.guna2Panel2_valid.Visible = false;
+            phanloai=1;
+        }
+        
 
         private void FoodMenu_Click(object sender, EventArgs e)
         {
-
-            SelectedFood selected = new SelectedFood(food);
-            if (panel2_valid.Visible == false)
+            if (phanloai == 0)
             {
-                panel2_valid.Visible = true;
-                guna2Panel2_valid.Visible = true;
-
-                // add selected vao panel, vao list 
-                selected.Price = this.Price;
-                selected.name = this.name;
-                food.flowLayoutPnl_Selected.Controls.Add(selected);
-                food.flowLayoutPnl_Selected.Controls.SetChildIndex(selected, count); // set index of added payment
-        //        try
-          //      {
-                    sttclicked = food.flowLayoutPnlMenu.Controls.GetChildIndex(this); // lấy index của menu được click
-/*                }
-                catch
+                SelectedFood selected = new SelectedFood(food);
+                if (panel2_valid.Visible == false)
                 {
-                    sttclicked = food.flowLayoutPanel1.Controls.GetChildIndex(this); // lấy index của menu được click
-                }*/
+                    panel2_valid.Visible = true;
+                    guna2Panel2_valid.Visible = true;
 
-                Foods.paymentlist[count] = selected;
-                count = count + 1;
-            }
-            else
-            {
-                panel2_valid.Visible = false;
-                guna2Panel2_valid.Visible = false;
-            }
+                    // add selected vao panel, vao list 
+                    selected.Price = this.Price;
+                    selected.name = this.name;
+                    food.flowLayoutPnl_Selected.Controls.Add(selected);
+                    food.flowLayoutPnl_Selected.Controls.SetChildIndex(selected, count); // set index of added payment
+                                                                                         //        try
+                                                                                         //      {
+                    sttclicked = food.flowLayoutPnlMenu.Controls.GetChildIndex(this); // lấy index của menu được click
+                    /*                }
+                                    catch
+                                    {
+                                        sttclicked = food.flowLayoutPanel1.Controls.GetChildIndex(this); // lấy index của menu được click
+                                    }*/
 
+                    Foods.paymentlist[count] = selected;
+                    count++;
+                }
+                else
+                {
+                    panel2_valid.Visible = false;
+                    guna2Panel2_valid.Visible = false;
+                }
+            }
 
         }
 
@@ -107,7 +120,7 @@ namespace QLnhahang_anhttt
                         {
                             food.flowLayoutPnl_Selected.Controls.Remove(Foods.paymentlist[i]);
                             Foods.paymentlist = Foods.paymentlist.Where((source, index) => index != i).ToArray(); // xoa phan tu  trong array                           
-                            count = count - 1;
+                            count--;
                         }
                     }
                 }

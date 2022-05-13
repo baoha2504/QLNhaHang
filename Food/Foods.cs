@@ -32,7 +32,7 @@ namespace QLnhahang_anhttt.Food
         {
             sqlCon.Close();
             sqlCon.Open();
-            SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT SoHieuBan as 'So hieu ban', Vitri as'Vi tri', SoGhe as'So ghe'  FROM Ban ", sqlCon);
+            SqlDataAdapter sqlDa = new SqlDataAdapter("select * from BAN", sqlCon);
             DataTable dtb = new DataTable();
             sqlDa.Fill(dtb);
 
@@ -178,14 +178,22 @@ namespace QLnhahang_anhttt.Food
                 btn.FlatAppearance.BorderSize = 3;
 
                 // màu cho bàn có ng
-                if (item["tinhTrang"].ToString() == "FULL")
+                if (item["tinhTrang"].ToString().Trim() == "FULL")
                 {
                     btn.FlatStyle = FlatStyle.Flat;
                     btn.FlatAppearance.BorderColor = Color.Red;
                     btn.ForeColor = Color.Red;
                     btn.FlatAppearance.BorderSize = 3;
-                    btn.BackColor = Color.Orange;
+                    btn.BackColor = Color.Red;
 
+                }
+                else if (item["tinhTrang"].ToString().Trim() == "BOOKED")
+                {
+                    btn.FlatStyle = FlatStyle.Flat;
+                    btn.FlatAppearance.BorderColor = Color.Blue;
+                    btn.ForeColor = Color.Blue;
+                    btn.FlatAppearance.BorderSize = 3;
+                    btn.BackColor = Color.Blue;
                 }
                 //  set màu cho bàn trống
                 else
@@ -367,7 +375,6 @@ namespace QLnhahang_anhttt.Food
 
             if (dtb.Rows.Count > 0) // đã có thông tin 
             {
-                int rows = dtb.Rows.Count;
                 foreach (DataRow row in dtb.Rows)
                 {
                     lblName_Order.Text = row["TenKH"].ToString();

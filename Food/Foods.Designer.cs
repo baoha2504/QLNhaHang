@@ -1655,7 +1655,7 @@ namespace QLnhahang_anhttt.Food
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.textBox1.ForeColor = System.Drawing.Color.Black;
             this.textBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBox1.Location = new System.Drawing.Point(16, 491);
+            this.textBox1.Location = new System.Drawing.Point(23, 634);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
             this.textBox1.PasswordChar = '\0';

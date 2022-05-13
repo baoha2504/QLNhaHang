@@ -121,3 +121,5 @@ D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Introduce.Introduce.resources
 D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Customer.resources
 D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.FoodMenu.resources
 D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Food.SelectedFood.resources
+D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.StartForm.resources
+D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.csproj.AssemblyReference.cache

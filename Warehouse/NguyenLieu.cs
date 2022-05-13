@@ -80,13 +80,13 @@ namespace QLnhahang_anhttt.Warehouse
         private void NLThuongXuyen_Click(object sender, EventArgs e)
         {
             
-            string query = "SELECT NGUYENLIEU.MaNL as 'Mã nguyên liệu', TenNL as 'Tên nguyên liệu', NGUYENLIEU.SoLuong as 'Số lượng', DonVi as 'Đơn vị' FROM CHITIETNHAP, NGUYENLIEU WHERE CHITIETNHAP.MaNL = NGUYENLIEU.MaNL GROUP BY NGUYENLIEU.MaNL, NGUYENLIEU.TenNL, NGUYENLIEU.TenNL, NGUYENLIEU.SoLuong, NGUYENLIEU.DonVi HAVING COUNT(CHITIETNHAP.SoPN) > = ALL(SELECT COUNT(CHITIETNHAP.SoPN) FROM CHITIETNHAP, NGUYENLIEU WHERE CHITIETNHAP.MaNL = NGUYENLIEU.MaNL GROUP BY NGUYENLIEU.MaNL)";
+            string query = "SELECT DISTINCT NGUYENLIEU.MaNL as 'Mã nguyên liệu', TenNL as 'Tên nguyên liệu', NGUYENLIEU.SoLuong as 'Số lượng', DonVi as 'Đơn vị' FROM CHITIETNHAP, NGUYENLIEU WHERE CHITIETNHAP.MaNL = NGUYENLIEU.MaNL GROUP BY NGUYENLIEU.MaNL, NGUYENLIEU.TenNL, NGUYENLIEU.TenNL, NGUYENLIEU.SoLuong, NGUYENLIEU.DonVi HAVING COUNT(CHITIETNHAP.SoPN) > = ALL(SELECT COUNT(CHITIETNHAP.SoPN) FROM CHITIETNHAP, NGUYENLIEU WHERE CHITIETNHAP.MaNL = NGUYENLIEU.MaNL GROUP BY NGUYENLIEU.MaNL)";
             connect(query);
         }
 
         private void NLSapHet_Click(object sender, EventArgs e)
         {
-            string query = "SELECT MaNL as 'Mã nguyên liệu', TenNL as 'Tên nguyên liệu', SoLuong as 'Số lượng', DonVi as 'Đơn vị' FROM NGUYENLIEU WHERE SoLuong <= 2";
+            string query = "SELECT DISTINCT MaNL as 'Mã nguyên liệu', TenNL as 'Tên nguyên liệu', SoLuong as 'Số lượng', DonVi as 'Đơn vị' FROM NGUYENLIEU WHERE SoLuong <= 2";
             connect(query);
         }
 
@@ -94,7 +94,7 @@ namespace QLnhahang_anhttt.Warehouse
         {
             DateTime date = DateTime.Now;
             DateTime dt = Convert.ToDateTime(date.AddDays(-3));
-            string query = "SELECT NL.MaNL as 'Mã nguyên liệu', NL.TenNL as 'Tên nguyên liệu', NL.SoLuong as 'Số lượng', NL.DonVi as 'Đơn vị' FROM NGUYENLIEU AS NL, PHIEUXUAT AS PX, CHITIETXUAT AS CTX WHERE NL.MaNL = CTX.MaNL AND CTX.SoPX = PX.SoPX AND PX.NgayXuat >= '";
+            string query = "SELECT DISTINCT NL.MaNL as 'Mã nguyên liệu', NL.TenNL as 'Tên nguyên liệu', NL.SoLuong as 'Số lượng', NL.DonVi as 'Đơn vị' FROM NGUYENLIEU AS NL, PHIEUXUAT AS PX, CHITIETXUAT AS CTX WHERE NL.MaNL = CTX.MaNL AND CTX.SoPX = PX.SoPX AND PX.NgayXuat >= '";
             connect(query + dt.ToString("yyyy-MM-dd") + "'");
         }
 
@@ -102,7 +102,23 @@ namespace QLnhahang_anhttt.Warehouse
         {
             DateTime date = DateTime.Now;
             DateTime dt = Convert.ToDateTime(date.AddDays(-3));
-            string query = "SELECT NL.MaNL as 'Mã nguyên liệu', NL.TenNL as 'Tên nguyên liệu', NL.SoLuong as 'Số lượng', NL.DonVi as 'Đơn vị' FROM NGUYENLIEU AS NL, PHIEUNHAP AS PN, CHITIETNHAP AS CTN WHERE NL.MaNL = CTN.MaNL AND CTN.SoPN = PN.SoPN AND PN.NgayNhap >= '";
+            string query = "SELECT DISTINCT NL.MaNL as 'Mã nguyên liệu', NL.TenNL as 'Tên nguyên liệu', NL.SoLuong as 'Số lượng', NL.DonVi as 'Đơn vị' FROM NGUYENLIEU AS NL, PHIEUNHAP AS PN, CHITIETNHAP AS CTN WHERE NL.MaNL = CTN.MaNL AND CTN.SoPN = PN.SoPN AND PN.NgayNhap >= '";
+            connect(query + dt.ToString("yyyy-MM-dd") + "'");
+        }
+
+        private void btItSD_Click(object sender, EventArgs e)
+        {
+            DateTime date = DateTime.Now;
+            DateTime dt = Convert.ToDateTime(date.AddDays(-7));
+            string query = "SELECT DISTINCT NL.MaNL as 'Mã nguyên liệu', NL.TenNL as 'Tên nguyên liệu', NL.SoLuong as 'Số lượng', NL.DonVi as 'Đơn vị' FROM NGUYENLIEU AS NL, PHIEUXUAT AS PX, CHITIETXUAT AS CTX WHERE NL.MaNL = CTX.MaNL AND CTX.SoPX = PX.SoPX AND PX.NgayXuat <= '";
+            connect(query + dt.ToString("yyyy-MM-dd") + "'");
+        }
+
+        private void btTonKho_Click(object sender, EventArgs e)
+        {
+            DateTime date = DateTime.Now;
+            DateTime dt = Convert.ToDateTime(date.AddDays(-7));
+            string query = "SELECT DISTINCT NL.MaNL as 'Mã nguyên liệu', NL.TenNL as 'Tên nguyên liệu', NL.SoLuong as 'Số lượng', NL.DonVi as 'Đơn vị' FROM NGUYENLIEU AS NL, PHIEUNHAP AS PN, CHITIETNHAP AS CTN WHERE NL.MaNL = CTN.MaNL AND CTN.SoPN = PN.SoPN AND PN.NgayNhap <= '";
             connect(query + dt.ToString("yyyy-MM-dd") + "'");
         }
     }
