@@ -11,6 +11,7 @@ namespace QLnhahang_anhttt.Statistical
         public BDNgayTuan()
         {
             InitializeComponent();
+            label3.Text += datengay1.ToString(" dd-MM-yyyy");
         }
         SqlConnection conn = new SqlConnection(Data_Provider.connectionSTR);
         string query;
@@ -109,8 +110,6 @@ namespace QLnhahang_anhttt.Statistical
             label12.Text += " VNĐ";
             label13.Text += " VNĐ";
             label14.Text += " VNĐ";
-
-            label3.Text += datengay1.ToString(" dd-MM-yyyy");
         }
 
         private void guna2PictureBox1_Click(object sender, EventArgs e)

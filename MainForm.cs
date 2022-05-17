@@ -118,6 +118,9 @@ namespace QLnhahang_anhttt
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            toolTip1.ShowAlways = true;
+            toolTip1.SetToolTip(btnSignOut, "Đăng xuất khỏi chương trình");
+            toolTip1.SetToolTip(guna2ControlBoxClose, "Đóng");
             sidePanel.Height = guna2GradientTileBtnHome.Height;
             sidePanel.Top = guna2GradientTileBtnHome.Top;
             mainPage1.BringToFront();

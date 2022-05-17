@@ -1,15 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using QLnhahang_anhttt.Introduce;
-using QLnhahang_anhttt.Food;
 using System.Data.SqlClient;
+using System.Drawing;
+using System.Windows.Forms;
 using QLnhahang_anhttt.Data;
 
 namespace QLnhahang_anhttt
@@ -19,10 +12,12 @@ namespace QLnhahang_anhttt
         public StartForm()
         {
             InitializeComponent();
+            toolTip1.ShowAlways = true;
+            toolTip1.SetToolTip(guna2PictureBox2, "Tìm kiếm");
+            toolTip1.SetToolTip(btnSignOut, "Đăng nhập vào hệ thống quản lý nhà hàng");
         }
 
         SqlConnection sqlCon = new SqlConnection(Data_Provider.connectionSTR);
-
 
         void connectTable()
         {
@@ -219,7 +214,7 @@ namespace QLnhahang_anhttt
             }
             if (HienThi(query).Contains("NONE"))
             {
-                
+
             }
         }
 

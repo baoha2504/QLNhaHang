@@ -135,6 +135,12 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PasswordRetrieval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PasswordRetrieval.Designer.cs">
+      <DependentUpon>PasswordRetrieval.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MainPage.cs">
@@ -327,6 +333,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainPage.resx">
       <DependentUpon>MainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordRetrieval.resx">
+      <DependentUpon>PasswordRetrieval.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

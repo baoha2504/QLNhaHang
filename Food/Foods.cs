@@ -3,6 +3,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
+using System.Windows.Forms;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
@@ -195,6 +196,7 @@ namespace QLnhahang_anhttt.Food
                     btn.FlatAppearance.BorderSize = 3;
                     btn.BackColor = Color.Blue;
                 }
+            
                 //  set màu cho bàn trống
                 else
                 {
@@ -240,13 +242,32 @@ namespace QLnhahang_anhttt.Food
 
             if (textBox1.Text.Contains("FULL"))
             {
-                InforDesk infortable = new InforDesk(this, id_Ban) { TopLevel = false, TopMost = true };
-                infortable.StartPosition = FormStartPosition.CenterParent;
-                flowPnlinfortable.Controls.Add(infortable);
-                infortable.Show();
-                flowPnlinfortable.BringToFront();
+                DialogResult result = MessageBox.Show("Thanh toán bàn này?","Thông báo",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                {
+                    sildePanelFood.Height = btnHD.Height;
+                    sildePanelFood.Top = btnHD.Top;
+                    pnlBill.BringToFront();
+                    pnlOrder.Visible = false;
+                    pnlBill.Visible = true;
+                    pnlBook.Visible = false;
+                    cbbDiscount.Enabled = false;
+                    btnPayment_Bill.Enabled = false;
+                    button1.Enabled = false;
+                    loaddata(id_Ban);
+                }
+                else
+                {
+                    InforDesk infortable = new InforDesk(this, id_Ban) { TopLevel = false, TopMost = true };
+                    // infortable.StartPosition = FormStartPosition.CenterScreen;
+                    flowPnlinfortable.Controls.Add(infortable);
+                    infortable.FormBorderStyle = FormBorderStyle.None;
+                    flowPnlinfortable.BringToFront();
+                    infortable.Show();
+                }
+               
             }
-            if (textBox1.Text.Contains("NONE"))
+            if (textBox1.Text.Contains("NONE") || textBox1.Text.Contains("BOOKED"))
             {
                 sildePanelFood.Height = btnCallFood.Height;
                 sildePanelFood.Top = btnCallFood.Top;
@@ -256,6 +277,7 @@ namespace QLnhahang_anhttt.Food
                 pnlBook.SendToBack();
                 pnlBill.SendToBack();
             }
+
         }
      
         //Bill
@@ -272,7 +294,18 @@ namespace QLnhahang_anhttt.Food
             btnPayment_Bill.Enabled = false;
             button1.Enabled = false;
             loaddata();
+        }
 
+        public void loaddata(string sohieuban)
+        {
+            sqlCon.Open();
+            SqlDataAdapter sqlDa = new SqlDataAdapter("select * from PHIEUYEUCAU where loai='2' and sohieuban = '" + sohieuban + "'", sqlCon);
+            DataTable dtb = new DataTable();
+            sqlDa.Fill(dtb);
+            dsyc.DataSource = dtb;
+            dsyc.AutoGenerateColumns = false;
+            dsyc.AllowUserToAddRows = false;
+            sqlCon.Close();
         }
 
         public void loaddata()
@@ -340,10 +373,11 @@ namespace QLnhahang_anhttt.Food
                 else
                 {
                     // Tạo trigger xóa các món kế thừa trc r mới xóa món ăn đc
-                    sqlCon.Open();
+                    
                     DialogResult dlr = MessageBox.Show("Xóa món đã chọn?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
                     if (dlr == DialogResult.OK)
                     {
+                        sqlCon.Open();
                         SqlCommand cmd = new SqlCommand("delete from MONAN where tenMon=N'" + menu[FoodMenu.sttclicked].name + "'and donGia='" + menu[FoodMenu.sttclicked].Price + "'", sqlCon);
                         cmd.ExecuteNonQuery();
                         sqlCon.Close();
@@ -352,7 +386,6 @@ namespace QLnhahang_anhttt.Food
                     flowLayoutPnlMenu.Controls.Clear();
                     index = 0; /// set lai gia tri index
                     HienThi();
-                    sqlCon.Close();
                 }
             } catch (Exception)
             {
@@ -405,50 +438,55 @@ namespace QLnhahang_anhttt.Food
             {
                 if (!String.IsNullOrEmpty(txtPhone_Order.Text) && !string.IsNullOrEmpty(txtOrderID_Order.Text) && cbbTableID_Order.Text != "Chọn bàn")
                 {
-                    sqlCon.Open();
-
-                    SqlCommand up = new SqlCommand();
-                    up.Connection = sqlCon;
-                    up.CommandText = "update BAN set tinhtrang = 'FULL' where SoHieuBan = '" + cbbTableID_Order.Text + "' ";
-                    up.ExecuteNonQuery();
-
-
-                    SqlCommand add1 = new SqlCommand();
-                    add1.Connection = sqlCon;
-                    add1.CommandText = "INSERT INTO PHIEUYEUCAU (SOPYC, NGAYXUAT, NGAYGIOYC, LOAI, MAKH, SOHIEUBAN) VALUES ('" + txtOrderID_Order.Text + "','" + dt.ToString("yyyy-MM-dd") + "','" + time.ToString() + "','2','" + lblID_Order.Text + "','" + cbbTableID_Order.Text + "')";
-                    add1.ExecuteNonQuery();
-                    sqlCon.Close();
-                    for (int i = 0; i < FoodMenu.count; i++)
+                    try
                     {
                         sqlCon.Open();
-                        if (flowLayoutPnl_Selected.Controls[i].Name == "SelectedFood")
-                        {
-                            try
-                            {
-                                SqlDataReader ma = null;
-                                SqlCommand macmd = new SqlCommand("select MaMonAn from MonAn where tenmon=N'" + paymentlist[i].lbl_name.Text + "'", sqlCon);
-                                ma = macmd.ExecuteReader();
-                                while (ma.Read())
-                                {
-                                    mamon = ma["MaMonAn"].ToString();
-                                }
-                            }
-                            catch (Exception)
-                            {
-                                MessageBox.Show(e.ToString());
-                            }
-                            sqlCon.Close();
 
+                        SqlCommand up = new SqlCommand();
+                        up.Connection = sqlCon;
+                        up.CommandText = "update BAN set tinhtrang = 'FULL' where SoHieuBan = '" + cbbTableID_Order.Text + "' ";
+                        up.ExecuteNonQuery();
+
+
+                        SqlCommand add1 = new SqlCommand();
+                        add1.Connection = sqlCon;
+                        add1.CommandText = "INSERT INTO PHIEUYEUCAU (SOPYC, NGAYXUAT, NGAYGIOYC, LOAI, MAKH, SOHIEUBAN) VALUES ('" + txtOrderID_Order.Text + "','" + dt.ToString("yyyy-MM-dd") + "','" + time.ToString() + "','2','" + lblID_Order.Text + "','" + cbbTableID_Order.Text + "')";
+                        add1.ExecuteNonQuery();
+                        sqlCon.Close();
+                        for (int i = 0; i < FoodMenu.count; i++)
+                        {
                             sqlCon.Open();
-                            SqlCommand add2 = new SqlCommand();
-                            add2.Connection = sqlCon;
-                            add2.CommandText = "INSERT INTO CHITIETPYC (SOPYC, MAMONAN, SOLUONG, DONGIA) VALUES('" + txtOrderID_Order.Text + "','" + mamon + "','" + paymentlist[i].guna2NumericUpDown1.Value + "','" + paymentlist[i].lbl_price.Text + "')";
-                            add2.ExecuteNonQuery();
-                            sqlCon.Close();
-                            MessageBox.Show("Order Successfully!!");
+                            if (flowLayoutPnl_Selected.Controls[i].Name == "SelectedFood")
+                            {
+                                try
+                                {
+                                    SqlDataReader ma = null;
+                                    SqlCommand macmd = new SqlCommand("select MaMonAn from MonAn where tenmon=N'" + paymentlist[i].lbl_name.Text + "'", sqlCon);
+                                    ma = macmd.ExecuteReader();
+                                    while (ma.Read())
+                                    {
+                                        mamon = ma["MaMonAn"].ToString();
+                                    }
+                                }
+                                catch (Exception)
+                                {
+                                    MessageBox.Show(e.ToString());
+                                }
+                                sqlCon.Close();
+
+                                sqlCon.Open();
+                                SqlCommand add2 = new SqlCommand();
+                                add2.Connection = sqlCon;
+                                add2.CommandText = "INSERT INTO CHITIETPYC (SOPYC, MAMONAN, SOLUONG, DONGIA) VALUES('" + txtOrderID_Order.Text + "','" + mamon + "','" + paymentlist[i].guna2NumericUpDown1.Value + "','" + paymentlist[i].lbl_price.Text + "')";
+                                add2.ExecuteNonQuery();
+                                sqlCon.Close();
+                                MessageBox.Show("Order Successfully!!");
+                            }
                         }
+                    } catch
+                    {
+                        MessageBox.Show("Vui lòng kiểm tra thông tin khách hàng trước khi gọi món", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
-                    
                 }
                 else if (String.IsNullOrEmpty(txtPhone_Order.Text))
                 {
@@ -637,7 +675,7 @@ namespace QLnhahang_anhttt.Food
             //khuyen mai
             if (cckDis_Bill.Checked == false)
             {
-                cbbDiscount.Visible = false;
+                cbbDiscount.Enabled = false;
                 button1.Enabled = false;
             }
             else
@@ -848,6 +886,113 @@ namespace QLnhahang_anhttt.Food
         {
             flowLayoutTable.Controls.Clear();
             loadban();
+        }
+        public void HienThiMon(string query)
+        {
+            sqlCon.Open();
+            SqlDataAdapter sqlDa = new SqlDataAdapter(query, sqlCon);
+            DataTable dtb = new DataTable();
+            sqlDa.Fill(dtb);
+            sqlCon.Close();
+
+            int rows = dtb.Rows.Count;
+            index = 0;
+            menu = new FoodMenu[rows];
+            foreach (DataRow row in dtb.Rows)
+            {
+                menu[index] = new FoodMenu(this);
+                menu[index].Price = row["DonGia"].ToString();
+                menu[index].name = row["TenMon"].ToString();
+                string path = row["pathimage"].ToString();
+                try
+                {
+                    if (path == "")
+                        menu[index].Background = Image.FromFile(@"D:\food\menufood.png"); // Chỉnh tùy máy
+                    else
+                        menu[index].Background = Image.FromFile(path);
+                }
+                catch
+                {
+                }
+
+                if (flowLayoutPnlMenu.Controls.Count < 0)
+                {
+                    flowLayoutPnlMenu.Controls.Clear();
+                }
+                else
+                {
+                    flowLayoutPnlMenu.Controls.Add(menu[index]);
+                    flowLayoutPnlMenu.Controls.SetChildIndex(menu[index], index); // set index of added Menu
+                }
+                index += 1;
+            }
+        }
+
+        private void picSearchFood_Click(object sender, EventArgs e)
+        {
+            flowLayoutPnlMenu.Controls.Clear();
+            index = 0;
+            query = "SELECT * FROM MONAN WHERE 1 = 1 ";
+            if (cbbFood.Text.Contains("Pizza"))
+            {
+                query += " and mamonan LIKE '%pz%'";
+            }
+            if (cbbFood.Text.Contains("Humberger"))
+            {
+                query += " and mamonan LIKE '%br%'";
+            }
+
+            if (cbbFood.Text.Contains("Drink"))
+            {
+                query += " and mamonan LIKE '%nu%'";
+            }
+            if (cbbPrice.Text.Contains("0-100k"))
+            {
+                query += " and dongia > 0 and dongia <= 100000";
+            }
+            if (cbbPrice.Text.Contains("100-200k"))
+            {
+                query += " and dongia > 100000 and dongia <= 200000";
+            }
+            if (cbbPrice.Text.Contains(">200k"))
+            {
+                query += " and dongia > 200000";
+            }
+            HienThiMon(query);
+        }
+
+        private void btnBookTable_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                sqlCon.Open();
+                SqlCommand table = new SqlCommand();
+                table.Connection = sqlCon;
+                table.CommandText = "update ban set tinhtrang = 'BOOKED' where sohieuban ='" + txtTableID.Text + "' ";
+                table.ExecuteNonQuery();
+                sqlCon.Close();
+                MessageBox.Show("This table is booked!");
+            }
+            catch
+            {
+                MessageBox.Show(e.ToString());
+            }
+         }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            // update lai tinh trang ban;
+            sqlCon.Open();
+            //Data_Provider.exc("update ban set tinhtrang = 'NONE' where '" + txtTableID.Text.Trim() + "'");
+            SqlCommand table = new SqlCommand();
+            table.Connection = sqlCon;
+            table.CommandText = "update ban set tinhtrang = 'NONE' where sohieuban = '" + txtTableID.Text.Trim() + "'";
+            table.ExecuteNonQuery();
+            //loadban();
+            MessageBox.Show("This table is NONE!");
+            sqlCon.Close();
+            //Data_Provider.exc("exec update_ban ('" + txtTableID.Text + "');");
+            
         }
 
         private void Foods_Load(object sender, EventArgs e)

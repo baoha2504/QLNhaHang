@@ -46,6 +46,7 @@ namespace QLnhahang_anhttt.Food
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnShowBill = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -55,6 +56,7 @@ namespace QLnhahang_anhttt.Food
             // 
             this.guna2Panel1.BorderColor = System.Drawing.Color.LightSeaGreen;
             this.guna2Panel1.BorderThickness = 2;
+            this.guna2Panel1.Controls.Add(this.btnShowBill);
             this.guna2Panel1.Controls.Add(this.panel1);
             this.guna2Panel1.Controls.Add(this.guna2TxtCusAddress);
             this.guna2Panel1.Controls.Add(this.guna2TxtCusPhone);
@@ -68,9 +70,9 @@ namespace QLnhahang_anhttt.Food
             this.guna2Panel1.Controls.Add(this.label4);
             this.guna2Panel1.Controls.Add(this.label3);
             this.guna2Panel1.Controls.Add(this.label2);
-            this.guna2Panel1.Location = new System.Drawing.Point(12, 12);
+            this.guna2Panel1.Location = new System.Drawing.Point(7, 1);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(660, 591);
+            this.guna2Panel1.Size = new System.Drawing.Size(396, 419);
             this.guna2Panel1.TabIndex = 1;
             // 
             // panel1
@@ -79,16 +81,16 @@ namespace QLnhahang_anhttt.Food
             this.panel1.Controls.Add(this.btnCloseTable);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(660, 74);
+            this.panel1.Size = new System.Drawing.Size(394, 74);
             this.panel1.TabIndex = 12;
             // 
             // btnCloseTable
             // 
-            this.btnCloseTable.Location = new System.Drawing.Point(606, 9);
+            this.btnCloseTable.Location = new System.Drawing.Point(349, 1);
             this.btnCloseTable.Name = "btnCloseTable";
-            this.btnCloseTable.Size = new System.Drawing.Size(47, 35);
+            this.btnCloseTable.Size = new System.Drawing.Size(40, 31);
             this.btnCloseTable.TabIndex = 3;
             this.btnCloseTable.Text = "X";
             this.btnCloseTable.UseVisualStyleBackColor = true;
@@ -105,10 +107,9 @@ namespace QLnhahang_anhttt.Food
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(184, 22);
+            this.label1.Location = new System.Drawing.Point(104, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(284, 34);
             this.label1.TabIndex = 1;
@@ -124,15 +125,15 @@ namespace QLnhahang_anhttt.Food
             this.guna2TxtCusAddress.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TxtCusAddress.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TxtCusAddress.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TxtCusAddress.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TxtCusAddress.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TxtCusAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TxtCusAddress.Location = new System.Drawing.Point(280, 388);
+            this.guna2TxtCusAddress.Location = new System.Drawing.Point(127, 298);
             this.guna2TxtCusAddress.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2TxtCusAddress.Name = "guna2TxtCusAddress";
             this.guna2TxtCusAddress.PasswordChar = '\0';
             this.guna2TxtCusAddress.PlaceholderText = "";
             this.guna2TxtCusAddress.SelectedText = "";
-            this.guna2TxtCusAddress.Size = new System.Drawing.Size(326, 43);
+            this.guna2TxtCusAddress.Size = new System.Drawing.Size(220, 35);
             this.guna2TxtCusAddress.TabIndex = 11;
             // 
             // guna2TxtCusPhone
@@ -145,15 +146,15 @@ namespace QLnhahang_anhttt.Food
             this.guna2TxtCusPhone.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TxtCusPhone.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TxtCusPhone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TxtCusPhone.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TxtCusPhone.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TxtCusPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TxtCusPhone.Location = new System.Drawing.Point(280, 323);
+            this.guna2TxtCusPhone.Location = new System.Drawing.Point(126, 245);
             this.guna2TxtCusPhone.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2TxtCusPhone.Name = "guna2TxtCusPhone";
             this.guna2TxtCusPhone.PasswordChar = '\0';
             this.guna2TxtCusPhone.PlaceholderText = "";
             this.guna2TxtCusPhone.SelectedText = "";
-            this.guna2TxtCusPhone.Size = new System.Drawing.Size(326, 43);
+            this.guna2TxtCusPhone.Size = new System.Drawing.Size(220, 36);
             this.guna2TxtCusPhone.TabIndex = 10;
             // 
             // guna2TxtCusName
@@ -166,15 +167,15 @@ namespace QLnhahang_anhttt.Food
             this.guna2TxtCusName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TxtCusName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TxtCusName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TxtCusName.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TxtCusName.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TxtCusName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TxtCusName.Location = new System.Drawing.Point(280, 256);
+            this.guna2TxtCusName.Location = new System.Drawing.Point(127, 196);
             this.guna2TxtCusName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2TxtCusName.Name = "guna2TxtCusName";
             this.guna2TxtCusName.PasswordChar = '\0';
             this.guna2TxtCusName.PlaceholderText = "";
             this.guna2TxtCusName.SelectedText = "";
-            this.guna2TxtCusName.Size = new System.Drawing.Size(326, 43);
+            this.guna2TxtCusName.Size = new System.Drawing.Size(220, 35);
             this.guna2TxtCusName.TabIndex = 9;
             // 
             // guna2TxtCode
@@ -187,15 +188,15 @@ namespace QLnhahang_anhttt.Food
             this.guna2TxtCode.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TxtCode.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TxtCode.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TxtCode.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TxtCode.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TxtCode.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TxtCode.Location = new System.Drawing.Point(280, 189);
+            this.guna2TxtCode.Location = new System.Drawing.Point(127, 145);
             this.guna2TxtCode.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2TxtCode.Name = "guna2TxtCode";
             this.guna2TxtCode.PasswordChar = '\0';
             this.guna2TxtCode.PlaceholderText = "";
             this.guna2TxtCode.SelectedText = "";
-            this.guna2TxtCode.Size = new System.Drawing.Size(326, 43);
+            this.guna2TxtCode.Size = new System.Drawing.Size(220, 34);
             this.guna2TxtCode.TabIndex = 8;
             // 
             // guna2TxtCouponNumber
@@ -208,30 +209,32 @@ namespace QLnhahang_anhttt.Food
             this.guna2TxtCouponNumber.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TxtCouponNumber.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TxtCouponNumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TxtCouponNumber.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TxtCouponNumber.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TxtCouponNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TxtCouponNumber.Location = new System.Drawing.Point(280, 122);
+            this.guna2TxtCouponNumber.Location = new System.Drawing.Point(127, 94);
             this.guna2TxtCouponNumber.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2TxtCouponNumber.Name = "guna2TxtCouponNumber";
             this.guna2TxtCouponNumber.PasswordChar = '\0';
             this.guna2TxtCouponNumber.PlaceholderText = "";
             this.guna2TxtCouponNumber.SelectedText = "";
-            this.guna2TxtCouponNumber.Size = new System.Drawing.Size(326, 43);
+            this.guna2TxtCouponNumber.Size = new System.Drawing.Size(220, 34);
             this.guna2TxtCouponNumber.TabIndex = 7;
             // 
             // guna2BtnCancelTable
             // 
+            this.guna2BtnCancelTable.AutoRoundedCorners = true;
+            this.guna2BtnCancelTable.BorderRadius = 20;
             this.guna2BtnCancelTable.BorderThickness = 1;
             this.guna2BtnCancelTable.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2BtnCancelTable.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2BtnCancelTable.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2BtnCancelTable.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2BtnCancelTable.FillColor = System.Drawing.Color.Orange;
-            this.guna2BtnCancelTable.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2BtnCancelTable.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2BtnCancelTable.ForeColor = System.Drawing.Color.White;
-            this.guna2BtnCancelTable.Location = new System.Drawing.Point(237, 488);
+            this.guna2BtnCancelTable.Location = new System.Drawing.Point(18, 364);
             this.guna2BtnCancelTable.Name = "guna2BtnCancelTable";
-            this.guna2BtnCancelTable.Size = new System.Drawing.Size(181, 64);
+            this.guna2BtnCancelTable.Size = new System.Drawing.Size(151, 43);
             this.guna2BtnCancelTable.TabIndex = 6;
             this.guna2BtnCancelTable.Text = "Cancel table";
             this.guna2BtnCancelTable.Click += new System.EventHandler(this.guna2BtnCancelTable_Click);
@@ -247,72 +250,93 @@ namespace QLnhahang_anhttt.Food
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label6.Location = new System.Drawing.Point(22, 408);
+            this.label6.Location = new System.Drawing.Point(17, 302);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(201, 23);
+            this.label6.Size = new System.Drawing.Size(129, 21);
             this.label6.TabIndex = 4;
-            this.label6.Text = "Customer\'s Address";
+            this.label6.Text = "Cus\'s Address";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label5.Location = new System.Drawing.Point(22, 338);
+            this.label5.Location = new System.Drawing.Point(14, 253);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(184, 23);
+            this.label5.Size = new System.Drawing.Size(116, 21);
             this.label5.TabIndex = 3;
-            this.label5.Text = "Customer\'s Phone";
+            this.label5.Text = "Cus\'s Phone";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label4.Location = new System.Drawing.Point(22, 267);
+            this.label4.Location = new System.Drawing.Point(14, 205);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(183, 23);
+            this.label4.Size = new System.Drawing.Size(113, 21);
             this.label4.TabIndex = 2;
-            this.label4.Text = "Customer\'s Name";
+            this.label4.Text = "Cus\'s Name";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label3.Location = new System.Drawing.Point(22, 200);
+            this.label3.Location = new System.Drawing.Point(17, 157);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(178, 23);
+            this.label3.Size = new System.Drawing.Size(110, 21);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Customer\'s Code";
+            this.label3.Text = "Cus\'s Code";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label2.Location = new System.Drawing.Point(22, 132);
+            this.label2.Location = new System.Drawing.Point(14, 107);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(251, 23);
+            this.label2.Size = new System.Drawing.Size(155, 21);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Request coupon number";
+            this.label2.Text = "Request number";
+            // 
+            // btnShowBill
+            // 
+            this.btnShowBill.AutoRoundedCorners = true;
+            this.btnShowBill.BorderRadius = 20;
+            this.btnShowBill.BorderThickness = 1;
+            this.btnShowBill.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnShowBill.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnShowBill.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnShowBill.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnShowBill.FillColor = System.Drawing.Color.LightSeaGreen;
+            this.btnShowBill.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShowBill.ForeColor = System.Drawing.Color.White;
+            this.btnShowBill.Location = new System.Drawing.Point(196, 364);
+            this.btnShowBill.Name = "btnShowBill";
+            this.btnShowBill.Size = new System.Drawing.Size(151, 43);
+            this.btnShowBill.TabIndex = 13;
+            this.btnShowBill.Text = "Show";
+            this.btnShowBill.Click += new System.EventHandler(this.btnShowBill_Click);
             // 
             // InforDesk
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(677, 612);
+            this.ClientSize = new System.Drawing.Size(410, 428);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(565, 530);
             this.Name = "InforDesk";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InforDesk";
+            this.Load += new System.EventHandler(this.InforDesk_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -337,5 +361,6 @@ namespace QLnhahang_anhttt.Food
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnCloseTable;
+        private Guna.UI2.WinForms.Guna2Button btnShowBill;
     }
 }

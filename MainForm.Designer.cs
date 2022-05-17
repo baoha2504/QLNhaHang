@@ -29,6 +29,7 @@ namespace QLnhahang_anhttt
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pnl1 = new System.Windows.Forms.Panel();
             this.btnSignOut = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -52,6 +53,7 @@ namespace QLnhahang_anhttt
             this.guna2GradientTileWarehouse = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.guna2GradientTileBtnStaff = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.customer1 = new QLnhahang_anhttt.Customer();
             this.staff1 = new QLnhahang_anhttt.Staff();
             this.introduce1 = new QLnhahang_anhttt.Introduce.Introduce();
@@ -98,12 +100,12 @@ namespace QLnhahang_anhttt
             this.btnSignOut.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSignOut.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnSignOut.FillColor = System.Drawing.Color.Transparent;
-            this.btnSignOut.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Underline);
+            this.btnSignOut.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignOut.ForeColor = System.Drawing.Color.Black;
-            this.btnSignOut.Location = new System.Drawing.Point(1202, 10);
+            this.btnSignOut.Location = new System.Drawing.Point(1155, 10);
             this.btnSignOut.Name = "btnSignOut";
             this.btnSignOut.PressedColor = System.Drawing.Color.Transparent;
-            this.btnSignOut.Size = new System.Drawing.Size(100, 36);
+            this.btnSignOut.Size = new System.Drawing.Size(147, 36);
             this.btnSignOut.TabIndex = 6;
             this.btnSignOut.Text = "Sign out";
             this.btnSignOut.Click += new System.EventHandler(this.btnSignOut_Click);
@@ -135,7 +137,7 @@ namespace QLnhahang_anhttt
             this.guna2GradientPanelInfo.FillColor2 = System.Drawing.Color.Transparent;
             this.guna2GradientPanelInfo.ForeColor = System.Drawing.Color.Gold;
             this.guna2GradientPanelInfo.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.guna2GradientPanelInfo.Location = new System.Drawing.Point(887, 10);
+            this.guna2GradientPanelInfo.Location = new System.Drawing.Point(840, 10);
             this.guna2GradientPanelInfo.Name = "guna2GradientPanelInfo";
             this.guna2GradientPanelInfo.Size = new System.Drawing.Size(309, 75);
             this.guna2GradientPanelInfo.TabIndex = 3;
@@ -548,7 +550,7 @@ namespace QLnhahang_anhttt
             // foods1
             // 
             this.foods1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.foods1.Location = new System.Drawing.Point(3, 6);
+            this.foods1.Location = new System.Drawing.Point(3, 2);
             this.foods1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.foods1.Name = "foods1";
             this.foods1.Size = new System.Drawing.Size(2726, 1234);
@@ -616,6 +618,7 @@ namespace QLnhahang_anhttt
         private Introduce.Introduce introduce1;
         private Staff staff1;
         private Customer customer1;
+        private System.Windows.Forms.ToolTip toolTip1;
         private Food.Foods foods1;
         //private Food.Foods foods1;
     }

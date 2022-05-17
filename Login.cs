@@ -21,6 +21,9 @@ namespace QLnhahang_anhttt
         {
             InitializeComponent();
             textPass.UseSystemPasswordChar = false;
+            toolTip1.ShowAlways = true;
+            toolTip1.SetToolTip(btnLogin, "Đăng nhập vào chương trình");
+            toolTip1.SetToolTip(picPassword, "Hiển thị mật khẩu");
         }
 
         static string ComputeSha256Hash(string rawData)
@@ -98,6 +101,18 @@ namespace QLnhahang_anhttt
             {
                 MessageBox.Show("Check your Username and Password!");
             }
+        }
+
+        private void btnForgetPassword_Click(object sender, EventArgs e)
+        {
+            PasswordRetrieval f = new PasswordRetrieval();
+            f.Show();
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            PasswordRetrieval f = new PasswordRetrieval();
+            f.Show();
         }
     }
 }

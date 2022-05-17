@@ -93,7 +93,8 @@ namespace QLnhahang_anhttt.Food
 
         private void InforDesk_Load(object sender, EventArgs e)
         {
-            DataTable data = Data_Provider.GetDataTable("select PHIEUYEUCAU.soPYC,KHACHHANG.maKH,tenKH,soDienThoai,diaChi from PHIEUYEUCAU,KHACHHANG, BAN where BAN.SoHieuBan = PHIEUYEUCAU.SoHieuBan and PHIEUYEUCAU.maKH=KHACHHANG.maKH and  PHIEUYEUCAU.LOAI = N'2' and PHIEUYEUCAU.sohieuban = '" + sohieuban + "'");
+            DataTable data = Data_Provider.GetDataTable("select * from getInforCus( '" + sohieuban + "');");
+         //   DataTable data = Data_Provider.GetDataTable("select PHIEUYEUCAU.soPYC,KHACHHANG.maKH,tenKH,soDienThoai,diaChi from PHIEUYEUCAU,KHACHHANG, BAN where BAN.SoHieuBan = PHIEUYEUCAU.SoHieuBan and PHIEUYEUCAU.maKH=KHACHHANG.maKH and  PHIEUYEUCAU.LOAI = N'2' and PHIEUYEUCAU.sohieuban = '" + sohieuban + "'");
             foreach (DataRow dr in data.Rows)
             {
                 guna2TxtCouponNumber.Text = dr["soPYC"].ToString();
@@ -106,12 +107,25 @@ namespace QLnhahang_anhttt.Food
 
         private void guna2BtnCancelTable_Click(object sender, EventArgs e)
         {
-            // update lai tinh trang ban
-            /*Data_Provider.exc("exec update_ban ('" + guna2TxtCouponNumber.Text + "');");
-            loadban();*/
-            // clear();
+            // update lai tinh trang ban;
+          /*  Data_Provider.exc("exec update_ban ('" + guna2TxtCouponNumber.Text + "');");
+            loadban();
+            clear();*/
             food.flowPnlinfortable.SendToBack();
         }
 
+        private void btnShowBill_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                food.pnlBill.Visible = true;
+            }
+            catch
+            {
+                MessageBox.Show(e.ToString());
+            }
+           // food.pnlBill.Visible = true;
+            //food.pnlBill.BringToFront();
+        }
     }
 }
