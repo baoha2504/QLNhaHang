@@ -832,7 +832,11 @@ namespace QLnhahang_anhttt.Food
                 add.CommandText = "INSERT INTO HOADON (MAHD, NGAYTHU, TONGTIEN, MANV, MAKH, SOPYC) VALUES ('" + txtIDHD.Text + "',N'" + date.ToString("yyyy-MM-dd") + "','" + lblTotal1_Bill.Text + "','" + cbbNV_Bill.Text + "','" + lblID_Bill.Text + "','" + lblOrderID_Bill.Text + "')";
                 add.ExecuteNonQuery();
                 sqlCon.Close();
-                MessageBox.Show("Đã thanh toán");
+                DialogResult result = MessageBox.Show("Đã thanh toán thành công!\nBạn có muốn in hóa đơn không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                if (result == DialogResult.Yes)
+                {
+                    btnPrint_Bill_Click(sender, e);
+                }
             }
             catch (Exception)
             {
