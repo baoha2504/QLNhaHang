@@ -297,6 +297,8 @@ namespace QLnhahang_anhttt.Food {
             
             private global::System.Data.DataColumn columnTenMon;
             
+            private global::System.Data.DataColumn columnColumn2;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public DataTable1DataTable() {
@@ -404,6 +406,14 @@ namespace QLnhahang_anhttt.Food {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn Column2Column {
+                get {
+                    return this.columnColumn2;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -439,7 +449,7 @@ namespace QLnhahang_anhttt.Food {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public DataTable1Row AddDataTable1Row(string SoPYC, System.DateTime NgayXuat, string SoHieuBan, string MaMonAn, int SoLuong, long DonGia, string TenKH, string Column1, string TenMon) {
+            public DataTable1Row AddDataTable1Row(string SoPYC, System.DateTime NgayXuat, string SoHieuBan, string MaMonAn, int SoLuong, long DonGia, string TenKH, string Column1, string TenMon, System.DateTime Column2) {
                 DataTable1Row rowDataTable1Row = ((DataTable1Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         SoPYC,
@@ -450,7 +460,8 @@ namespace QLnhahang_anhttt.Food {
                         DonGia,
                         TenKH,
                         Column1,
-                        TenMon};
+                        TenMon,
+                        Column2};
                 rowDataTable1Row.ItemArray = columnValuesArray;
                 this.Rows.Add(rowDataTable1Row);
                 return rowDataTable1Row;
@@ -482,6 +493,7 @@ namespace QLnhahang_anhttt.Food {
                 this.columnTenKH = base.Columns["TenKH"];
                 this.columnColumn1 = base.Columns["Column1"];
                 this.columnTenMon = base.Columns["TenMon"];
+                this.columnColumn2 = base.Columns["Column2"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -505,6 +517,8 @@ namespace QLnhahang_anhttt.Food {
                 base.Columns.Add(this.columnColumn1);
                 this.columnTenMon = new global::System.Data.DataColumn("TenMon", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTenMon);
+                this.columnColumn2 = new global::System.Data.DataColumn("Column2", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnColumn2);
                 this.columnSoPYC.AllowDBNull = false;
                 this.columnSoPYC.MaxLength = 8;
                 this.columnNgayXuat.AllowDBNull = false;
@@ -519,6 +533,7 @@ namespace QLnhahang_anhttt.Food {
                 this.columnColumn1.MaxLength = 1024;
                 this.columnTenMon.AllowDBNull = false;
                 this.columnTenMon.MaxLength = 50;
+                this.columnColumn2.ReadOnly = true;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -770,6 +785,22 @@ namespace QLnhahang_anhttt.Food {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public System.DateTime Column2 {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableDataTable1.Column2Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Column2\' in table \'DataTable1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDataTable1.Column2Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsSoHieuBanNull() {
                 return this.IsNull(this.tableDataTable1.SoHieuBanColumn);
             }
@@ -790,6 +821,18 @@ namespace QLnhahang_anhttt.Food {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetColumn1Null() {
                 this[this.tableDataTable1.Column1Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsColumn2Null() {
+                return this.IsNull(this.tableDataTable1.Column2Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetColumn2Null() {
+                this[this.tableDataTable1.Column2Column] = global::System.Convert.DBNull;
             }
         }
         
@@ -961,6 +1004,7 @@ namespace QLnhahang_anhttt.Food.DataSetFoodTableAdapters {
             tableMapping.ColumnMappings.Add("TenKH", "TenKH");
             tableMapping.ColumnMappings.Add("Column1", "Column1");
             tableMapping.ColumnMappings.Add("TenMon", "TenMon");
+            tableMapping.ColumnMappings.Add("Column2", "Column2");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -978,7 +1022,7 @@ namespace QLnhahang_anhttt.Food.DataSetFoodTableAdapters {
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = @"SELECT PHIEUYEUCAU.SoPYC, PHIEUYEUCAU.NgayXuat, PHIEUYEUCAU.SoHieuBan, KHACHHANG.TenKH,
-			CHITIETPYC.MaMonAn, CHITIETPYC.DonGia, CHITIETPYC.SoLuong, MONAN.TenMon, @tongtien
+			CHITIETPYC.MaMonAn, CHITIETPYC.DonGia, CHITIETPYC.SoLuong, MONAN.TenMon, @tongtien, GETDATE()
 	FROM PHIEUYEUCAU, KHACHHANG, CHITIETPYC, MONAN
 	WHERE PHIEUYEUCAU.SoPYC = CHITIETPYC.SoPYC
 	AND KHACHHANG.MaKH = PHIEUYEUCAU.MaKH

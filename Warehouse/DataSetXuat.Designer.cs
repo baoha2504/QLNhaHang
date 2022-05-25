@@ -293,6 +293,8 @@ namespace QLnhahang_anhttt.Warehouse {
             
             private global::System.Data.DataColumn columnDonGia;
             
+            private global::System.Data.DataColumn columnColumn1;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public DataTable1DataTable() {
@@ -384,6 +386,14 @@ namespace QLnhahang_anhttt.Warehouse {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn Column1Column {
+                get {
+                    return this.columnColumn1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -419,7 +429,7 @@ namespace QLnhahang_anhttt.Warehouse {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public DataTable1Row AddDataTable1Row(string SoPX, System.DateTime NgayXuat, string MaNV, string MaNL, string TenNL, int SoLuong, long DonGia) {
+            public DataTable1Row AddDataTable1Row(string SoPX, System.DateTime NgayXuat, string MaNV, string MaNL, string TenNL, int SoLuong, long DonGia, System.DateTime Column1) {
                 DataTable1Row rowDataTable1Row = ((DataTable1Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         SoPX,
@@ -428,7 +438,8 @@ namespace QLnhahang_anhttt.Warehouse {
                         MaNL,
                         TenNL,
                         SoLuong,
-                        DonGia};
+                        DonGia,
+                        Column1};
                 rowDataTable1Row.ItemArray = columnValuesArray;
                 this.Rows.Add(rowDataTable1Row);
                 return rowDataTable1Row;
@@ -458,6 +469,7 @@ namespace QLnhahang_anhttt.Warehouse {
                 this.columnTenNL = base.Columns["TenNL"];
                 this.columnSoLuong = base.Columns["SoLuong"];
                 this.columnDonGia = base.Columns["DonGia"];
+                this.columnColumn1 = base.Columns["Column1"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -477,6 +489,8 @@ namespace QLnhahang_anhttt.Warehouse {
                 base.Columns.Add(this.columnSoLuong);
                 this.columnDonGia = new global::System.Data.DataColumn("DonGia", typeof(long), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDonGia);
+                this.columnColumn1 = new global::System.Data.DataColumn("Column1", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnColumn1);
                 this.columnSoPX.AllowDBNull = false;
                 this.columnSoPX.MaxLength = 8;
                 this.columnNgayXuat.AllowDBNull = false;
@@ -488,6 +502,7 @@ namespace QLnhahang_anhttt.Warehouse {
                 this.columnTenNL.MaxLength = 100;
                 this.columnSoLuong.AllowDBNull = false;
                 this.columnDonGia.AllowDBNull = false;
+                this.columnColumn1.ReadOnly = true;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -704,6 +719,34 @@ namespace QLnhahang_anhttt.Warehouse {
                     this[this.tableDataTable1.DonGiaColumn] = value;
                 }
             }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public System.DateTime Column1 {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableDataTable1.Column1Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Column1\' in table \'DataTable1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDataTable1.Column1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsColumn1Null() {
+                return this.IsNull(this.tableDataTable1.Column1Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetColumn1Null() {
+                this[this.tableDataTable1.Column1Column] = global::System.Convert.DBNull;
+            }
         }
         
         /// <summary>
@@ -872,6 +915,7 @@ namespace QLnhahang_anhttt.Warehouse.DataSetXuatTableAdapters {
             tableMapping.ColumnMappings.Add("TenNL", "TenNL");
             tableMapping.ColumnMappings.Add("SoLuong", "SoLuong");
             tableMapping.ColumnMappings.Add("DonGia", "DonGia");
+            tableMapping.ColumnMappings.Add("Column1", "Column1");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -888,7 +932,7 @@ namespace QLnhahang_anhttt.Warehouse.DataSetXuatTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = @"SELECT PHIEUXUAT.SoPX, PHIEUXUAT.NgayXuat, PHIEUXUAT.MaNV, NGUYENLIEU.MaNL, NGUYENLIEU.TenNL, CHITIETXUAT.SoLuong, CHITIETXUAT.DonGia
+            this._commandCollection[0].CommandText = @"SELECT PHIEUXUAT.SoPX, PHIEUXUAT.NgayXuat, PHIEUXUAT.MaNV, NGUYENLIEU.MaNL, NGUYENLIEU.TenNL, CHITIETXUAT.SoLuong, CHITIETXUAT.DonGia, GETDATE()
 FROM     CHITIETXUAT INNER JOIN
                   NGUYENLIEU ON CHITIETXUAT.MaNL = NGUYENLIEU.MaNL INNER JOIN
                   PHIEUXUAT ON CHITIETXUAT.SoPX = PHIEUXUAT.SoPX

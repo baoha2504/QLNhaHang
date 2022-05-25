@@ -331,7 +331,7 @@
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
         <Top>4.71325cm</Top>
-        <Left>8.60637cm</Left>
+        <Left>10.6572cm</Left>
         <Height>1.2cm</Height>
         <Width>10cm</Width>
         <Style>
@@ -415,7 +415,7 @@
         <Top>5.6247cm</Top>
         <Left>0.3937cm</Left>
         <Height>0.6cm</Height>
-        <Width>6.5005cm</Width>
+        <Width>7.326cm</Width>
         <ZIndex>2</ZIndex>
         <Style>
           <Border>
@@ -455,7 +455,7 @@
         <Top>4.71325cm</Top>
         <Left>0.3937cm</Left>
         <Height>0.6cm</Height>
-        <Width>6.5005cm</Width>
+        <Width>7.326cm</Width>
         <ZIndex>3</ZIndex>
         <Style>
           <Border>
@@ -492,10 +492,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox23</rd:DefaultName>
-        <Top>6.58975cm</Top>
+        <Top>7.56342cm</Top>
         <Left>0.3937cm</Left>
         <Height>1.82767cm</Height>
-        <Width>6.5005cm</Width>
+        <Width>7.326cm</Width>
         <ZIndex>4</ZIndex>
         <Style>
           <Border>
@@ -623,11 +623,51 @@
           </Border>
         </Style>
       </Image>
+      <Textbox Name="Textbox27">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Ngày thanh toán: </Value>
+                <Style>
+                  <FontFamily>times New Roman</FontFamily>
+                  <FontSize>12pt</FontSize>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Fields!Column2.Value</Value>
+                <Style>
+                  <FontFamily>times New Roman</FontFamily>
+                  <FontSize>12pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox23</rd:DefaultName>
+        <Top>6.52625cm</Top>
+        <Left>0.3937cm</Left>
+        <Height>0.6cm</Height>
+        <Width>7.326cm</Width>
+        <ZIndex>9</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
     </ReportItems>
-    <Height>5.60833in</Height>
+    <Height>5.90833in</Height>
     <Style />
   </Body>
-  <Width>7.95in</Width>
+  <Width>8.48333in</Width>
   <Page>
     <PageHeader>
       <Height>1.26717cm</Height>
@@ -710,6 +750,10 @@
         <Field Name="TenMon">
           <DataField>TenMon</DataField>
           <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Column2">
+          <DataField>Column2</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>

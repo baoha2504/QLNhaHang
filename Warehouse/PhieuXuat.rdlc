@@ -45,6 +45,10 @@
           <DataField>DonGia</DataField>
           <rd:TypeName>System.Int64</rd:TypeName>
         </Field>
+        <Field Name="Column1">
+          <DataField>Column1</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>DataSetXuat</rd:DataSetName>
@@ -161,15 +165,19 @@
                     <Value>Hà Nội, ngày </Value>
                     <Style />
                   </TextRun>
+                  <TextRun>
+                    <Value>=Fields!Column1.Value</Value>
+                    <Style />
+                  </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox3</rd:DefaultName>
             <Top>3.05492cm</Top>
-            <Left>14.90017cm</Left>
+            <Left>13.90534cm</Left>
             <Height>0.6cm</Height>
-            <Width>6.66983cm</Width>
+            <Width>8.08799cm</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
@@ -622,7 +630,7 @@
             <Top>5.34092cm</Top>
             <Left>10.1727cm</Left>
             <Height>1.2cm</Height>
-            <Width>11.3973cm</Width>
+            <Width>11.39729cm</Width>
             <ZIndex>8</ZIndex>
             <Style>
               <Border>
@@ -630,8 +638,41 @@
               </Border>
             </Style>
           </Tablix>
+          <Textbox Name="Textbox9">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Hà Công Quốc Bảo</Value>
+                    <Style>
+                      <FontFamily>times New Roman</FontFamily>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox8</rd:DefaultName>
+            <Top>14.10391cm</Top>
+            <Left>17.23909cm</Left>
+            <Height>0.6cm</Height>
+            <Width>3.897cm</Width>
+            <ZIndex>9</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
         </ReportItems>
-        <Height>5.60833in</Height>
+        <Height>6.575in</Height>
         <Style />
       </Body>
       <Width>8.99167in</Width>
