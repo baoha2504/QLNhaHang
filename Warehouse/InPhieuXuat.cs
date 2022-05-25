@@ -25,7 +25,7 @@ namespace QLnhahang_anhttt.Warehouse
             //2
             reportViewer1.SetDisplayMode(Microsoft.Reporting.WinForms.DisplayMode.Normal);
             reportViewer1.ZoomMode = Microsoft.Reporting.WinForms.ZoomMode.Percent;
-            reportViewer1.ZoomPercent = 75;
+            reportViewer1.ZoomPercent = 100;
 
             //3
             DataSetXuat dataset = new DataSetXuat();
