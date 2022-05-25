@@ -314,7 +314,7 @@ namespace QLnhahang_anhttt
             {
                 query += " and dongia > 100000 and dongia <= 200000";
             }
-            if (cbbGia.Text == "")
+            if (cbbGia.Text == ">200k")
             {
                 query += " and dongia > 200000";
             }

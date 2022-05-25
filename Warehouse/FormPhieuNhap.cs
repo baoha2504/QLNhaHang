@@ -23,7 +23,8 @@ namespace QLnhahang_anhttt.Warehouse
         private void connect()
         {
             sqlCon.Open();
-            string query = "SELECT SoPN as 'Số phiếu nhập', NgayNhap as 'Ngày nhập', TongTien as 'Tổng tiền', MaNV as 'Mã nhân viên', MaNCC as 'Nhà cung cấp' FROM PHIEUNHAP";
+            //string query = "SELECT SoPN as 'Số phiếu nhập', NgayNhap as 'Ngày nhập', TongTien as 'Tổng tiền', MaNV as 'Mã nhân viên', MaNCC as 'Nhà cung cấp' FROM PHIEUNHAP";
+            string query = "PhieuNhap_Load";
             SqlDataAdapter sqlDa = new SqlDataAdapter(query, sqlCon);
             DataTable dtb = new DataTable();
             sqlDa.Fill(dtb);

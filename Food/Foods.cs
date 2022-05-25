@@ -809,7 +809,6 @@ namespace QLnhahang_anhttt.Food
 
         private void btnPayment_Bill_Click(object sender, EventArgs e)
         {
-            
             try
             {
                 sqlCon.Open();
@@ -993,6 +992,14 @@ namespace QLnhahang_anhttt.Food
             sqlCon.Close();
             //Data_Provider.exc("exec update_ban ('" + txtTableID.Text + "');");
             
+        }
+
+        private void btnPrint_Bill_Click(object sender, EventArgs e)
+        {
+            InHoaDon inHoaDon  = new InHoaDon();
+            inHoaDon.sopyc = lblOrderID_Bill.Text.Trim();
+            inHoaDon.tongtien = lblTotal1_Bill.Text.Trim();
+            inHoaDon.ShowDialog();
         }
 
         private void Foods_Load(object sender, EventArgs e)

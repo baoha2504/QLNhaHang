@@ -31,14 +31,14 @@ namespace QLnhahang_anhttt.Food
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Foods));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2GradientPanelMenuFood = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.btnAddFood = new Guna.UI2.WinForms.Guna2TileButton();
             this.btnHD = new Guna.UI2.WinForms.Guna2TileButton();
@@ -140,6 +140,7 @@ namespace QLnhahang_anhttt.Food
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.pnlBook = new System.Windows.Forms.Panel();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.flowPnlinfortable = new System.Windows.Forms.FlowLayoutPanel();
             this.txtTableID = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
@@ -157,7 +158,6 @@ namespace QLnhahang_anhttt.Food
             this.kHUYENMAITableAdapter = new QLnhahang_anhttt.QuanLyNhaHangDataSet2TableAdapters.KHUYENMAITableAdapter();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.textBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GradientPanelMenuFood.SuspendLayout();
             this.pnlOrder.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picSearchFood)).BeginInit();
@@ -198,10 +198,10 @@ namespace QLnhahang_anhttt.Food
             this.guna2GradientPanelMenuFood.Controls.Add(this.btnBooking);
             this.guna2GradientPanelMenuFood.Controls.Add(this.btnCallFood);
             this.guna2GradientPanelMenuFood.Controls.Add(this.sildePanelFood);
-            this.guna2GradientPanelMenuFood.Location = new System.Drawing.Point(14, 15);
+            this.guna2GradientPanelMenuFood.Location = new System.Drawing.Point(12, 12);
             this.guna2GradientPanelMenuFood.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2GradientPanelMenuFood.Name = "guna2GradientPanelMenuFood";
-            this.guna2GradientPanelMenuFood.Size = new System.Drawing.Size(105, 488);
+            this.guna2GradientPanelMenuFood.Size = new System.Drawing.Size(93, 390);
             this.guna2GradientPanelMenuFood.TabIndex = 0;
             // 
             // btnAddFood
@@ -221,10 +221,10 @@ namespace QLnhahang_anhttt.Food
             this.btnAddFood.HoverState.Font = new System.Drawing.Font("Century Gothic", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddFood.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnAddFood.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnAddFood.Location = new System.Drawing.Point(19, 301);
+            this.btnAddFood.Location = new System.Drawing.Point(17, 241);
             this.btnAddFood.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddFood.Name = "btnAddFood";
-            this.btnAddFood.Size = new System.Drawing.Size(76, 72);
+            this.btnAddFood.Size = new System.Drawing.Size(68, 58);
             this.btnAddFood.TabIndex = 4;
             this.btnAddFood.Click += new System.EventHandler(this.btnAddFood_Click);
             // 
@@ -245,10 +245,10 @@ namespace QLnhahang_anhttt.Food
             this.btnHD.HoverState.Font = new System.Drawing.Font("Century Gothic", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHD.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnHD.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnHD.Location = new System.Drawing.Point(19, 205);
+            this.btnHD.Location = new System.Drawing.Point(17, 164);
             this.btnHD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHD.Name = "btnHD";
-            this.btnHD.Size = new System.Drawing.Size(76, 72);
+            this.btnHD.Size = new System.Drawing.Size(68, 58);
             this.btnHD.TabIndex = 7;
             this.btnHD.Click += new System.EventHandler(this.btnHD_Click);
             // 
@@ -269,10 +269,10 @@ namespace QLnhahang_anhttt.Food
             this.btnDelete.HoverState.Font = new System.Drawing.Font("Century Gothic", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnDelete.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnDelete.Location = new System.Drawing.Point(19, 395);
+            this.btnDelete.Location = new System.Drawing.Point(17, 316);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(76, 72);
+            this.btnDelete.Size = new System.Drawing.Size(68, 58);
             this.btnDelete.TabIndex = 5;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
@@ -293,10 +293,10 @@ namespace QLnhahang_anhttt.Food
             this.btnBooking.HoverState.Font = new System.Drawing.Font("Century Gothic", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBooking.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnBooking.ImageSize = new System.Drawing.Size(45, 45);
-            this.btnBooking.Location = new System.Drawing.Point(19, 116);
+            this.btnBooking.Location = new System.Drawing.Point(17, 93);
             this.btnBooking.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBooking.Name = "btnBooking";
-            this.btnBooking.Size = new System.Drawing.Size(76, 72);
+            this.btnBooking.Size = new System.Drawing.Size(68, 58);
             this.btnBooking.TabIndex = 3;
             this.btnBooking.Click += new System.EventHandler(this.btnBooking_Click);
             // 
@@ -318,10 +318,10 @@ namespace QLnhahang_anhttt.Food
             this.btnCallFood.HoverState.Font = new System.Drawing.Font("Century Gothic", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCallFood.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnCallFood.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnCallFood.Location = new System.Drawing.Point(19, 21);
+            this.btnCallFood.Location = new System.Drawing.Point(17, 17);
             this.btnCallFood.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCallFood.Name = "btnCallFood";
-            this.btnCallFood.Size = new System.Drawing.Size(76, 72);
+            this.btnCallFood.Size = new System.Drawing.Size(68, 58);
             this.btnCallFood.TabIndex = 2;
             this.btnCallFood.Click += new System.EventHandler(this.guna2TileBtnCallFood_Click);
             // 
@@ -329,10 +329,10 @@ namespace QLnhahang_anhttt.Food
             // 
             this.sildePanelFood.BackColor = System.Drawing.Color.DarkOrange;
             this.sildePanelFood.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sildePanelFood.Location = new System.Drawing.Point(4, 12);
+            this.sildePanelFood.Location = new System.Drawing.Point(4, 10);
             this.sildePanelFood.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sildePanelFood.Name = "sildePanelFood";
-            this.sildePanelFood.Size = new System.Drawing.Size(11, 72);
+            this.sildePanelFood.Size = new System.Drawing.Size(10, 58);
             this.sildePanelFood.TabIndex = 1;
             // 
             // flowLayoutPnlMenu
@@ -341,10 +341,10 @@ namespace QLnhahang_anhttt.Food
             this.flowLayoutPnlMenu.BackColor = System.Drawing.Color.WhiteSmoke;
             this.flowLayoutPnlMenu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutPnlMenu.Cursor = System.Windows.Forms.Cursors.Default;
-            this.flowLayoutPnlMenu.Location = new System.Drawing.Point(7, 167);
-            this.flowLayoutPnlMenu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.flowLayoutPnlMenu.Location = new System.Drawing.Point(6, 134);
+            this.flowLayoutPnlMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flowLayoutPnlMenu.Name = "flowLayoutPnlMenu";
-            this.flowLayoutPnlMenu.Size = new System.Drawing.Size(821, 562);
+            this.flowLayoutPnlMenu.Size = new System.Drawing.Size(730, 450);
             this.flowLayoutPnlMenu.TabIndex = 1;
             // 
             // guna2VScrollBar1
@@ -355,11 +355,11 @@ namespace QLnhahang_anhttt.Food
             this.guna2VScrollBar1.FillColor = System.Drawing.Color.LightSeaGreen;
             this.guna2VScrollBar1.InUpdate = false;
             this.guna2VScrollBar1.LargeChange = 10;
-            this.guna2VScrollBar1.Location = new System.Drawing.Point(801, 168);
+            this.guna2VScrollBar1.Location = new System.Drawing.Point(714, 135);
             this.guna2VScrollBar1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2VScrollBar1.Name = "guna2VScrollBar1";
-            this.guna2VScrollBar1.ScrollbarSize = 26;
-            this.guna2VScrollBar1.Size = new System.Drawing.Size(26, 560);
+            this.guna2VScrollBar1.ScrollbarSize = 21;
+            this.guna2VScrollBar1.Size = new System.Drawing.Size(21, 448);
             this.guna2VScrollBar1.TabIndex = 2;
             this.guna2VScrollBar1.ThumbColor = System.Drawing.Color.Salmon;
             // 
@@ -371,11 +371,11 @@ namespace QLnhahang_anhttt.Food
             this.guna2VScrollBar2.FillColor = System.Drawing.Color.LightSeaGreen;
             this.guna2VScrollBar2.InUpdate = false;
             this.guna2VScrollBar2.LargeChange = 10;
-            this.guna2VScrollBar2.Location = new System.Drawing.Point(439, 155);
+            this.guna2VScrollBar2.Location = new System.Drawing.Point(392, 124);
             this.guna2VScrollBar2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2VScrollBar2.Name = "guna2VScrollBar2";
-            this.guna2VScrollBar2.ScrollbarSize = 26;
-            this.guna2VScrollBar2.Size = new System.Drawing.Size(26, 276);
+            this.guna2VScrollBar2.ScrollbarSize = 21;
+            this.guna2VScrollBar2.Size = new System.Drawing.Size(21, 221);
             this.guna2VScrollBar2.TabIndex = 4;
             this.guna2VScrollBar2.ThumbColor = System.Drawing.Color.Salmon;
             // 
@@ -385,29 +385,29 @@ namespace QLnhahang_anhttt.Food
             this.flowLayoutPnl_Selected.BackColor = System.Drawing.Color.WhiteSmoke;
             this.flowLayoutPnl_Selected.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutPnl_Selected.Cursor = System.Windows.Forms.Cursors.Default;
-            this.flowLayoutPnl_Selected.Location = new System.Drawing.Point(18, 154);
+            this.flowLayoutPnl_Selected.Location = new System.Drawing.Point(16, 123);
             this.flowLayoutPnl_Selected.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowLayoutPnl_Selected.Name = "flowLayoutPnl_Selected";
-            this.flowLayoutPnl_Selected.Size = new System.Drawing.Size(448, 278);
+            this.flowLayoutPnl_Selected.Size = new System.Drawing.Size(398, 223);
             this.flowLayoutPnl_Selected.TabIndex = 23;
             // 
             // pnlOrder
             // 
             this.pnlOrder.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.pnlOrder.Controls.Add(this.guna2VScrollBar1);
             this.pnlOrder.Controls.Add(this.picSearchFood);
             this.pnlOrder.Controls.Add(this.cbbPrice);
             this.pnlOrder.Controls.Add(this.cbbFood);
             this.pnlOrder.Controls.Add(this.label21);
             this.pnlOrder.Controls.Add(this.label20);
-            this.pnlOrder.Controls.Add(this.guna2VScrollBar1);
             this.pnlOrder.Controls.Add(this.guna2Panel6);
             this.pnlOrder.Controls.Add(this.guna2Panel5);
             this.pnlOrder.Controls.Add(this.panel4);
             this.pnlOrder.Controls.Add(this.flowLayoutPnlMenu);
-            this.pnlOrder.Location = new System.Drawing.Point(126, 7);
-            this.pnlOrder.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnlOrder.Location = new System.Drawing.Point(112, 6);
+            this.pnlOrder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlOrder.Name = "pnlOrder";
-            this.pnlOrder.Size = new System.Drawing.Size(1334, 744);
+            this.pnlOrder.Size = new System.Drawing.Size(1186, 595);
             this.pnlOrder.TabIndex = 6;
             // 
             // picSearchFood
@@ -417,10 +417,9 @@ namespace QLnhahang_anhttt.Food
             this.picSearchFood.Image = global::QLnhahang_anhttt.Properties.Resources.search;
             this.picSearchFood.ImageLocation = "";
             this.picSearchFood.ImageRotate = 0F;
-            this.picSearchFood.Location = new System.Drawing.Point(666, 97);
-            this.picSearchFood.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.picSearchFood.Location = new System.Drawing.Point(592, 78);
             this.picSearchFood.Name = "picSearchFood";
-            this.picSearchFood.Size = new System.Drawing.Size(54, 41);
+            this.picSearchFood.Size = new System.Drawing.Size(48, 33);
             this.picSearchFood.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picSearchFood.TabIndex = 30;
             this.picSearchFood.TabStop = false;
@@ -442,10 +441,9 @@ namespace QLnhahang_anhttt.Food
             "0-100k",
             "100-200k",
             ">200k"});
-            this.cbbPrice.Location = new System.Drawing.Point(463, 97);
-            this.cbbPrice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cbbPrice.Location = new System.Drawing.Point(412, 78);
             this.cbbPrice.Name = "cbbPrice";
-            this.cbbPrice.Size = new System.Drawing.Size(173, 24);
+            this.cbbPrice.Size = new System.Drawing.Size(154, 24);
             this.cbbPrice.TabIndex = 29;
             // 
             // cbbFood
@@ -464,19 +462,18 @@ namespace QLnhahang_anhttt.Food
             "Pizza",
             "Humberger",
             "Drink"});
-            this.cbbFood.Location = new System.Drawing.Point(129, 97);
-            this.cbbFood.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cbbFood.Location = new System.Drawing.Point(115, 78);
             this.cbbFood.Name = "cbbFood";
-            this.cbbFood.Size = new System.Drawing.Size(214, 24);
+            this.cbbFood.Size = new System.Drawing.Size(191, 24);
             this.cbbFood.TabIndex = 28;
             // 
             // label21
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Lucida Handwriting", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(372, 101);
+            this.label21.Location = new System.Drawing.Point(331, 81);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(74, 27);
+            this.label21.Size = new System.Drawing.Size(64, 23);
             this.label21.TabIndex = 27;
             this.label21.Text = "Price";
             // 
@@ -484,9 +481,9 @@ namespace QLnhahang_anhttt.Food
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Lucida Handwriting", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(53, 101);
+            this.label20.Location = new System.Drawing.Point(47, 81);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(70, 27);
+            this.label20.Size = new System.Drawing.Size(59, 23);
             this.label20.TabIndex = 26;
             this.label20.Text = "Food";
             // 
@@ -499,10 +496,10 @@ namespace QLnhahang_anhttt.Food
             this.guna2Panel6.CustomBorderColor = System.Drawing.Color.LightSeaGreen;
             this.guna2Panel6.FillColor = System.Drawing.Color.DarkOrange;
             this.guna2Panel6.ForeColor = System.Drawing.Color.LightSeaGreen;
-            this.guna2Panel6.Location = new System.Drawing.Point(844, 12);
+            this.guna2Panel6.Location = new System.Drawing.Point(750, 10);
             this.guna2Panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel6.Name = "guna2Panel6";
-            this.guna2Panel6.Size = new System.Drawing.Size(486, 55);
+            this.guna2Panel6.Size = new System.Drawing.Size(432, 44);
             this.guna2Panel6.TabIndex = 25;
             // 
             // label29
@@ -511,9 +508,9 @@ namespace QLnhahang_anhttt.Food
             this.label29.BackColor = System.Drawing.Color.DarkOrange;
             this.label29.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label29.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label29.Location = new System.Drawing.Point(14, 2);
+            this.label29.Location = new System.Drawing.Point(12, 2);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(267, 46);
+            this.label29.Size = new System.Drawing.Size(226, 39);
             this.label29.TabIndex = 0;
             this.label29.Text = "Order Reciepts";
             // 
@@ -532,20 +529,20 @@ namespace QLnhahang_anhttt.Food
             this.guna2Panel5.Controls.Add(this.label5);
             this.guna2Panel5.Controls.Add(this.btnAdd_Order);
             this.guna2Panel5.Controls.Add(this.gunaCheckpnl);
-            this.guna2Panel5.Location = new System.Drawing.Point(844, 61);
+            this.guna2Panel5.Location = new System.Drawing.Point(750, 49);
             this.guna2Panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel5.Name = "guna2Panel5";
-            this.guna2Panel5.Size = new System.Drawing.Size(486, 668);
+            this.guna2Panel5.Size = new System.Drawing.Size(432, 534);
             this.guna2Panel5.TabIndex = 24;
             // 
             // txtOrderID_Order
             // 
             this.txtOrderID_Order.BackColor = System.Drawing.SystemColors.Window;
             this.txtOrderID_Order.Font = new System.Drawing.Font("Segoe UI Symbol", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOrderID_Order.Location = new System.Drawing.Point(362, 535);
+            this.txtOrderID_Order.Location = new System.Drawing.Point(322, 428);
             this.txtOrderID_Order.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtOrderID_Order.Name = "txtOrderID_Order";
-            this.txtOrderID_Order.Size = new System.Drawing.Size(112, 37);
+            this.txtOrderID_Order.Size = new System.Drawing.Size(100, 32);
             this.txtOrderID_Order.TabIndex = 26;
             // 
             // label6
@@ -554,9 +551,9 @@ namespace QLnhahang_anhttt.Food
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label6.Location = new System.Drawing.Point(264, 542);
+            this.label6.Location = new System.Drawing.Point(235, 434);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(97, 23);
+            this.label6.Size = new System.Drawing.Size(82, 19);
             this.label6.TabIndex = 25;
             this.label6.Text = "Order ID:";
             // 
@@ -566,9 +563,9 @@ namespace QLnhahang_anhttt.Food
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label12.Location = new System.Drawing.Point(35, 542);
+            this.label12.Location = new System.Drawing.Point(31, 434);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(94, 23);
+            this.label12.Size = new System.Drawing.Size(80, 19);
             this.label12.TabIndex = 22;
             this.label12.Text = "Table ID:";
             // 
@@ -578,10 +575,10 @@ namespace QLnhahang_anhttt.Food
             this.cbbTableID_Order.DisplayMember = "SoHieuBan";
             this.cbbTableID_Order.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.cbbTableID_Order.FormattingEnabled = true;
-            this.cbbTableID_Order.Location = new System.Drawing.Point(135, 540);
+            this.cbbTableID_Order.Location = new System.Drawing.Point(120, 432);
             this.cbbTableID_Order.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbbTableID_Order.Name = "cbbTableID_Order";
-            this.cbbTableID_Order.Size = new System.Drawing.Size(90, 31);
+            this.cbbTableID_Order.Size = new System.Drawing.Size(80, 29);
             this.cbbTableID_Order.TabIndex = 21;
             // 
             // bANBindingSource2
@@ -600,9 +597,9 @@ namespace QLnhahang_anhttt.Food
             this.lblSub_menu.BackColor = System.Drawing.Color.Transparent;
             this.lblSub_menu.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSub_menu.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblSub_menu.Location = new System.Drawing.Point(300, 451);
+            this.lblSub_menu.Location = new System.Drawing.Point(267, 361);
             this.lblSub_menu.Name = "lblSub_menu";
-            this.lblSub_menu.Size = new System.Drawing.Size(147, 37);
+            this.lblSub_menu.Size = new System.Drawing.Size(121, 29);
             this.lblSub_menu.TabIndex = 20;
             this.lblSub_menu.Text = "Sub Total";
             // 
@@ -612,9 +609,9 @@ namespace QLnhahang_anhttt.Food
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label5.Location = new System.Drawing.Point(35, 460);
+            this.label5.Location = new System.Drawing.Point(31, 368);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(115, 28);
+            this.label5.Size = new System.Drawing.Size(96, 23);
             this.label5.TabIndex = 19;
             this.label5.Text = "Sub Total";
             // 
@@ -632,10 +629,10 @@ namespace QLnhahang_anhttt.Food
             this.btnAdd_Order.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.btnAdd_Order.ForeColor = System.Drawing.Color.White;
             this.btnAdd_Order.HoverState.FillColor = System.Drawing.Color.Green;
-            this.btnAdd_Order.Location = new System.Drawing.Point(178, 601);
+            this.btnAdd_Order.Location = new System.Drawing.Point(158, 481);
             this.btnAdd_Order.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdd_Order.Name = "btnAdd_Order";
-            this.btnAdd_Order.Size = new System.Drawing.Size(146, 48);
+            this.btnAdd_Order.Size = new System.Drawing.Size(130, 38);
             this.btnAdd_Order.TabIndex = 14;
             this.btnAdd_Order.Text = "Add";
             this.btnAdd_Order.Click += new System.EventHandler(this.btnAdd_Order_Click);
@@ -650,10 +647,10 @@ namespace QLnhahang_anhttt.Food
             this.gunaCheckpnl.Controls.Add(this.label8);
             this.gunaCheckpnl.Controls.Add(this.txtPhone_Order);
             this.gunaCheckpnl.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaCheckpnl.Location = new System.Drawing.Point(19, 12);
+            this.gunaCheckpnl.Location = new System.Drawing.Point(17, 10);
             this.gunaCheckpnl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaCheckpnl.Name = "gunaCheckpnl";
-            this.gunaCheckpnl.Size = new System.Drawing.Size(448, 128);
+            this.gunaCheckpnl.Size = new System.Drawing.Size(398, 102);
             this.gunaCheckpnl.TabIndex = 5;
             // 
             // label4
@@ -662,9 +659,9 @@ namespace QLnhahang_anhttt.Food
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label4.Location = new System.Drawing.Point(305, 94);
+            this.label4.Location = new System.Drawing.Point(271, 75);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(36, 23);
+            this.label4.Size = new System.Drawing.Size(31, 19);
             this.label4.TabIndex = 23;
             this.label4.Text = "ID:";
             // 
@@ -674,9 +671,9 @@ namespace QLnhahang_anhttt.Food
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label3.Location = new System.Drawing.Point(12, 92);
+            this.label3.Location = new System.Drawing.Point(11, 74);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 23);
+            this.label3.Size = new System.Drawing.Size(65, 19);
             this.label3.TabIndex = 21;
             this.label3.Text = "Name:";
             // 
@@ -686,9 +683,9 @@ namespace QLnhahang_anhttt.Food
             this.lblID_Order.BackColor = System.Drawing.Color.Transparent;
             this.lblID_Order.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblID_Order.ForeColor = System.Drawing.Color.DarkGreen;
-            this.lblID_Order.Location = new System.Drawing.Point(346, 90);
+            this.lblID_Order.Location = new System.Drawing.Point(308, 72);
             this.lblID_Order.Name = "lblID_Order";
-            this.lblID_Order.Size = new System.Drawing.Size(31, 25);
+            this.lblID_Order.Size = new System.Drawing.Size(26, 20);
             this.lblID_Order.TabIndex = 20;
             this.lblID_Order.Text = "ID";
             // 
@@ -698,9 +695,9 @@ namespace QLnhahang_anhttt.Food
             this.lblName_Order.BackColor = System.Drawing.Color.Transparent;
             this.lblName_Order.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName_Order.ForeColor = System.Drawing.Color.DarkGreen;
-            this.lblName_Order.Location = new System.Drawing.Point(94, 90);
+            this.lblName_Order.Location = new System.Drawing.Point(84, 72);
             this.lblName_Order.Name = "lblName_Order";
-            this.lblName_Order.Size = new System.Drawing.Size(169, 25);
+            this.lblName_Order.Size = new System.Drawing.Size(146, 20);
             this.lblName_Order.TabIndex = 19;
             this.lblName_Order.Text = "   Customer Name";
             // 
@@ -718,10 +715,10 @@ namespace QLnhahang_anhttt.Food
             this.btnCheck_Order.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnCheck_Order.ForeColor = System.Drawing.Color.White;
             this.btnCheck_Order.HoverState.FillColor = System.Drawing.Color.Green;
-            this.btnCheck_Order.Location = new System.Drawing.Point(352, 12);
+            this.btnCheck_Order.Location = new System.Drawing.Point(313, 10);
             this.btnCheck_Order.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCheck_Order.Name = "btnCheck_Order";
-            this.btnCheck_Order.Size = new System.Drawing.Size(94, 38);
+            this.btnCheck_Order.Size = new System.Drawing.Size(84, 30);
             this.btnCheck_Order.TabIndex = 16;
             this.btnCheck_Order.Text = "Check";
             this.btnCheck_Order.Click += new System.EventHandler(this.btnCheck_Order_Click);
@@ -732,9 +729,9 @@ namespace QLnhahang_anhttt.Food
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label8.Location = new System.Drawing.Point(14, 24);
+            this.label8.Location = new System.Drawing.Point(12, 19);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(71, 23);
+            this.label8.Size = new System.Drawing.Size(61, 19);
             this.label8.TabIndex = 15;
             this.label8.Text = "Phone";
             // 
@@ -742,10 +739,10 @@ namespace QLnhahang_anhttt.Food
             // 
             this.txtPhone_Order.BackColor = System.Drawing.SystemColors.Window;
             this.txtPhone_Order.Font = new System.Drawing.Font("Segoe UI Symbol", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPhone_Order.Location = new System.Drawing.Point(90, 12);
+            this.txtPhone_Order.Location = new System.Drawing.Point(80, 10);
             this.txtPhone_Order.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPhone_Order.Name = "txtPhone_Order";
-            this.txtPhone_Order.Size = new System.Drawing.Size(222, 37);
+            this.txtPhone_Order.Size = new System.Drawing.Size(198, 32);
             this.txtPhone_Order.TabIndex = 10;
             this.txtPhone_Order.Validating += new System.ComponentModel.CancelEventHandler(this.txtPhone_Order_Validating);
             // 
@@ -756,20 +753,20 @@ namespace QLnhahang_anhttt.Food
             this.panel4.Controls.Add(this.button3);
             this.panel4.Controls.Add(this.label13);
             this.panel4.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.panel4.Location = new System.Drawing.Point(7, 12);
+            this.panel4.Location = new System.Drawing.Point(6, 10);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(821, 61);
+            this.panel4.Size = new System.Drawing.Size(730, 49);
             this.panel4.TabIndex = 3;
             // 
             // button3
             // 
             this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.Location = new System.Drawing.Point(739, 4);
+            this.button3.Location = new System.Drawing.Point(657, 3);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(65, 50);
+            this.button3.Size = new System.Drawing.Size(58, 40);
             this.button3.TabIndex = 1;
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -779,9 +776,9 @@ namespace QLnhahang_anhttt.Food
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Goudy Stout", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label13.Location = new System.Drawing.Point(280, 1);
+            this.label13.Location = new System.Drawing.Point(249, 1);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(237, 55);
+            this.label13.Size = new System.Drawing.Size(201, 47);
             this.label13.TabIndex = 0;
             this.label13.Text = "menu";
             // 
@@ -842,10 +839,10 @@ namespace QLnhahang_anhttt.Food
             this.pnlBill.Controls.Add(this.guna2Panel8);
             this.pnlBill.Controls.Add(this.guna2GroupBox2);
             this.pnlBill.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pnlBill.Location = new System.Drawing.Point(125, 7);
+            this.pnlBill.Location = new System.Drawing.Point(111, 6);
             this.pnlBill.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlBill.Name = "pnlBill";
-            this.pnlBill.Size = new System.Drawing.Size(1336, 744);
+            this.pnlBill.Size = new System.Drawing.Size(1188, 595);
             this.pnlBill.TabIndex = 7;
             // 
             // guna2VScrollBar4
@@ -856,34 +853,34 @@ namespace QLnhahang_anhttt.Food
             this.guna2VScrollBar4.FillColor = System.Drawing.Color.LightSeaGreen;
             this.guna2VScrollBar4.InUpdate = false;
             this.guna2VScrollBar4.LargeChange = 10;
-            this.guna2VScrollBar4.Location = new System.Drawing.Point(763, 111);
+            this.guna2VScrollBar4.Location = new System.Drawing.Point(680, 89);
             this.guna2VScrollBar4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2VScrollBar4.Minimum = 1;
             this.guna2VScrollBar4.Name = "guna2VScrollBar4";
-            this.guna2VScrollBar4.ScrollbarSize = 26;
-            this.guna2VScrollBar4.Size = new System.Drawing.Size(26, 614);
+            this.guna2VScrollBar4.ScrollbarSize = 21;
+            this.guna2VScrollBar4.Size = new System.Drawing.Size(21, 491);
             this.guna2VScrollBar4.TabIndex = 2;
             this.guna2VScrollBar4.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.guna2VScrollBar4.Value = 1;
             // 
             // dsyc
             // 
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            this.dsyc.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.White;
+            this.dsyc.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle17;
             this.dsyc.AutoGenerateColumns = false;
             this.dsyc.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dsyc.BackgroundColor = System.Drawing.Color.White;
             this.dsyc.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dsyc.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dsyc.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.DarkOrange;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Peru;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dsyc.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.Peru;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dsyc.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
             this.dsyc.ColumnHeadersHeight = 30;
             this.dsyc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.soPYCDataGridViewTextBoxColumn,
@@ -893,18 +890,17 @@ namespace QLnhahang_anhttt.Food
             this.maKHDataGridViewTextBoxColumn,
             this.soHieuBanDataGridViewTextBoxColumn});
             this.dsyc.DataSource = this.pHIEUYEUCAUBindingSource;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dsyc.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dsyc.DefaultCellStyle = dataGridViewCellStyle19;
             this.dsyc.EnableHeadersVisualStyles = false;
             this.dsyc.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.dsyc.Location = new System.Drawing.Point(17, 111);
-            this.dsyc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dsyc.Location = new System.Drawing.Point(15, 89);
             this.dsyc.Name = "dsyc";
             this.dsyc.RowHeadersVisible = false;
             this.dsyc.RowHeadersWidth = 51;
@@ -912,7 +908,7 @@ namespace QLnhahang_anhttt.Food
             this.dsyc.RowTemplate.Height = 24;
             this.dsyc.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dsyc.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dsyc.Size = new System.Drawing.Size(772, 614);
+            this.dsyc.Size = new System.Drawing.Size(686, 491);
             this.dsyc.TabIndex = 11;
             this.dsyc.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dsyc.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -994,10 +990,10 @@ namespace QLnhahang_anhttt.Food
             this.button2.BackColor = System.Drawing.Color.Transparent;
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.Location = new System.Drawing.Point(712, 22);
+            this.button2.Location = new System.Drawing.Point(633, 18);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(76, 74);
+            this.button2.Size = new System.Drawing.Size(68, 59);
             this.button2.TabIndex = 13;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -1011,11 +1007,11 @@ namespace QLnhahang_anhttt.Food
             this.groupBox1.Controls.Add(this.cbbTim);
             this.groupBox1.Font = new System.Drawing.Font("Comic Sans MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.Tomato;
-            this.groupBox1.Location = new System.Drawing.Point(17, 8);
+            this.groupBox1.Location = new System.Drawing.Point(15, 6);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(688, 89);
+            this.groupBox1.Size = new System.Drawing.Size(612, 71);
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Searching for bill";
@@ -1026,9 +1022,9 @@ namespace QLnhahang_anhttt.Food
             this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.IndianRed;
-            this.label19.Location = new System.Drawing.Point(22, 46);
+            this.label19.Location = new System.Drawing.Point(20, 37);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(54, 27);
+            this.label19.Size = new System.Drawing.Size(46, 23);
             this.label19.TabIndex = 21;
             this.label19.Text = "Key";
             // 
@@ -1044,13 +1040,12 @@ namespace QLnhahang_anhttt.Food
             this.txtTim_Bill.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTim_Bill.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTim_Bill.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTim_Bill.Location = new System.Drawing.Point(334, 36);
-            this.txtTim_Bill.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtTim_Bill.Location = new System.Drawing.Point(297, 29);
             this.txtTim_Bill.Name = "txtTim_Bill";
             this.txtTim_Bill.PasswordChar = '\0';
             this.txtTim_Bill.PlaceholderText = "";
             this.txtTim_Bill.SelectedText = "";
-            this.txtTim_Bill.Size = new System.Drawing.Size(262, 40);
+            this.txtTim_Bill.Size = new System.Drawing.Size(233, 32);
             this.txtTim_Bill.TabIndex = 20;
             // 
             // ptrTim
@@ -1058,10 +1053,10 @@ namespace QLnhahang_anhttt.Food
             this.ptrTim.BackgroundImage = global::QLnhahang_anhttt.Properties.Resources.search;
             this.ptrTim.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ptrTim.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ptrTim.Location = new System.Drawing.Point(602, 29);
+            this.ptrTim.Location = new System.Drawing.Point(535, 23);
             this.ptrTim.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ptrTim.Name = "ptrTim";
-            this.ptrTim.Size = new System.Drawing.Size(62, 50);
+            this.ptrTim.Size = new System.Drawing.Size(55, 40);
             this.ptrTim.TabIndex = 19;
             this.ptrTim.TabStop = false;
             this.ptrTim.Click += new System.EventHandler(this.pictureBox2_Click);
@@ -1076,10 +1071,10 @@ namespace QLnhahang_anhttt.Food
             "Ngày",
             "Mã khách hàng",
             "Số hiệu bàn"});
-            this.cbbTim.Location = new System.Drawing.Point(82, 40);
+            this.cbbTim.Location = new System.Drawing.Point(73, 32);
             this.cbbTim.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbbTim.Name = "cbbTim";
-            this.cbbTim.Size = new System.Drawing.Size(182, 33);
+            this.cbbTim.Size = new System.Drawing.Size(162, 28);
             this.cbbTim.TabIndex = 17;
             this.cbbTim.SelectedIndexChanged += new System.EventHandler(this.cbbTim_SelectedIndexChanged);
             // 
@@ -1093,10 +1088,10 @@ namespace QLnhahang_anhttt.Food
             this.guna2Panel8.CustomBorderColor = System.Drawing.Color.LightSeaGreen;
             this.guna2Panel8.FillColor = System.Drawing.Color.LightSeaGreen;
             this.guna2Panel8.ForeColor = System.Drawing.Color.LightSeaGreen;
-            this.guna2Panel8.Location = new System.Drawing.Point(801, 8);
+            this.guna2Panel8.Location = new System.Drawing.Point(712, 6);
             this.guna2Panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel8.Name = "guna2Panel8";
-            this.guna2Panel8.Size = new System.Drawing.Size(529, 48);
+            this.guna2Panel8.Size = new System.Drawing.Size(470, 38);
             this.guna2Panel8.TabIndex = 6;
             // 
             // label40
@@ -1105,9 +1100,9 @@ namespace QLnhahang_anhttt.Food
             this.label40.BackColor = System.Drawing.Color.LightSeaGreen;
             this.label40.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label40.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label40.Location = new System.Drawing.Point(223, 4);
+            this.label40.Location = new System.Drawing.Point(198, 3);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(90, 46);
+            this.label40.Size = new System.Drawing.Size(76, 39);
             this.label40.TabIndex = 0;
             this.label40.Text = "BILL";
             // 
@@ -1127,10 +1122,10 @@ namespace QLnhahang_anhttt.Food
             this.guna2GroupBox2.Font = new System.Drawing.Font("Segoe UI Symbol", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox2.ForeColor = System.Drawing.Color.White;
             this.guna2GroupBox2.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.guna2GroupBox2.Location = new System.Drawing.Point(801, 61);
+            this.guna2GroupBox2.Location = new System.Drawing.Point(712, 49);
             this.guna2GroupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2GroupBox2.Name = "guna2GroupBox2";
-            this.guna2GroupBox2.Size = new System.Drawing.Size(529, 664);
+            this.guna2GroupBox2.Size = new System.Drawing.Size(470, 531);
             this.guna2GroupBox2.TabIndex = 0;
             this.guna2GroupBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.guna2GroupBox2.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
@@ -1143,12 +1138,12 @@ namespace QLnhahang_anhttt.Food
             this.guna2VScrollBar3.FillColor = System.Drawing.Color.LightSeaGreen;
             this.guna2VScrollBar3.InUpdate = false;
             this.guna2VScrollBar3.LargeChange = 10;
-            this.guna2VScrollBar3.Location = new System.Drawing.Point(483, 135);
+            this.guna2VScrollBar3.Location = new System.Drawing.Point(431, 108);
             this.guna2VScrollBar3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2VScrollBar3.Minimum = 1;
             this.guna2VScrollBar3.Name = "guna2VScrollBar3";
-            this.guna2VScrollBar3.ScrollbarSize = 26;
-            this.guna2VScrollBar3.Size = new System.Drawing.Size(26, 189);
+            this.guna2VScrollBar3.ScrollbarSize = 21;
+            this.guna2VScrollBar3.Size = new System.Drawing.Size(21, 151);
             this.guna2VScrollBar3.TabIndex = 4;
             this.guna2VScrollBar3.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.guna2VScrollBar3.Value = 1;
@@ -1156,55 +1151,55 @@ namespace QLnhahang_anhttt.Food
             // 
             // dataGridViewBill1
             // 
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.Snow;
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Salmon;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridViewBill1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.Snow;
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.Salmon;
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridViewBill1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle20;
             this.dataGridViewBill1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewBill1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridViewBill1.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.Snow;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Segoe UI Symbol", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.Salmon;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewBill1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.Snow;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Segoe UI Symbol", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.Salmon;
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewBill1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle21;
             this.dataGridViewBill1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.Snow;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI Symbol", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.LightCoral;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewBill1.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.Snow;
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Segoe UI Symbol", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.Color.LightCoral;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewBill1.DefaultCellStyle = dataGridViewCellStyle22;
             this.dataGridViewBill1.GridColor = System.Drawing.Color.LightCoral;
-            this.dataGridViewBill1.Location = new System.Drawing.Point(10, 134);
+            this.dataGridViewBill1.Location = new System.Drawing.Point(9, 107);
             this.dataGridViewBill1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridViewBill1.Name = "dataGridViewBill1";
             this.dataGridViewBill1.ReadOnly = true;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.Snow;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI Symbol", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.Salmon;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewBill1.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.Snow;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Segoe UI Symbol", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.Salmon;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewBill1.RowHeadersDefaultCellStyle = dataGridViewCellStyle23;
             this.dataGridViewBill1.RowHeadersVisible = false;
             this.dataGridViewBill1.RowHeadersWidth = 50;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.Snow;
-            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.Salmon;
-            this.dataGridViewBill1.RowsDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle24.BackColor = System.Drawing.Color.Snow;
+            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.Salmon;
+            this.dataGridViewBill1.RowsDefaultCellStyle = dataGridViewCellStyle24;
             this.dataGridViewBill1.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.MistyRose;
             this.dataGridViewBill1.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
             this.dataGridViewBill1.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.Salmon;
             this.dataGridViewBill1.RowTemplate.Height = 3;
-            this.dataGridViewBill1.Size = new System.Drawing.Size(500, 191);
+            this.dataGridViewBill1.Size = new System.Drawing.Size(444, 153);
             this.dataGridViewBill1.TabIndex = 15;
             // 
             // btnPayment_Bill
@@ -1222,10 +1217,10 @@ namespace QLnhahang_anhttt.Food
             this.btnPayment_Bill.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnPayment_Bill.ForeColor = System.Drawing.Color.White;
             this.btnPayment_Bill.HoverState.FillColor = System.Drawing.Color.Green;
-            this.btnPayment_Bill.Location = new System.Drawing.Point(294, 601);
+            this.btnPayment_Bill.Location = new System.Drawing.Point(261, 481);
             this.btnPayment_Bill.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPayment_Bill.Name = "btnPayment_Bill";
-            this.btnPayment_Bill.Size = new System.Drawing.Size(162, 48);
+            this.btnPayment_Bill.Size = new System.Drawing.Size(144, 38);
             this.btnPayment_Bill.TabIndex = 16;
             this.btnPayment_Bill.Text = "Payment";
             this.btnPayment_Bill.Click += new System.EventHandler(this.btnPayment_Bill_Click);
@@ -1246,12 +1241,13 @@ namespace QLnhahang_anhttt.Food
             this.btnPrint_Bill.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnPrint_Bill.ForeColor = System.Drawing.Color.White;
             this.btnPrint_Bill.HoverState.FillColor = System.Drawing.Color.Green;
-            this.btnPrint_Bill.Location = new System.Drawing.Point(74, 601);
+            this.btnPrint_Bill.Location = new System.Drawing.Point(66, 481);
             this.btnPrint_Bill.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPrint_Bill.Name = "btnPrint_Bill";
-            this.btnPrint_Bill.Size = new System.Drawing.Size(162, 48);
+            this.btnPrint_Bill.Size = new System.Drawing.Size(144, 38);
             this.btnPrint_Bill.TabIndex = 14;
             this.btnPrint_Bill.Text = "Print";
+            this.btnPrint_Bill.Click += new System.EventHandler(this.btnPrint_Bill_Click);
             // 
             // guna2Panel2
             // 
@@ -1271,10 +1267,10 @@ namespace QLnhahang_anhttt.Food
             this.guna2Panel2.Controls.Add(this.lblTotal_Bill);
             this.guna2Panel2.Controls.Add(this.label7);
             this.guna2Panel2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.guna2Panel2.Location = new System.Drawing.Point(10, 331);
+            this.guna2Panel2.Location = new System.Drawing.Point(9, 265);
             this.guna2Panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(503, 254);
+            this.guna2Panel2.Size = new System.Drawing.Size(447, 203);
             this.guna2Panel2.TabIndex = 7;
             // 
             // label28
@@ -1282,32 +1278,34 @@ namespace QLnhahang_anhttt.Food
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Segoe UI Symbol", 11F, System.Drawing.FontStyle.Bold);
             this.label28.ForeColor = System.Drawing.Color.Teal;
-            this.label28.Location = new System.Drawing.Point(430, 54);
+            this.label28.Location = new System.Drawing.Point(382, 43);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(32, 30);
+            this.label28.Size = new System.Drawing.Size(29, 25);
             this.label28.TabIndex = 31;
             this.label28.Text = "%";
             // 
             // button1
             // 
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Location = new System.Drawing.Point(291, 49);
+            this.button1.Location = new System.Drawing.Point(259, 39);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(43, 39);
+            this.button1.Size = new System.Drawing.Size(38, 31);
             this.button1.TabIndex = 30;
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Poor Richard", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(161, 200);
+            this.dateTimePicker1.Location = new System.Drawing.Point(143, 160);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(224, 31);
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 27);
             this.dateTimePicker1.TabIndex = 29;
             // 
             // label26
@@ -1316,19 +1314,19 @@ namespace QLnhahang_anhttt.Food
             this.label26.BackColor = System.Drawing.Color.Transparent;
             this.label26.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label26.Location = new System.Drawing.Point(106, 206);
+            this.label26.Location = new System.Drawing.Point(94, 165);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(49, 23);
+            this.label26.Size = new System.Drawing.Size(42, 19);
             this.label26.TabIndex = 28;
             this.label26.Text = "Day";
             // 
             // txtIDHD
             // 
             this.txtIDHD.Font = new System.Drawing.Font("Segoe UI Symbol", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIDHD.Location = new System.Drawing.Point(323, 145);
+            this.txtIDHD.Location = new System.Drawing.Point(287, 116);
             this.txtIDHD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtIDHD.Name = "txtIDHD";
-            this.txtIDHD.Size = new System.Drawing.Size(100, 34);
+            this.txtIDHD.Size = new System.Drawing.Size(89, 30);
             this.txtIDHD.TabIndex = 27;
             // 
             // label18
@@ -1337,9 +1335,9 @@ namespace QLnhahang_anhttt.Food
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label18.Location = new System.Drawing.Point(280, 152);
+            this.label18.Location = new System.Drawing.Point(249, 122);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(37, 23);
+            this.label18.Size = new System.Drawing.Size(31, 19);
             this.label18.TabIndex = 26;
             this.label18.Text = "Bill";
             // 
@@ -1347,10 +1345,10 @@ namespace QLnhahang_anhttt.Food
             // 
             this.cbbNV_Bill.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.cbbNV_Bill.FormattingEnabled = true;
-            this.cbbNV_Bill.Location = new System.Drawing.Point(99, 148);
+            this.cbbNV_Bill.Location = new System.Drawing.Point(88, 118);
             this.cbbNV_Bill.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbbNV_Bill.Name = "cbbNV_Bill";
-            this.cbbNV_Bill.Size = new System.Drawing.Size(108, 31);
+            this.cbbNV_Bill.Size = new System.Drawing.Size(96, 29);
             this.cbbNV_Bill.TabIndex = 25;
             // 
             // label25
@@ -1359,9 +1357,9 @@ namespace QLnhahang_anhttt.Food
             this.label25.BackColor = System.Drawing.Color.Transparent;
             this.label25.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label25.Location = new System.Drawing.Point(34, 155);
+            this.label25.Location = new System.Drawing.Point(30, 124);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(57, 23);
+            this.label25.Size = new System.Drawing.Size(48, 19);
             this.label25.TabIndex = 24;
             this.label25.Text = "Staff ";
             // 
@@ -1372,9 +1370,9 @@ namespace QLnhahang_anhttt.Food
             this.lblDis_Bill.BackColor = System.Drawing.Color.Transparent;
             this.lblDis_Bill.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDis_Bill.ForeColor = System.Drawing.Color.Teal;
-            this.lblDis_Bill.Location = new System.Drawing.Point(400, 58);
+            this.lblDis_Bill.Location = new System.Drawing.Point(356, 46);
             this.lblDis_Bill.Name = "lblDis_Bill";
-            this.lblDis_Bill.Size = new System.Drawing.Size(24, 26);
+            this.lblDis_Bill.Size = new System.Drawing.Size(21, 23);
             this.lblDis_Bill.TabIndex = 20;
             this.lblDis_Bill.Text = "0";
             // 
@@ -1384,9 +1382,9 @@ namespace QLnhahang_anhttt.Food
             this.lblTotal1_Bill.BackColor = System.Drawing.Color.Transparent;
             this.lblTotal1_Bill.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotal1_Bill.ForeColor = System.Drawing.Color.OrangeRed;
-            this.lblTotal1_Bill.Location = new System.Drawing.Point(362, 92);
+            this.lblTotal1_Bill.Location = new System.Drawing.Point(322, 74);
             this.lblTotal1_Bill.Name = "lblTotal1_Bill";
-            this.lblTotal1_Bill.Size = new System.Drawing.Size(78, 34);
+            this.lblTotal1_Bill.Size = new System.Drawing.Size(66, 28);
             this.lblTotal1_Bill.TabIndex = 19;
             this.lblTotal1_Bill.Text = "Total";
             // 
@@ -1396,9 +1394,9 @@ namespace QLnhahang_anhttt.Food
             this.label37.BackColor = System.Drawing.Color.Transparent;
             this.label37.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label37.ForeColor = System.Drawing.Color.Green;
-            this.label37.Location = new System.Drawing.Point(30, 100);
+            this.label37.Location = new System.Drawing.Point(27, 80);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(147, 28);
+            this.label37.Size = new System.Drawing.Size(122, 23);
             this.label37.TabIndex = 18;
             this.label37.Text = "Grand Total";
             // 
@@ -1407,10 +1405,10 @@ namespace QLnhahang_anhttt.Food
             this.cckDis_Bill.AutoSize = true;
             this.cckDis_Bill.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cckDis_Bill.ForeColor = System.Drawing.Color.Teal;
-            this.cckDis_Bill.Location = new System.Drawing.Point(35, 58);
+            this.cckDis_Bill.Location = new System.Drawing.Point(31, 46);
             this.cckDis_Bill.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cckDis_Bill.Name = "cckDis_Bill";
-            this.cckDis_Bill.Size = new System.Drawing.Size(120, 27);
+            this.cckDis_Bill.Size = new System.Drawing.Size(101, 23);
             this.cckDis_Bill.TabIndex = 17;
             this.cckDis_Bill.Text = "Discount";
             this.cckDis_Bill.UseVisualStyleBackColor = true;
@@ -1421,10 +1419,10 @@ namespace QLnhahang_anhttt.Food
             this.cbbDiscount.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.kHUYENMAIBindingSource, "MaKM", true));
             this.cbbDiscount.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.cbbDiscount.FormattingEnabled = true;
-            this.cbbDiscount.Location = new System.Drawing.Point(165, 52);
+            this.cbbDiscount.Location = new System.Drawing.Point(147, 42);
             this.cbbDiscount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbbDiscount.Name = "cbbDiscount";
-            this.cbbDiscount.Size = new System.Drawing.Size(120, 31);
+            this.cbbDiscount.Size = new System.Drawing.Size(107, 29);
             this.cbbDiscount.TabIndex = 16;
             // 
             // kHUYENMAIBindingSource
@@ -1443,9 +1441,9 @@ namespace QLnhahang_anhttt.Food
             this.lblTotal_Bill.BackColor = System.Drawing.Color.Transparent;
             this.lblTotal_Bill.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotal_Bill.ForeColor = System.Drawing.Color.Green;
-            this.lblTotal_Bill.Location = new System.Drawing.Point(361, 12);
+            this.lblTotal_Bill.Location = new System.Drawing.Point(321, 10);
             this.lblTotal_Bill.Name = "lblTotal_Bill";
-            this.lblTotal_Bill.Size = new System.Drawing.Size(66, 28);
+            this.lblTotal_Bill.Size = new System.Drawing.Size(55, 23);
             this.lblTotal_Bill.TabIndex = 15;
             this.lblTotal_Bill.Text = "Total";
             // 
@@ -1455,9 +1453,9 @@ namespace QLnhahang_anhttt.Food
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Green;
-            this.label7.Location = new System.Drawing.Point(30, 14);
+            this.label7.Location = new System.Drawing.Point(27, 11);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(107, 26);
+            this.label7.Size = new System.Drawing.Size(93, 23);
             this.label7.TabIndex = 14;
             this.label7.Text = "Sub Total";
             // 
@@ -1477,18 +1475,18 @@ namespace QLnhahang_anhttt.Food
             this.guna2Panel3.Controls.Add(this.label15);
             this.guna2Panel3.Controls.Add(this.label16);
             this.guna2Panel3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.guna2Panel3.Location = new System.Drawing.Point(10, 10);
+            this.guna2Panel3.Location = new System.Drawing.Point(9, 8);
             this.guna2Panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(503, 118);
+            this.guna2Panel3.Size = new System.Drawing.Size(447, 94);
             this.guna2Panel3.TabIndex = 5;
             // 
             // panel3
             // 
-            this.panel3.Location = new System.Drawing.Point(198, 44);
+            this.panel3.Location = new System.Drawing.Point(176, 35);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(76, 28);
+            this.panel3.Size = new System.Drawing.Size(68, 22);
             this.panel3.TabIndex = 26;
             // 
             // lblTime_OBill
@@ -1497,9 +1495,9 @@ namespace QLnhahang_anhttt.Food
             this.lblTime_OBill.BackColor = System.Drawing.Color.Transparent;
             this.lblTime_OBill.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTime_OBill.ForeColor = System.Drawing.Color.Green;
-            this.lblTime_OBill.Location = new System.Drawing.Point(339, 48);
+            this.lblTime_OBill.Location = new System.Drawing.Point(301, 38);
             this.lblTime_OBill.Name = "lblTime_OBill";
-            this.lblTime_OBill.Size = new System.Drawing.Size(52, 23);
+            this.lblTime_OBill.Size = new System.Drawing.Size(46, 21);
             this.lblTime_OBill.TabIndex = 25;
             this.lblTime_OBill.Text = "time";
             // 
@@ -1509,9 +1507,9 @@ namespace QLnhahang_anhttt.Food
             this.label27.BackColor = System.Drawing.Color.Transparent;
             this.label27.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.Color.Green;
-            this.label27.Location = new System.Drawing.Point(273, 48);
+            this.label27.Location = new System.Drawing.Point(243, 38);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(61, 23);
+            this.label27.Size = new System.Drawing.Size(52, 19);
             this.label27.TabIndex = 24;
             this.label27.Text = "Time:";
             // 
@@ -1521,9 +1519,9 @@ namespace QLnhahang_anhttt.Food
             this.lblID_Bill.BackColor = System.Drawing.Color.Transparent;
             this.lblID_Bill.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblID_Bill.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblID_Bill.Location = new System.Drawing.Point(73, 82);
+            this.lblID_Bill.Location = new System.Drawing.Point(65, 66);
             this.lblID_Bill.Name = "lblID_Bill";
-            this.lblID_Bill.Size = new System.Drawing.Size(30, 23);
+            this.lblID_Bill.Size = new System.Drawing.Size(28, 21);
             this.lblID_Bill.TabIndex = 23;
             this.lblID_Bill.Text = "ID";
             // 
@@ -1533,9 +1531,9 @@ namespace QLnhahang_anhttt.Food
             this.label35.BackColor = System.Drawing.Color.Transparent;
             this.label35.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label35.ForeColor = System.Drawing.Color.Green;
-            this.label35.Location = new System.Drawing.Point(266, 11);
+            this.label35.Location = new System.Drawing.Point(236, 9);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(97, 23);
+            this.label35.Size = new System.Drawing.Size(82, 19);
             this.label35.TabIndex = 22;
             this.label35.Text = "Order ID:";
             // 
@@ -1545,9 +1543,9 @@ namespace QLnhahang_anhttt.Food
             this.lblTableID_Bill.BackColor = System.Drawing.Color.Transparent;
             this.lblTableID_Bill.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTableID_Bill.ForeColor = System.Drawing.Color.Green;
-            this.lblTableID_Bill.Location = new System.Drawing.Point(130, 11);
+            this.lblTableID_Bill.Location = new System.Drawing.Point(116, 9);
             this.lblTableID_Bill.Name = "lblTableID_Bill";
-            this.lblTableID_Bill.Size = new System.Drawing.Size(33, 26);
+            this.lblTableID_Bill.Size = new System.Drawing.Size(28, 23);
             this.lblTableID_Bill.TabIndex = 21;
             this.lblTableID_Bill.Text = "ID";
             // 
@@ -1557,9 +1555,9 @@ namespace QLnhahang_anhttt.Food
             this.lblDay_OBill.BackColor = System.Drawing.Color.Transparent;
             this.lblDay_OBill.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDay_OBill.ForeColor = System.Drawing.Color.Green;
-            this.lblDay_OBill.Location = new System.Drawing.Point(92, 46);
+            this.lblDay_OBill.Location = new System.Drawing.Point(82, 37);
             this.lblDay_OBill.Name = "lblDay_OBill";
-            this.lblDay_OBill.Size = new System.Drawing.Size(52, 23);
+            this.lblDay_OBill.Size = new System.Drawing.Size(46, 21);
             this.lblDay_OBill.TabIndex = 20;
             this.lblDay_OBill.Text = "time";
             // 
@@ -1569,9 +1567,9 @@ namespace QLnhahang_anhttt.Food
             this.lblOrderID_Bill.BackColor = System.Drawing.Color.Transparent;
             this.lblOrderID_Bill.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOrderID_Bill.ForeColor = System.Drawing.Color.Green;
-            this.lblOrderID_Bill.Location = new System.Drawing.Point(369, 9);
+            this.lblOrderID_Bill.Location = new System.Drawing.Point(328, 7);
             this.lblOrderID_Bill.Name = "lblOrderID_Bill";
-            this.lblOrderID_Bill.Size = new System.Drawing.Size(33, 26);
+            this.lblOrderID_Bill.Size = new System.Drawing.Size(28, 23);
             this.lblOrderID_Bill.TabIndex = 20;
             this.lblOrderID_Bill.Text = "ID";
             // 
@@ -1581,9 +1579,9 @@ namespace QLnhahang_anhttt.Food
             this.lblName_Bill.BackColor = System.Drawing.Color.Transparent;
             this.lblName_Bill.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName_Bill.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblName_Bill.Location = new System.Drawing.Point(248, 78);
+            this.lblName_Bill.Location = new System.Drawing.Point(220, 62);
             this.lblName_Bill.Name = "lblName_Bill";
-            this.lblName_Bill.Size = new System.Drawing.Size(64, 25);
+            this.lblName_Bill.Size = new System.Drawing.Size(53, 20);
             this.lblName_Bill.TabIndex = 19;
             this.lblName_Bill.Text = "Name";
             // 
@@ -1593,9 +1591,9 @@ namespace QLnhahang_anhttt.Food
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Green;
-            this.label10.Location = new System.Drawing.Point(32, 12);
+            this.label10.Location = new System.Drawing.Point(28, 10);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(94, 23);
+            this.label10.Size = new System.Drawing.Size(80, 19);
             this.label10.TabIndex = 13;
             this.label10.Text = "Table ID:";
             // 
@@ -1605,9 +1603,9 @@ namespace QLnhahang_anhttt.Food
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Green;
-            this.label14.Location = new System.Drawing.Point(32, 48);
+            this.label14.Location = new System.Drawing.Point(28, 38);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(55, 23);
+            this.label14.Size = new System.Drawing.Size(47, 19);
             this.label14.TabIndex = 15;
             this.label14.Text = "Day:";
             // 
@@ -1617,9 +1615,9 @@ namespace QLnhahang_anhttt.Food
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label15.Location = new System.Drawing.Point(35, 82);
+            this.label15.Location = new System.Drawing.Point(31, 66);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(36, 23);
+            this.label15.Size = new System.Drawing.Size(31, 19);
             this.label15.TabIndex = 14;
             this.label15.Text = "ID:";
             // 
@@ -1629,9 +1627,9 @@ namespace QLnhahang_anhttt.Food
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label16.Location = new System.Drawing.Point(169, 82);
+            this.label16.Location = new System.Drawing.Point(150, 66);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(76, 23);
+            this.label16.Size = new System.Drawing.Size(65, 19);
             this.label16.TabIndex = 13;
             this.label16.Text = "Name:";
             // 
@@ -1650,35 +1648,55 @@ namespace QLnhahang_anhttt.Food
             this.pnlBook.Controls.Add(this.flowLayoutTable);
             this.pnlBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlBook.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.pnlBook.Location = new System.Drawing.Point(124, 9);
+            this.pnlBook.Location = new System.Drawing.Point(1316, 6);
             this.pnlBook.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlBook.Name = "pnlBook";
-            this.pnlBook.Size = new System.Drawing.Size(1336, 744);
+            this.pnlBook.Size = new System.Drawing.Size(1188, 595);
             this.pnlBook.TabIndex = 8;
+            // 
+            // guna2Button2
+            // 
+            this.guna2Button2.AutoRoundedCorners = true;
+            this.guna2Button2.BorderRadius = 14;
+            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.guna2Button2.Font = new System.Drawing.Font("Rockwell", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button2.ForeColor = System.Drawing.Color.White;
+            this.guna2Button2.Location = new System.Drawing.Point(902, 546);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.Size = new System.Drawing.Size(142, 30);
+            this.guna2Button2.TabIndex = 19;
+            this.guna2Button2.Text = "Cancel";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // flowPnlinfortable
             // 
-            this.flowPnlinfortable.Location = new System.Drawing.Point(83, 46);
+            this.flowPnlinfortable.Location = new System.Drawing.Point(74, 37);
             this.flowPnlinfortable.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowPnlinfortable.Name = "flowPnlinfortable";
-            this.flowPnlinfortable.Size = new System.Drawing.Size(639, 584);
+            this.flowPnlinfortable.Size = new System.Drawing.Size(568, 467);
             this.flowPnlinfortable.TabIndex = 0;
             // 
             // txtTableID
             // 
             this.txtTableID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTableID.Location = new System.Drawing.Point(914, 631);
+            this.txtTableID.Location = new System.Drawing.Point(812, 505);
+            this.txtTableID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTableID.Name = "txtTableID";
-            this.txtTableID.Size = new System.Drawing.Size(172, 30);
+            this.txtTableID.Size = new System.Drawing.Size(153, 26);
             this.txtTableID.TabIndex = 18;
             // 
             // label23
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Lucida Sans Unicode", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(808, 636);
+            this.label23.Location = new System.Drawing.Point(718, 509);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(99, 23);
+            this.label23.Size = new System.Drawing.Size(88, 21);
             this.label23.TabIndex = 17;
             this.label23.Text = "Table ID";
             // 
@@ -1687,16 +1705,16 @@ namespace QLnhahang_anhttt.Food
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Lucida Handwriting", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label22.Location = new System.Drawing.Point(799, 568);
+            this.label22.Location = new System.Drawing.Point(710, 454);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(154, 36);
+            this.label22.Size = new System.Drawing.Size(134, 31);
             this.label22.TabIndex = 16;
             this.label22.Text = "Booking";
             // 
             // btnBookTable
             // 
             this.btnBookTable.AutoRoundedCorners = true;
-            this.btnBookTable.BorderRadius = 18;
+            this.btnBookTable.BorderRadius = 14;
             this.btnBookTable.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnBookTable.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnBookTable.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -1704,9 +1722,10 @@ namespace QLnhahang_anhttt.Food
             this.btnBookTable.FillColor = System.Drawing.Color.SeaGreen;
             this.btnBookTable.Font = new System.Drawing.Font("Rockwell", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBookTable.ForeColor = System.Drawing.Color.White;
-            this.btnBookTable.Location = new System.Drawing.Point(812, 682);
+            this.btnBookTable.Location = new System.Drawing.Point(722, 546);
+            this.btnBookTable.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBookTable.Name = "btnBookTable";
-            this.btnBookTable.Size = new System.Drawing.Size(160, 38);
+            this.btnBookTable.Size = new System.Drawing.Size(142, 30);
             this.btnBookTable.TabIndex = 15;
             this.btnBookTable.Text = "Book";
             this.btnBookTable.Click += new System.EventHandler(this.btnBookTable_Click);
@@ -1716,10 +1735,10 @@ namespace QLnhahang_anhttt.Food
             this.button4.BackColor = System.Drawing.Color.Transparent;
             this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button4.Location = new System.Drawing.Point(1243, 553);
+            this.button4.Location = new System.Drawing.Point(1105, 442);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(65, 55);
+            this.button4.Size = new System.Drawing.Size(58, 44);
             this.button4.TabIndex = 14;
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
@@ -1728,12 +1747,12 @@ namespace QLnhahang_anhttt.Food
             // 
             this.dataGridViewTable.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dataGridViewTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewTable.Location = new System.Drawing.Point(795, 8);
+            this.dataGridViewTable.Location = new System.Drawing.Point(707, 6);
             this.dataGridViewTable.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridViewTable.Name = "dataGridViewTable";
             this.dataGridViewTable.RowHeadersWidth = 62;
             this.dataGridViewTable.RowTemplate.Height = 28;
-            this.dataGridViewTable.Size = new System.Drawing.Size(513, 541);
+            this.dataGridViewTable.Size = new System.Drawing.Size(456, 433);
             this.dataGridViewTable.TabIndex = 5;
             // 
             // guna2VScrollBar5
@@ -1743,11 +1762,11 @@ namespace QLnhahang_anhttt.Food
             this.guna2VScrollBar5.FillColor = System.Drawing.Color.LightSeaGreen;
             this.guna2VScrollBar5.InUpdate = false;
             this.guna2VScrollBar5.LargeChange = 10;
-            this.guna2VScrollBar5.Location = new System.Drawing.Point(1314, 8);
+            this.guna2VScrollBar5.Location = new System.Drawing.Point(1168, 6);
             this.guna2VScrollBar5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2VScrollBar5.Name = "guna2VScrollBar5";
-            this.guna2VScrollBar5.ScrollbarSize = 10;
-            this.guna2VScrollBar5.Size = new System.Drawing.Size(10, 346);
+            this.guna2VScrollBar5.ScrollbarSize = 9;
+            this.guna2VScrollBar5.Size = new System.Drawing.Size(9, 277);
             this.guna2VScrollBar5.TabIndex = 4;
             this.guna2VScrollBar5.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             // 
@@ -1758,21 +1777,21 @@ namespace QLnhahang_anhttt.Food
             this.guna2VScrollBar6.FillColor = System.Drawing.Color.LightSeaGreen;
             this.guna2VScrollBar6.InUpdate = false;
             this.guna2VScrollBar6.LargeChange = 10;
-            this.guna2VScrollBar6.Location = new System.Drawing.Point(778, 8);
+            this.guna2VScrollBar6.Location = new System.Drawing.Point(692, 6);
             this.guna2VScrollBar6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2VScrollBar6.Name = "guna2VScrollBar6";
-            this.guna2VScrollBar6.ScrollbarSize = 10;
-            this.guna2VScrollBar6.Size = new System.Drawing.Size(10, 718);
+            this.guna2VScrollBar6.ScrollbarSize = 9;
+            this.guna2VScrollBar6.Size = new System.Drawing.Size(9, 574);
             this.guna2VScrollBar6.TabIndex = 2;
             this.guna2VScrollBar6.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             // 
             // flowLayoutTable
             // 
             this.flowLayoutTable.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.flowLayoutTable.Location = new System.Drawing.Point(7, 11);
+            this.flowLayoutTable.Location = new System.Drawing.Point(6, 9);
             this.flowLayoutTable.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowLayoutTable.Name = "flowLayoutTable";
-            this.flowLayoutTable.Size = new System.Drawing.Size(765, 712);
+            this.flowLayoutTable.Size = new System.Drawing.Size(680, 570);
             this.flowLayoutTable.TabIndex = 1;
             // 
             // bANBindingSource
@@ -1807,37 +1826,19 @@ namespace QLnhahang_anhttt.Food
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.textBox1.ForeColor = System.Drawing.Color.Black;
             this.textBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBox1.Location = new System.Drawing.Point(26, 792);
+            this.textBox1.Location = new System.Drawing.Point(23, 634);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
             this.textBox1.PasswordChar = '\0';
             this.textBox1.PlaceholderForeColor = System.Drawing.Color.White;
             this.textBox1.PlaceholderText = "";
             this.textBox1.SelectedText = "";
-            this.textBox1.Size = new System.Drawing.Size(83, 38);
+            this.textBox1.Size = new System.Drawing.Size(74, 30);
             this.textBox1.TabIndex = 9;
-            // 
-            // guna2Button2
-            // 
-            this.guna2Button2.AutoRoundedCorners = true;
-            this.guna2Button2.BorderRadius = 18;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Rockwell", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(1015, 682);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(160, 38);
-            this.guna2Button2.TabIndex = 19;
-            this.guna2Button2.Text = "Cancel";
-            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // Foods
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Controls.Add(this.textBox1);
@@ -1847,7 +1848,7 @@ namespace QLnhahang_anhttt.Food
             this.Controls.Add(this.pnlOrder);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Foods";
-            this.Size = new System.Drawing.Size(3067, 1542);
+            this.Size = new System.Drawing.Size(2726, 1234);
             this.Load += new System.EventHandler(this.Foods_Load);
             this.guna2GradientPanelMenuFood.ResumeLayout(false);
             this.pnlOrder.ResumeLayout(false);

@@ -93,6 +93,14 @@
     <Compile Include="Food\Bill.Designer.cs">
       <DependentUpon>Bill.cs</DependentUpon>
     </Compile>
+    <Compile Include="Food\DataSetFood.cs">
+      <DependentUpon>DataSetFood.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Food\DataSetFood.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetFood.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Food\FoodMenu.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -110,6 +118,12 @@
     </Compile>
     <Compile Include="Food\InforDesk.Designer.cs">
       <DependentUpon>InforDesk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Food\InHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Food\InHoaDon.Designer.cs">
+      <DependentUpon>InHoaDon.cs</DependentUpon>
     </Compile>
     <Compile Include="Food\SelectedFood.cs">
       <SubType>UserControl</SubType>
@@ -319,6 +333,10 @@
     <EmbeddedResource Include="Food\InforDesk.resx">
       <DependentUpon>InforDesk.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Food\InHoaDon.rdlc" />
+    <EmbeddedResource Include="Food\InHoaDon.resx">
+      <DependentUpon>InHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Food\SelectedFood.resx">
       <DependentUpon>SelectedFood.cs</DependentUpon>
     </EmbeddedResource>
@@ -404,6 +422,17 @@
     <EmbeddedResource Include="Warehouse\ThemPhieuXuat.resx">
       <DependentUpon>ThemPhieuXuat.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Food\DataSetFood.xsc">
+      <DependentUpon>DataSetFood.xsd</DependentUpon>
+    </None>
+    <None Include="Food\DataSetFood.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetFood.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Food\DataSetFood.xss">
+      <DependentUpon>DataSetFood.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\Customer.datasource" />
     <None Include="Properties\DataSources\loginform.datasource" />
