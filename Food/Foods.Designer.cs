@@ -1648,7 +1648,7 @@ namespace QLnhahang_anhttt.Food
             this.pnlBook.Controls.Add(this.flowLayoutTable);
             this.pnlBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlBook.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.pnlBook.Location = new System.Drawing.Point(108, 4);
+            this.pnlBook.Location = new System.Drawing.Point(107, 8);
             this.pnlBook.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlBook.Name = "pnlBook";
             this.pnlBook.Size = new System.Drawing.Size(1188, 595);

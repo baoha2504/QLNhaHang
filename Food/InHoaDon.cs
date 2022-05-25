@@ -18,6 +18,8 @@ namespace QLnhahang_anhttt.Food
         public DataTable dt;
         public string sopyc;
         public string tongtien;
+        public string tongtam;
+        public string giamgia;
 
         public InHoaDon()
         {
@@ -51,7 +53,7 @@ namespace QLnhahang_anhttt.Food
             DataSetFoodTableAdapters.DataTable1TableAdapter nhap = new DataSetFoodTableAdapters.DataTable1TableAdapter();
             nhap.Connection.ConnectionString = connectionString;
             nhap.ClearBeforeFill = true;
-            nhap.Fill(dataset.DataTable1, tongtien, sopyc);
+            nhap.Fill(dataset.DataTable1, tongtien, tongtam, giamgia, sopyc);
 
             this.reportViewer1.RefreshReport();
         }

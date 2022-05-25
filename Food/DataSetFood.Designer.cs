@@ -299,6 +299,10 @@ namespace QLnhahang_anhttt.Food {
             
             private global::System.Data.DataColumn columnColumn2;
             
+            private global::System.Data.DataColumn columnColumn3;
+            
+            private global::System.Data.DataColumn columnColumn4;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public DataTable1DataTable() {
@@ -414,6 +418,22 @@ namespace QLnhahang_anhttt.Food {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn Column3Column {
+                get {
+                    return this.columnColumn3;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn Column4Column {
+                get {
+                    return this.columnColumn4;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -449,7 +469,7 @@ namespace QLnhahang_anhttt.Food {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public DataTable1Row AddDataTable1Row(string SoPYC, System.DateTime NgayXuat, string SoHieuBan, string MaMonAn, int SoLuong, long DonGia, string TenKH, string Column1, string TenMon, System.DateTime Column2) {
+            public DataTable1Row AddDataTable1Row(string SoPYC, System.DateTime NgayXuat, string SoHieuBan, string MaMonAn, int SoLuong, long DonGia, string TenKH, string Column1, string TenMon, System.DateTime Column2, string Column3, string Column4) {
                 DataTable1Row rowDataTable1Row = ((DataTable1Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         SoPYC,
@@ -461,7 +481,9 @@ namespace QLnhahang_anhttt.Food {
                         TenKH,
                         Column1,
                         TenMon,
-                        Column2};
+                        Column2,
+                        Column3,
+                        Column4};
                 rowDataTable1Row.ItemArray = columnValuesArray;
                 this.Rows.Add(rowDataTable1Row);
                 return rowDataTable1Row;
@@ -494,6 +516,8 @@ namespace QLnhahang_anhttt.Food {
                 this.columnColumn1 = base.Columns["Column1"];
                 this.columnTenMon = base.Columns["TenMon"];
                 this.columnColumn2 = base.Columns["Column2"];
+                this.columnColumn3 = base.Columns["Column3"];
+                this.columnColumn4 = base.Columns["Column4"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -519,6 +543,10 @@ namespace QLnhahang_anhttt.Food {
                 base.Columns.Add(this.columnTenMon);
                 this.columnColumn2 = new global::System.Data.DataColumn("Column2", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnColumn2);
+                this.columnColumn3 = new global::System.Data.DataColumn("Column3", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnColumn3);
+                this.columnColumn4 = new global::System.Data.DataColumn("Column4", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnColumn4);
                 this.columnSoPYC.AllowDBNull = false;
                 this.columnSoPYC.MaxLength = 8;
                 this.columnNgayXuat.AllowDBNull = false;
@@ -534,6 +562,10 @@ namespace QLnhahang_anhttt.Food {
                 this.columnTenMon.AllowDBNull = false;
                 this.columnTenMon.MaxLength = 50;
                 this.columnColumn2.ReadOnly = true;
+                this.columnColumn3.ReadOnly = true;
+                this.columnColumn3.MaxLength = 1024;
+                this.columnColumn4.ReadOnly = true;
+                this.columnColumn4.MaxLength = 1024;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -801,6 +833,38 @@ namespace QLnhahang_anhttt.Food {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string Column3 {
+                get {
+                    try {
+                        return ((string)(this[this.tableDataTable1.Column3Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Column3\' in table \'DataTable1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDataTable1.Column3Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string Column4 {
+                get {
+                    try {
+                        return ((string)(this[this.tableDataTable1.Column4Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Column4\' in table \'DataTable1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDataTable1.Column4Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsSoHieuBanNull() {
                 return this.IsNull(this.tableDataTable1.SoHieuBanColumn);
             }
@@ -833,6 +897,30 @@ namespace QLnhahang_anhttt.Food {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetColumn2Null() {
                 this[this.tableDataTable1.Column2Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsColumn3Null() {
+                return this.IsNull(this.tableDataTable1.Column3Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetColumn3Null() {
+                this[this.tableDataTable1.Column3Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsColumn4Null() {
+                return this.IsNull(this.tableDataTable1.Column4Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetColumn4Null() {
+                this[this.tableDataTable1.Column4Column] = global::System.Convert.DBNull;
             }
         }
         
@@ -1005,6 +1093,8 @@ namespace QLnhahang_anhttt.Food.DataSetFoodTableAdapters {
             tableMapping.ColumnMappings.Add("Column1", "Column1");
             tableMapping.ColumnMappings.Add("TenMon", "TenMon");
             tableMapping.ColumnMappings.Add("Column2", "Column2");
+            tableMapping.ColumnMappings.Add("Column3", "Column3");
+            tableMapping.ColumnMappings.Add("Column4", "Column4");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -1022,7 +1112,7 @@ namespace QLnhahang_anhttt.Food.DataSetFoodTableAdapters {
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = @"SELECT PHIEUYEUCAU.SoPYC, PHIEUYEUCAU.NgayXuat, PHIEUYEUCAU.SoHieuBan, KHACHHANG.TenKH,
-			CHITIETPYC.MaMonAn, CHITIETPYC.DonGia, CHITIETPYC.SoLuong, MONAN.TenMon, @tongtien, GETDATE()
+			CHITIETPYC.MaMonAn, CHITIETPYC.DonGia, CHITIETPYC.SoLuong, MONAN.TenMon, @tongtien, GETDATE(), @tongtam, @giamgia
 	FROM PHIEUYEUCAU, KHACHHANG, CHITIETPYC, MONAN
 	WHERE PHIEUYEUCAU.SoPYC = CHITIETPYC.SoPYC
 	AND KHACHHANG.MaKH = PHIEUYEUCAU.MaKH
@@ -1030,6 +1120,8 @@ namespace QLnhahang_anhttt.Food.DataSetFoodTableAdapters {
 	AND PHIEUYEUCAU.SoPYC = @sopyc";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@tongtien", global::System.Data.SqlDbType.VarChar, 1024, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@tongtam", global::System.Data.SqlDbType.VarChar, 1024, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@giamgia", global::System.Data.SqlDbType.VarChar, 1024, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@sopyc", global::System.Data.SqlDbType.Char, 8, global::System.Data.ParameterDirection.Input, 0, 0, "SoPYC", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -1037,7 +1129,7 @@ namespace QLnhahang_anhttt.Food.DataSetFoodTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DataSetFood.DataTable1DataTable dataTable, string tongtien, string sopyc) {
+        public virtual int Fill(DataSetFood.DataTable1DataTable dataTable, string tongtien, string tongtam, string giamgia, string sopyc) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((tongtien == null)) {
                 throw new global::System.ArgumentNullException("tongtien");
@@ -1045,11 +1137,23 @@ namespace QLnhahang_anhttt.Food.DataSetFoodTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((string)(tongtien));
             }
+            if ((tongtam == null)) {
+                throw new global::System.ArgumentNullException("tongtam");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(tongtam));
+            }
+            if ((giamgia == null)) {
+                throw new global::System.ArgumentNullException("giamgia");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((string)(giamgia));
+            }
             if ((sopyc == null)) {
                 throw new global::System.ArgumentNullException("sopyc");
             }
             else {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(sopyc));
+                this.Adapter.SelectCommand.Parameters[3].Value = ((string)(sopyc));
             }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1062,7 +1166,7 @@ namespace QLnhahang_anhttt.Food.DataSetFoodTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DataSetFood.DataTable1DataTable GetData(string tongtien, string sopyc) {
+        public virtual DataSetFood.DataTable1DataTable GetData(string tongtien, string tongtam, string giamgia, string sopyc) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((tongtien == null)) {
                 throw new global::System.ArgumentNullException("tongtien");
@@ -1070,11 +1174,23 @@ namespace QLnhahang_anhttt.Food.DataSetFoodTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((string)(tongtien));
             }
+            if ((tongtam == null)) {
+                throw new global::System.ArgumentNullException("tongtam");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(tongtam));
+            }
+            if ((giamgia == null)) {
+                throw new global::System.ArgumentNullException("giamgia");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((string)(giamgia));
+            }
             if ((sopyc == null)) {
                 throw new global::System.ArgumentNullException("sopyc");
             }
             else {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(sopyc));
+                this.Adapter.SelectCommand.Parameters[3].Value = ((string)(sopyc));
             }
             DataSetFood.DataTable1DataTable dataTable = new DataSetFood.DataTable1DataTable();
             this.Adapter.Fill(dataTable);

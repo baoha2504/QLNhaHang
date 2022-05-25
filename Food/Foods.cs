@@ -1003,6 +1003,8 @@ namespace QLnhahang_anhttt.Food
             InHoaDon inHoaDon  = new InHoaDon();
             inHoaDon.sopyc = lblOrderID_Bill.Text.Trim();
             inHoaDon.tongtien = lblTotal1_Bill.Text.Trim();
+            inHoaDon.giamgia = lblDis_Bill.Text.Trim();
+            inHoaDon.tongtam = lblTotal_Bill.Text.Trim();
             inHoaDon.ShowDialog();
         }
 
