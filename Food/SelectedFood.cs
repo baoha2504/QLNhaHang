@@ -88,26 +88,31 @@ namespace QLnhahang_anhttt.Food
 
         private void guna2NumericUpDown1_ValueChanged(object sender, EventArgs e)
         {
-            subtotal = 0;
-            if (FoodMenu.count > 0)
+            try
             {
-                for (int i = 0; i < FoodMenu.count; i++)
+                subtotal = 0;
+                if (FoodMenu.count > 0)
                 {
-                    if (food.flowLayoutPnl_Selected.Controls[i].Name == "SelectedFood")
+                    for (int i = 0; i < FoodMenu.count; i++)
                     {
-                        subtotal = (long)(subtotal + Foods.paymentlist[i].guna2NumericUpDown1.Value * Int32.Parse(Foods.paymentlist[i].lbl_price.Text));
+                        if (food.flowLayoutPnl_Selected.Controls[i].Name == "SelectedFood")
+                        {
+                            subtotal = (long)(subtotal + Foods.paymentlist[i].guna2NumericUpDown1.Value * Int32.Parse(Foods.paymentlist[i].lbl_price.Text));
+                        }
                     }
+                    Foods.tongtam = subtotal;
+                    Foods.tong = subtotal;
+                    string sub = subtotal.ToString();
+                    //    string sub = string.Format(new CultureInfo("vi-VN"), "{0:#,##0.00}", subtotal);
+                    food.lblSub_menu.Text = sub;
+                    //        food.<tongtien>.Text = sub;
                 }
-                Foods.tongtam = subtotal;
-                Foods.tong = subtotal;
-                string sub = subtotal.ToString();
-                //    string sub = string.Format(new CultureInfo("vi-VN"), "{0:#,##0.00}", subtotal);
-                food.lblSub_menu.Text = sub;
-                //        food.<tongtien>.Text = sub;
+                else
+                    food.lblSub_menu.Text = "0";
+            } catch
+            {
+                MessageBox.Show("Lỗi", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else
-                food.lblSub_menu.Text = "0";
-
         }
     }
 }

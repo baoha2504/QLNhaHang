@@ -88,7 +88,7 @@ namespace QLnhahang_anhttt.Food
                 menu[index].name = row["TenMon"].ToString();
                 string path = row["pathimage"].ToString();
                 if (path == "")
-                    menu[index].Background = Image.FromFile(@"D:\food\menufood.png"); // Chỉnh tùy máy
+                    menu[index].Background = Image.FromFile(@"D:\QLNhaHang\Food\food\menufood.png"); // Chỉnh tùy máy
                 else
                     menu[index].Background = Image.FromFile(path);
                 /*try
@@ -159,7 +159,7 @@ namespace QLnhahang_anhttt.Food
                 // hiển thị thông tin bàn từ csdl lên button
                 btn.Text = "Bàn " + item["SoHieuBan"] + " ( " + item["SoGhe"] + " ghế )" + Environment.NewLine + item["TinhTrang"];
 
-                btn.BackgroundImage = Image.FromFile(@"D:\food\pngtree-white-restaurant-table-image_2234080-removebg-preview.png");
+                btn.BackgroundImage = Image.FromFile(@"D:\QLNhaHang\Food\food\pngtree-white-restaurant-table-image_2234080-removebg-preview.png");
 
                 int newSize = 10;
                 btn.Font = new Font(btn.Font.FontFamily, newSize);
@@ -665,7 +665,7 @@ namespace QLnhahang_anhttt.Food
 
             //chi tiet pyc
             sqlCon.Open();
-            SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT * FROM CHITIETPYC where SoPYC='" + lblOrderID_Bill.Text + "'", sqlCon);
+            SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT MONAN.MaMonAn, MONAN.TenMon, CHITIETPYC.SoLuong, CHITIETPYC.DonGia FROM CHITIETPYC, MONAN where CHITIETPYC.MaMonAn = MONAN.MaMonAn and SoPYC='" + lblOrderID_Bill.Text + "'", sqlCon);
             DataTable dtb = new DataTable();
             sqlDa.Fill(dtb);
             dataGridViewBill1.DataSource = dtb;

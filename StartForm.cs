@@ -48,7 +48,7 @@ namespace QLnhahang_anhttt
                 // hiển thị thông tin bàn từ csdl lên button
                 btn.Text = "Bàn " + item["SoHieuBan"] + " ( " + item["SoGhe"] + " ghế )" + Environment.NewLine + item["TinhTrang"];
 
-                btn.BackgroundImage = Image.FromFile(@"D:\food\pngtree-white-restaurant-table-image_2234080-removebg-preview.png");
+                btn.BackgroundImage = Image.FromFile(@"D:\QLNhaHang\Food\\food\pngtree-white-restaurant-table-image_2234080-removebg-preview.png");
 
                 int newSize = 10;
                 btn.Font = new Font(btn.Font.FontFamily, newSize);
