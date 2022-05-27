@@ -114,5 +114,12 @@ namespace QLnhahang_anhttt
             PasswordRetrieval f = new PasswordRetrieval();
             f.Show();
         }
+
+        private void btCustomers_Click(object sender, EventArgs e)
+        {
+            StartForm startForm = new StartForm();
+            this.Hide();
+            startForm.Show();
+        }
     }
 }

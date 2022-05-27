@@ -275,7 +275,7 @@ namespace QLnhahang_anhttt
         {
             loginform frm = new loginform();
             this.Hide();
-            frm.ShowDialog();
+            frm.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)

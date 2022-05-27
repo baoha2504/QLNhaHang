@@ -31,6 +31,7 @@ namespace QLnhahang_anhttt
         {
             this.components = new System.ComponentModel.Container();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnRegister = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -40,20 +41,20 @@ namespace QLnhahang_anhttt
             this.btnLogin = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.textPass = new System.Windows.Forms.TextBox();
+            this.picPassword = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.textUser = new System.Windows.Forms.TextBox();
+            this.picUser = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.picPassword = new System.Windows.Forms.PictureBox();
-            this.picUser = new System.Windows.Forms.PictureBox();
+            this.btCustomers = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPassword)).BeginInit();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,9 +70,20 @@ namespace QLnhahang_anhttt
             this.flowLayoutPanel1.Size = new System.Drawing.Size(630, 400);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = global::QLnhahang_anhttt.Properties.Resources.loginPizza;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(252, 400);
+            this.panel1.TabIndex = 1;
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Controls.Add(this.btCustomers);
             this.panel2.Controls.Add(this.btnRegister);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label4);
@@ -98,7 +110,7 @@ namespace QLnhahang_anhttt
             this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegister.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Underline);
             this.btnRegister.ForeColor = System.Drawing.Color.DarkOrange;
-            this.btnRegister.Location = new System.Drawing.Point(204, 278);
+            this.btnRegister.Location = new System.Drawing.Point(214, 299);
             this.btnRegister.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(130, 28);
@@ -147,7 +159,7 @@ namespace QLnhahang_anhttt
             this.btnForgetPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnForgetPassword.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Underline);
             this.btnForgetPassword.ForeColor = System.Drawing.Color.DarkOrange;
-            this.btnForgetPassword.Location = new System.Drawing.Point(10, 278);
+            this.btnForgetPassword.Location = new System.Drawing.Point(10, 299);
             this.btnForgetPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnForgetPassword.Name = "btnForgetPassword";
             this.btnForgetPassword.Size = new System.Drawing.Size(167, 28);
@@ -162,10 +174,10 @@ namespace QLnhahang_anhttt
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(140, 233);
+            this.btnLogin.Location = new System.Drawing.Point(231, 233);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(89, 30);
+            this.btnLogin.Size = new System.Drawing.Size(113, 30);
             this.btnLogin.TabIndex = 5;
             this.btnLogin.Text = " LOGIN";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -195,6 +207,20 @@ namespace QLnhahang_anhttt
             this.textPass.TabIndex = 2;
             this.textPass.UseSystemPasswordChar = true;
             // 
+            // picPassword
+            // 
+            this.picPassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picPassword.Image = global::QLnhahang_anhttt.Properties.Resources.password;
+            this.picPassword.Location = new System.Drawing.Point(3, 8);
+            this.picPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.picPassword.Name = "picPassword";
+            this.picPassword.Size = new System.Drawing.Size(27, 24);
+            this.picPassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picPassword.TabIndex = 1;
+            this.picPassword.TabStop = false;
+            this.picPassword.MouseDown += new System.Windows.Forms.MouseEventHandler(this.picPassword_MouseDown);
+            this.picPassword.MouseUp += new System.Windows.Forms.MouseEventHandler(this.picPassword_MouseUp);
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
@@ -216,6 +242,18 @@ namespace QLnhahang_anhttt
             this.textUser.Name = "textUser";
             this.textUser.Size = new System.Drawing.Size(302, 32);
             this.textUser.TabIndex = 1;
+            // 
+            // picUser
+            // 
+            this.picUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picUser.Image = global::QLnhahang_anhttt.Properties.Resources.user;
+            this.picUser.Location = new System.Drawing.Point(3, 8);
+            this.picUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.picUser.Name = "picUser";
+            this.picUser.Size = new System.Drawing.Size(27, 24);
+            this.picUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picUser.TabIndex = 0;
+            this.picUser.TabStop = false;
             // 
             // btnClose
             // 
@@ -254,41 +292,20 @@ namespace QLnhahang_anhttt
             this.label1.Size = new System.Drawing.Size(0, 16);
             this.label1.TabIndex = 0;
             // 
-            // panel1
+            // btCustomers
             // 
-            this.panel1.BackgroundImage = global::QLnhahang_anhttt.Properties.Resources.loginPizza;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(252, 400);
-            this.panel1.TabIndex = 1;
-            // 
-            // picPassword
-            // 
-            this.picPassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picPassword.Image = global::QLnhahang_anhttt.Properties.Resources.password;
-            this.picPassword.Location = new System.Drawing.Point(3, 8);
-            this.picPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.picPassword.Name = "picPassword";
-            this.picPassword.Size = new System.Drawing.Size(27, 24);
-            this.picPassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picPassword.TabIndex = 1;
-            this.picPassword.TabStop = false;
-            this.picPassword.MouseDown += new System.Windows.Forms.MouseEventHandler(this.picPassword_MouseDown);
-            this.picPassword.MouseUp += new System.Windows.Forms.MouseEventHandler(this.picPassword_MouseUp);
-            // 
-            // picUser
-            // 
-            this.picUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picUser.Image = global::QLnhahang_anhttt.Properties.Resources.user;
-            this.picUser.Location = new System.Drawing.Point(3, 8);
-            this.picUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.picUser.Name = "picUser";
-            this.picUser.Size = new System.Drawing.Size(27, 24);
-            this.picUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picUser.TabIndex = 0;
-            this.picUser.TabStop = false;
+            this.btCustomers.BackColor = System.Drawing.Color.Orange;
+            this.btCustomers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btCustomers.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.btCustomers.ForeColor = System.Drawing.Color.White;
+            this.btCustomers.Location = new System.Drawing.Point(42, 233);
+            this.btCustomers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btCustomers.Name = "btCustomers";
+            this.btCustomers.Size = new System.Drawing.Size(113, 30);
+            this.btCustomers.TabIndex = 11;
+            this.btCustomers.Text = "CUSTOMERS";
+            this.btCustomers.UseVisualStyleBackColor = false;
+            this.btCustomers.Click += new System.EventHandler(this.btCustomers_Click);
             // 
             // loginform
             // 
@@ -307,9 +324,9 @@ namespace QLnhahang_anhttt
             this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picPassword)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picPassword)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).EndInit();
             this.ResumeLayout(false);
 
@@ -336,6 +353,7 @@ namespace QLnhahang_anhttt
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnRegister;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Button btCustomers;
     }
 }
 
