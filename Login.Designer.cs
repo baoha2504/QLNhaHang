@@ -33,6 +33,7 @@ namespace QLnhahang_anhttt
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btCustomers = new System.Windows.Forms.Button();
             this.btnRegister = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -49,7 +50,6 @@ namespace QLnhahang_anhttt
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.btCustomers = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -101,6 +101,21 @@ namespace QLnhahang_anhttt
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(377, 400);
             this.panel2.TabIndex = 2;
+            // 
+            // btCustomers
+            // 
+            this.btCustomers.BackColor = System.Drawing.Color.Orange;
+            this.btCustomers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btCustomers.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.btCustomers.ForeColor = System.Drawing.Color.White;
+            this.btCustomers.Location = new System.Drawing.Point(42, 233);
+            this.btCustomers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btCustomers.Name = "btCustomers";
+            this.btCustomers.Size = new System.Drawing.Size(113, 30);
+            this.btCustomers.TabIndex = 11;
+            this.btCustomers.Text = "CUSTOMERS";
+            this.btCustomers.UseVisualStyleBackColor = false;
+            this.btCustomers.Click += new System.EventHandler(this.btCustomers_Click);
             // 
             // btnRegister
             // 
@@ -291,21 +306,6 @@ namespace QLnhahang_anhttt
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 16);
             this.label1.TabIndex = 0;
-            // 
-            // btCustomers
-            // 
-            this.btCustomers.BackColor = System.Drawing.Color.Orange;
-            this.btCustomers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btCustomers.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
-            this.btCustomers.ForeColor = System.Drawing.Color.White;
-            this.btCustomers.Location = new System.Drawing.Point(42, 233);
-            this.btCustomers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btCustomers.Name = "btCustomers";
-            this.btCustomers.Size = new System.Drawing.Size(113, 30);
-            this.btCustomers.TabIndex = 11;
-            this.btCustomers.Text = "CUSTOMERS";
-            this.btCustomers.UseVisualStyleBackColor = false;
-            this.btCustomers.Click += new System.EventHandler(this.btCustomers_Click);
             // 
             // loginform
             // 

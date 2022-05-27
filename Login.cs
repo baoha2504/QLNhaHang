@@ -24,6 +24,8 @@ namespace QLnhahang_anhttt
             toolTip1.ShowAlways = true;
             toolTip1.SetToolTip(btnLogin, "Đăng nhập vào chương trình");
             toolTip1.SetToolTip(picPassword, "Hiển thị mật khẩu");
+            toolTip1.SetToolTip(btCustomers, "Sử dụng với tư cách là khách hàng");
+            toolTip1.SetToolTip(btnForgetPassword, "Quên mật khẩu");
         }
 
         static string ComputeSha256Hash(string rawData)
