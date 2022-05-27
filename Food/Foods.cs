@@ -81,12 +81,14 @@ namespace QLnhahang_anhttt.Food
 
             int rows = dtb.Rows.Count;
             menu = new FoodMenu[rows];
+            index = 0;
             foreach (DataRow row in dtb.Rows)
             {
                 menu[index] = new FoodMenu(this);
                 menu[index].Price = row["DonGia"].ToString();
                 menu[index].name = row["TenMon"].ToString();
                 string path = row["pathimage"].ToString();
+
                 if (path == "")
                     menu[index].Background = Image.FromFile(@"D:\QLNhaHang\Food\food\menufood.png"); // Chỉnh tùy máy
                 else

@@ -41,6 +41,9 @@ namespace QLnhahang_anhttt
             if (permission == 1 || permission == 3)
             {
                 foods1.BringToFront();
+            } else
+            {
+                MessageBox.Show("Bạn không có quyền sử dụng chức năng này!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
         //staff
@@ -52,6 +55,10 @@ namespace QLnhahang_anhttt
             {
                 staff1.BringToFront();
             }
+            else
+            {
+                MessageBox.Show("Bạn không có quyền sử dụng chức năng này!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
         //customer
         private void guna2GradientTileBtnCustomer_Click(object sender, EventArgs e)
@@ -61,6 +68,10 @@ namespace QLnhahang_anhttt
             if (permission == 1 || permission == 3)
             {
                 customer1.BringToFront();
+            }
+            else
+            {
+                MessageBox.Show("Bạn không có quyền sử dụng chức năng này!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
         //warehouse
@@ -72,6 +83,10 @@ namespace QLnhahang_anhttt
             {
                 nguyenLieu1.BringToFront();
             }
+            else
+            {
+                MessageBox.Show("Bạn không có quyền sử dụng chức năng này!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
         // introduce
         private void guna2GradientTileBtnIntroduce_Click(object sender, EventArgs e)
@@ -80,6 +95,7 @@ namespace QLnhahang_anhttt
             sidePanel.Top = guna2GradientTileBtnIntroduce.Top;
             introduce1.BringToFront();
         }
+
         // thong ke
         private void guna2GradientTileBtnStatistical_Click(object sender, EventArgs e)
         {
@@ -88,6 +104,10 @@ namespace QLnhahang_anhttt
             if (permission == 1 || permission == 2)
             {
                 statisticals2.BringToFront();
+            }
+            else
+            {
+                MessageBox.Show("Bạn không có quyền sử dụng chức năng này!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
         // home

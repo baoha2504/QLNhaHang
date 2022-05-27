@@ -117,7 +117,7 @@ namespace QLnhahang_anhttt
                 try
                 {
                     if (path == "")
-                        menu[index].Background = Image.FromFile(@"D:\food\menufood.png"); // Chỉnh tùy máy
+                        menu[index].Background = Image.FromFile(@"D:\QLNhaHang\Food\food\menufood.png"); // Chỉnh tùy máy
                     else
                         menu[index].Background = Image.FromFile(path);
                 }
@@ -210,8 +210,14 @@ namespace QLnhahang_anhttt
 
             if (HienThi(query).Contains("FULL"))
             {
-                MessageBox.Show("Bàn không trống", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Bàn đã có người ngồi", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+
+            if (HienThi(query).Contains("BOOKED"))
+            {
+                MessageBox.Show("Bàn đã có người đặt", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
             if (HienThi(query).Contains("NONE"))
             {
 
