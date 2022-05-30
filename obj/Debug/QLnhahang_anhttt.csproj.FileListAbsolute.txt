@@ -125,3 +125,4 @@ D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.StartForm.resources
 D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.csproj.AssemblyReference.cache
 D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.PasswordRetrieval.resources
 D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Food.InHoaDon.resources
+D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Warehouse.NguyenLieuMoi.resources

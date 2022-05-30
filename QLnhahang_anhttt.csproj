@@ -300,6 +300,12 @@
     <Compile Include="Warehouse\NguyenLieu.Designer.cs">
       <DependentUpon>NguyenLieu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Warehouse\NguyenLieuMoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Warehouse\NguyenLieuMoi.Designer.cs">
+      <DependentUpon>NguyenLieuMoi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Warehouse\ThemPhieuNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -413,6 +419,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Warehouse\NguyenLieu.resx">
       <DependentUpon>NguyenLieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Warehouse\NguyenLieuMoi.resx">
+      <DependentUpon>NguyenLieuMoi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Warehouse\PhieuNhap.rdlc" />
     <EmbeddedResource Include="Warehouse\PhieuXuat.rdlc" />

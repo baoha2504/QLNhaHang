@@ -17,6 +17,8 @@ namespace QLnhahang_anhttt
         DataTable dtbl;
 
         SqlConnection sqlCon = new SqlConnection(Data_Provider.connectionSTR);
+        int newLocationX;
+        int newLocationY;
 
         static string ComputeSha256Hash(string rawData)
         {
@@ -75,6 +77,23 @@ namespace QLnhahang_anhttt
             {
                 MessageBox.Show("Kiểm tra lại thông tin", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void guna2Panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button != MouseButtons.Left)
+                return;
+            newLocationX = e.X;
+            newLocationY = e.Y;
+        }
+
+        private void guna2Panel1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button != MouseButtons.Left)
+                return;
+
+            Left = Left + (e.X - newLocationX);
+            Top = Top + (e.Y - newLocationY);
         }
     }
 }

@@ -18,6 +18,8 @@ namespace QLnhahang_anhttt
         }
 
         SqlConnection sqlCon = new SqlConnection(Data_Provider.connectionSTR);
+        int newLocationX;
+        int newLocationY;
 
         void connectTable()
         {
@@ -325,6 +327,23 @@ namespace QLnhahang_anhttt
                 query += " and dongia > 200000";
             }
             HienThiMon(query);
+        }
+
+        private void pnl1_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button != MouseButtons.Left)
+                return;
+            newLocationX = e.X;
+            newLocationY = e.Y;
+        }
+
+        private void pnl1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button != MouseButtons.Left)
+                return;
+
+            Left = Left + (e.X - newLocationX);
+            Top = Top + (e.Y - newLocationY);
         }
     }
 }

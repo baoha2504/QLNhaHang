@@ -402,32 +402,38 @@ namespace QLnhahang_anhttt.Food
 
         private void btnCheck_Order_Click(object sender, EventArgs e)
         {
-            sqlCon.Open();
-            SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT * FROM KHACHHANG where soDienThoai='" + txtPhone_Order.Text + "'", sqlCon);
-            DataTable dtb = new DataTable();
-            sqlDa.Fill(dtb);
-            sqlCon.Close();
+            try
+            {
+                sqlCon.Open();
+                SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT * FROM KHACHHANG where soDienThoai='" + txtPhone_Order.Text + "'", sqlCon);
+                DataTable dtb = new DataTable();
+                sqlDa.Fill(dtb);
+                sqlCon.Close();
 
-            if (dtb.Rows.Count > 0) // đã có thông tin 
-            {
-                foreach (DataRow row in dtb.Rows)
+                if (dtb.Rows.Count > 0) // đã có thông tin 
                 {
-                    lblName_Order.Text = row["TenKH"].ToString();
-                    lblID_Order.Text = row["MaKH"].ToString();
-                }
-            }
-            else
-            {
-                DialogResult dlr = MessageBox.Show("Không có thông tin khách hàng!!! \nBạn có muốn đăng ký thông tin không?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-                if (dlr == DialogResult.OK)
-                {
-                    AddCustomer add = new AddCustomer();
-                    add.ShowDialog();
+                    foreach (DataRow row in dtb.Rows)
+                    {
+                        lblName_Order.Text = row["TenKH"].ToString();
+                        lblID_Order.Text = row["MaKH"].ToString();
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Xin vui lòng đăng ký thông tin để gọi món");
+                    DialogResult dlr = MessageBox.Show("Không có thông tin khách hàng!!! \nBạn có muốn đăng ký thông tin không?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                    if (dlr == DialogResult.OK)
+                    {
+                        AddCustomer add = new AddCustomer();
+                        add.ShowDialog();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Xin vui lòng đăng ký thông tin để gọi món");
+                    }
                 }
+            } catch
+            {
+                MessageBox.Show(e.ToString());
             }
         }
 
@@ -647,9 +653,9 @@ namespace QLnhahang_anhttt.Food
             lblID_Bill.Text = dsyc.Rows[i].Cells[4].Value.ToString();
 
             //lay ten khach 
-            sqlCon.Open();
             try
             {
+                sqlCon.Open();
                 SqlDataReader myReader = null;
                 SqlCommand myCommand = new SqlCommand("select tenKH from khachhang where maKH='" + lblID_Bill.Text + "'", sqlCon);
                 myReader = myCommand.ExecuteReader();
@@ -657,21 +663,27 @@ namespace QLnhahang_anhttt.Food
                 {
                     lblName_Bill.Text = myReader["TenKH"].ToString();
                 }
+                sqlCon.Close();
             }
             catch (Exception)
             {
                 MessageBox.Show(e.ToString());
             }
 
-            sqlCon.Close();
+
 
             //chi tiet pyc
-            sqlCon.Open();
-            SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT MONAN.MaMonAn, MONAN.TenMon, CHITIETPYC.SoLuong, CHITIETPYC.DonGia FROM CHITIETPYC, MONAN where CHITIETPYC.MaMonAn = MONAN.MaMonAn and SoPYC='" + lblOrderID_Bill.Text + "'", sqlCon);
-            DataTable dtb = new DataTable();
-            sqlDa.Fill(dtb);
-            dataGridViewBill1.DataSource = dtb;
-            sqlCon.Close();
+            try
+            {
+                sqlCon.Open();
+                SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT MONAN.MaMonAn, MONAN.TenMon, CHITIETPYC.SoLuong, CHITIETPYC.DonGia FROM CHITIETPYC, MONAN where CHITIETPYC.MaMonAn = MONAN.MaMonAn and SoPYC='" + lblOrderID_Bill.Text + "'", sqlCon);
+                DataTable dtb = new DataTable();
+                sqlDa.Fill(dtb);
+                dataGridViewBill1.DataSource = dtb;
+                sqlCon.Close();
+            } catch {
+                MessageBox.Show(e.ToString());
+            }
 
 
             //khuyen mai

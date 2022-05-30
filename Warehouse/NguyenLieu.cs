@@ -128,5 +128,11 @@ namespace QLnhahang_anhttt.Warehouse
             string query = "NguyenLieu_TonKho '";
             connect(query + dt.ToString("yyyy-MM-dd") + "'");
         }
+
+        private void btThemNL_Click(object sender, EventArgs e)
+        {
+            NguyenLieuMoi nguyenLieuMoi =  new NguyenLieuMoi();
+            nguyenLieuMoi.Show();
+        }
     }
 }

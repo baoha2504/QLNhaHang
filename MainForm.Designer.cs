@@ -53,16 +53,16 @@ namespace QLnhahang_anhttt
             this.guna2GradientTileWarehouse = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.guna2GradientTileBtnStaff = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.foods1 = new QLnhahang_anhttt.Food.Foods();
             this.customer1 = new QLnhahang_anhttt.Customer();
             this.staff1 = new QLnhahang_anhttt.Staff();
             this.introduce1 = new QLnhahang_anhttt.Introduce.Introduce();
             this.statisticals2 = new QLnhahang_anhttt.Statistical.Statisticals();
             this.nguyenLieu1 = new QLnhahang_anhttt.Warehouse.NguyenLieu();
             this.mainPage1 = new QLnhahang_anhttt.MainPage();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.MainPage = new QLnhahang_anhttt.MainPage();
             this.statisticals1 = new QLnhahang_anhttt.Statistical.Statisticals();
-            this.foods1 = new QLnhahang_anhttt.Food.Foods();
             this.pnl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2GradientPanelInfo.SuspendLayout();
@@ -90,6 +90,8 @@ namespace QLnhahang_anhttt
             this.pnl1.Name = "pnl1";
             this.pnl1.Size = new System.Drawing.Size(1500, 95);
             this.pnl1.TabIndex = 0;
+            this.pnl1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnl1_MouseDown);
+            this.pnl1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnl1_MouseMove);
             // 
             // btnSignOut
             // 
@@ -481,6 +483,15 @@ namespace QLnhahang_anhttt
             this.panel1.Size = new System.Drawing.Size(1299, 598);
             this.panel1.TabIndex = 3;
             // 
+            // foods1
+            // 
+            this.foods1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.foods1.Location = new System.Drawing.Point(3, 2);
+            this.foods1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.foods1.Name = "foods1";
+            this.foods1.Size = new System.Drawing.Size(2726, 1234);
+            this.foods1.TabIndex = 8;
+            // 
             // customer1
             // 
             this.customer1.BackColor = System.Drawing.SystemColors.ControlLightLight;
@@ -546,15 +557,6 @@ namespace QLnhahang_anhttt
             this.statisticals1.Name = "statisticals1";
             this.statisticals1.Size = new System.Drawing.Size(1293, 595);
             this.statisticals1.TabIndex = 4;
-            // 
-            // foods1
-            // 
-            this.foods1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.foods1.Location = new System.Drawing.Point(3, 2);
-            this.foods1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.foods1.Name = "foods1";
-            this.foods1.Size = new System.Drawing.Size(2726, 1234);
-            this.foods1.TabIndex = 8;
             // 
             // MainForm
             // 

@@ -123,6 +123,9 @@ namespace QLnhahang_anhttt.Warehouse
         private void btXoa_Click(object sender, EventArgs e)
         {
             dtgvThemNL.Rows.Clear();
+            txtSoPN.Enabled = true;
+            txtMaNV.Enabled = true;
+            txtMaNCC.Enabled = true;
         }
 
         private void btThemPN_Click(object sender, EventArgs e)
