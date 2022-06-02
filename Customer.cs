@@ -425,7 +425,7 @@ namespace QLnhahang_anhttt
                     sqlCon.Close();
                     sqlCon.Open();
                     String query = "INSERT INTO HOADON (maHD,ngayThu,tongTien,maNV,maKH,soPYC) VALUES('" + guna2TextBoxBill_ID.Text + "','" +
-                            guna2DateTimePicker1.Value.Date + "','" + long.Parse(guna2TextBoxTotal.Text) + "','" + guna2TextBoxEmployID.Text + "','" + guna2TextBoxBill_CusID.Text + "','"  + guna2TextBoxRequestnumber.Text + "')";
+                            guna2DateTimePicker1.Value.ToString("yyyy-MM-dd") + "','" + long.Parse(guna2TextBoxTotal.Text) + "','" + guna2TextBoxEmployID.Text + "','" + guna2TextBoxBill_CusID.Text + "','"  + guna2TextBoxRequestnumber.Text + "')";
                     SqlCommand sqlDa = new SqlCommand(query, sqlCon);
                     sqlDa.ExecuteNonQuery();
                     sqlCon.Close();
@@ -449,7 +449,7 @@ namespace QLnhahang_anhttt
             {
                 sqlCon.Close();
                 sqlCon.Open();
-                String query = "UPDATE HOADON set  ngayThu = '" + guna2DateTimePicker1.Value.Date + "',tongTien = '" + long.Parse(guna2TextBoxTotal.Text) + "',maNV ='" + guna2TextBoxEmployID.Text + "',soPYC='" + guna2TextBoxRequestnumber.Text + "', MaKH ='" + guna2TextBoxBill_CusID.Text + "' where maHD = '" + guna2TextBoxBill_ID.Text + "'";
+                String query = "UPDATE HOADON set  ngayThu = '" + guna2DateTimePicker1.Value.ToString("yyyy-MM-dd") + "',tongTien = '" + long.Parse(guna2TextBoxTotal.Text) + "',maNV ='" + guna2TextBoxEmployID.Text + "',soPYC='" + guna2TextBoxRequestnumber.Text + "', MaKH ='" + guna2TextBoxBill_CusID.Text + "' where maHD = '" + guna2TextBoxBill_ID.Text + "'";
                // String query = "UPDATE HOADON set  ngayThu = '" + guna2DateTimePicker1.Value.Date + "',tongTien = '" + long.Parse(guna2TextBoxTotal.Text) + "',maNV ='" + guna2TextBoxEmployID.Text + "',soPYC='" + guna2TextBoxRequestnumber.Text + "' where maHD = '" + guna2TextBoxBill_ID.Text + "'";
                 SqlCommand cmd = new SqlCommand(query, sqlCon);
                 cmd.ExecuteNonQuery();
@@ -574,7 +574,7 @@ namespace QLnhahang_anhttt
                 {
                     sqlCon.Open();
                     String query = "INSERT INTO KHUYENMAI (maKM,tenKM,han,mucGiam) VALUES('" + guna2TextBoxSaleID.Text + "','" +
-                            guna2TextBoxSaleName.Text + "','" + guna2DateTimePickerSale.Value.Date + "','" + guna2TextBoxReductionRate.Text + "')";
+                            guna2TextBoxSaleName.Text + "','" + guna2DateTimePickerSale.Value.ToString("yyyy-MM-dd") + "','" + guna2TextBoxReductionRate.Text + "')";
                     SqlCommand sqlDa = new SqlCommand(query, sqlCon);
                     sqlDa.ExecuteNonQuery();
                     sqlCon.Close();
@@ -596,7 +596,7 @@ namespace QLnhahang_anhttt
             {
                 sqlCon.Close();
                 sqlCon.Open();
-                String query = "UPDATE KHUYENMAI set tenKM = N'" + guna2TextBoxSaleName.Text + "',han = '" + guna2DateTimePickerSale.Value.Date + "',MucGiam= N'" + guna2TextBoxReductionRate.Text + "' where maKM = '" + guna2TextBoxSaleID.Text + "'";
+                String query = "UPDATE KHUYENMAI set tenKM = N'" + guna2TextBoxSaleName.Text + "',han = '" + guna2DateTimePickerSale.Value.ToString("yyyy-MM-dd") + "',MucGiam= N'" + guna2TextBoxReductionRate.Text + "' where maKM = '" + guna2TextBoxSaleID.Text + "'";
                 SqlCommand cmd = new SqlCommand(query, sqlCon);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Update success");
@@ -666,7 +666,6 @@ namespace QLnhahang_anhttt
         {
             clear();
         }
-
 
         #endregion
 
