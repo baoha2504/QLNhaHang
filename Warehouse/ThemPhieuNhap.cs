@@ -126,6 +126,7 @@ namespace QLnhahang_anhttt.Warehouse
             txtSoPN.Enabled = true;
             txtMaNV.Enabled = true;
             txtMaNCC.Enabled = true;
+            txtTongTien.Text = "0";
         }
 
         private void btThemPN_Click(object sender, EventArgs e)

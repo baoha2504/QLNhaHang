@@ -122,7 +122,7 @@ D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Customer.resources
 D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.FoodMenu.resources
 D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Food.SelectedFood.resources
 D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.StartForm.resources
-D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.csproj.AssemblyReference.cache
 D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.PasswordRetrieval.resources
 D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Food.InHoaDon.resources
 D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.Warehouse.NguyenLieuMoi.resources
+D:\QLNhaHang\obj\Debug\QLnhahang_anhttt.csproj.AssemblyReference.cache

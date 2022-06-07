@@ -36,6 +36,15 @@ namespace QLnhahang_anhttt
             guna2DataGridViewStaff.AutoResizeColumns();
             sqlCon.Close();
         }
+
+        void clear()
+        {
+            txtID.Text = "";
+            txtName.Text = "";
+            txtPhone.Text = "";
+            txtAddress.Text = "";
+            txtPosition.Text = "";
+        }
         // trong bang information
 
         // nút Fix : sua thong tin
@@ -44,9 +53,12 @@ namespace QLnhahang_anhttt
             try
             {
                 sqlCon.Open();
-                String query = "UPDATE NHANVIEN set maNV=N'" + txtID.Text + "',hoTen=N'" + txtName.Text + "',diaChi=N'" + txtAddress.Text + "',soDienThoai='" + txtPhone.Text + "',chucVu=N'" + txtPosition.Text + "'where maNV=N'" + txtID.Text + "'";
+                /*String query = "UPDATE NHANVIEN set maNV=N'" + txtID.Text + "',hoTen=N'" + txtName.Text + "',diaChi=N'" + txtAddress.Text + "',soDienThoai='" + txtPhone.Text + "',chucVu=N'" + txtPosition.Text + "'where maNV=N'" + txtID.Text + "'";
                 SqlCommand cmd = new SqlCommand(query, sqlCon);
-                cmd.ExecuteNonQuery();
+                cmd.ExecuteNonQuery()*/;
+
+                Data_Provider.exc("exec update_NV '" +txtID.Text+ "','" +txtName.Text + "','" + txtAddress.Text + "','" + txtPhone.Text + "','" +txtPosition.Text + "';");
+
                 MessageBox.Show("Update success");
                 sqlCon.Close();
                 connect();
@@ -62,9 +74,11 @@ namespace QLnhahang_anhttt
         // nut delete
         private void guna2BtnDelete_Click(object sender, EventArgs e)
         {
+            sqlCon.Close();
             sqlCon.Open();
             SqlCommand cmd = new SqlCommand("delete from NHANVIEN where maNV='" + IDEmployee + "'", sqlCon);
             cmd.ExecuteNonQuery();
+            //   Data_Provider.exc("exec delete_NV '" +txtID.Text+ "'; ");
             sqlCon.Close();
             connect();
         }
@@ -85,6 +99,7 @@ namespace QLnhahang_anhttt
                     guna2DataGridViewStaff.AutoGenerateColumns = true;
                     guna2DataGridViewStaff.AutoResizeColumns();
                     sqlCon.Close();
+                   
                 }
             }
             catch (Exception ex)
@@ -98,14 +113,9 @@ namespace QLnhahang_anhttt
         {
             connect();
             guna2TextBoxSearch.Text = "";
+            clear();
         }
-
-        // thanh search for menu
-        private void guna2TextBoxSearch_Enter(object sender, EventArgs e)
-        {
-            if (guna2TextBoxSearch.Text == "Search for menu")
-                guna2TextBoxSearch.Text = null;
-        }
+       
 
         // nut add personel
         private void guna2ButtonAddNV_Click(object sender, EventArgs e)
@@ -197,12 +207,12 @@ namespace QLnhahang_anhttt
             {
                 if (guna2TextBoxSearch.Text != "")
                 {
+                    sqlCon.Close();
                     sqlCon.Open();
-                    DataTable dtb = Data_Provider.GetDataTable("select * from SearchNV( N'" + guna2TextBoxSearch.Text + "');");
+                    DataTable dtb = Data_Provider.GetDataTable("select manv as 'ID', hoten as 'Name', diachi as 'Address', sodienthoai as 'Phone', chucvu as 'Position' from SearchNV( N'" + guna2TextBoxSearch.Text + "');");
                     guna2DataGridViewStaff.DataSource = dtb;
-
-                    guna2DataGridViewStaff.AutoGenerateColumns = true;
-                    guna2DataGridViewStaff.AllowUserToAddRows = false;
+                    guna2DataGridViewStaff.AutoGenerateColumns = true ;
+                    guna2DataGridViewStaff.AllowUserToAddRows = false ;
                     guna2DataGridViewStaff.AutoResizeColumns();
                     sqlCon.Close();
                 }
@@ -215,6 +225,11 @@ namespace QLnhahang_anhttt
             {
                 MessageBox.Show(ex.ToString(), "An error occurred", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void s(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

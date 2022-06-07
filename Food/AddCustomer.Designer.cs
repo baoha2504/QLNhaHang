@@ -29,8 +29,9 @@ namespace QLnhahang_anhttt.Food
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.guna2PnlAddCustomer = new Guna.UI2.WinForms.Guna2Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtID_add = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2BtnAddcustomer = new Guna.UI2.WinForms.Guna2Button();
             this.txtAdd_add = new Guna.UI2.WinForms.Guna2TextBox();
@@ -41,9 +42,6 @@ namespace QLnhahang_anhttt.Food
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtID_add = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-
             this.guna2PnlAddCustomer.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -66,6 +64,39 @@ namespace QLnhahang_anhttt.Food
             this.guna2PnlAddCustomer.Name = "guna2PnlAddCustomer";
             this.guna2PnlAddCustomer.Size = new System.Drawing.Size(642, 484);
             this.guna2PnlAddCustomer.TabIndex = 0;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label5.Location = new System.Drawing.Point(47, 51);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(33, 26);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "ID";
+            // 
+            // txtID_add
+            // 
+            this.txtID_add.BorderColor = System.Drawing.Color.Silver;
+            this.txtID_add.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtID_add.DefaultText = "";
+            this.txtID_add.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtID_add.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtID_add.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtID_add.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtID_add.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtID_add.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtID_add.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtID_add.Location = new System.Drawing.Point(179, 34);
+            this.txtID_add.Margin = new System.Windows.Forms.Padding(4);
+            this.txtID_add.Name = "txtID_add";
+            this.txtID_add.PasswordChar = '\0';
+            this.txtID_add.PlaceholderText = "";
+            this.txtID_add.SelectedText = "";
+            this.txtID_add.Size = new System.Drawing.Size(389, 43);
+            this.txtID_add.TabIndex = 1;
+            this.txtID_add.DoubleClick += new System.EventHandler(this.txtID_add_DoubleClick);
             // 
             // guna2Button1
             // 
@@ -113,7 +144,7 @@ namespace QLnhahang_anhttt.Food
             this.txtAdd_add.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtAdd_add.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtAdd_add.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAdd_add.Font = new System.Drawing.Font("Segoe UI Variable Display", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAdd_add.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAdd_add.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtAdd_add.Location = new System.Drawing.Point(179, 264);
             this.txtAdd_add.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -134,7 +165,7 @@ namespace QLnhahang_anhttt.Food
             this.txtPhone_add.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtPhone_add.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtPhone_add.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPhone_add.Font = new System.Drawing.Font("Segoe UI Variable Display", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhone_add.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPhone_add.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPhone_add.Location = new System.Drawing.Point(179, 192);
             this.txtPhone_add.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -155,7 +186,7 @@ namespace QLnhahang_anhttt.Food
             this.txtName_add.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtName_add.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtName_add.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtName_add.Font = new System.Drawing.Font("Segoe UI Variable Display", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName_add.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName_add.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtName_add.Location = new System.Drawing.Point(179, 119);
             this.txtName_add.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -219,39 +250,6 @@ namespace QLnhahang_anhttt.Food
             this.label1.Size = new System.Drawing.Size(271, 30);
             this.label1.TabIndex = 0;
             this.label1.Text = " Register for customer ";
-            // 
-            // txtID_add
-            // 
-            this.txtID_add.BorderColor = System.Drawing.Color.Silver;
-            this.txtID_add.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtID_add.DefaultText = "";
-            this.txtID_add.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtID_add.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtID_add.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtID_add.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtID_add.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtID_add.Font = new System.Drawing.Font("Segoe UI Variable Display", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtID_add.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtID_add.Location = new System.Drawing.Point(179, 34);
-            this.txtID_add.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtID_add.Name = "txtID_add";
-            this.txtID_add.PasswordChar = '\0';
-            this.txtID_add.PlaceholderText = "";
-            this.txtID_add.SelectedText = "";
-            this.txtID_add.Size = new System.Drawing.Size(389, 43);
-            this.txtID_add.TabIndex = 1;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label5.Location = new System.Drawing.Point(47, 51);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(33, 26);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "ID";
-
             // 
             // AddCustomer
             // 

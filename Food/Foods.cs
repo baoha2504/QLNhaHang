@@ -276,6 +276,12 @@ namespace QLnhahang_anhttt.Food
                 pnlOrder.BringToFront();
                 pnlOrder.Visible = true;
                 cbbTableID_Order.Text = id_Ban;
+                sqlCon.Close();
+                sqlCon.Open();
+                SqlCommand command = new SqlCommand("Select dbo.Auto_SoPYC()", sqlCon);
+                command.ExecuteNonQuery();
+                txtOrderID_Order.Text = command.ExecuteScalar().ToString();
+                sqlCon.Close();
                 pnlBook.SendToBack();
                 pnlBill.SendToBack();
             }
@@ -488,9 +494,10 @@ namespace QLnhahang_anhttt.Food
                                 add2.CommandText = "INSERT INTO CHITIETPYC (SOPYC, MAMONAN, SOLUONG, DONGIA) VALUES('" + txtOrderID_Order.Text + "','" + mamon + "','" + paymentlist[i].guna2NumericUpDown1.Value + "','" + paymentlist[i].lbl_price.Text + "')";
                                 add2.ExecuteNonQuery();
                                 sqlCon.Close();
-                                MessageBox.Show("Order Successfully!!");
+                                //MessageBox.Show("Order Successfully!!");
                             }
                         }
+                        MessageBox.Show("Order Successfully!!");
                     } catch
                     {
                         MessageBox.Show("Vui lòng kiểm tra thông tin khách hàng trước khi gọi món", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -737,15 +744,18 @@ namespace QLnhahang_anhttt.Food
             }
             sqlCon.Close();
 
-
-
             //tong tien
 
             tongtam = int.Parse(lblTotal_Bill.Text);
             tong = tongtam * (100 - int.Parse(lblDis_Bill.Text)) / 100;
             lblTotal1_Bill.Text = tong.ToString();
 
-
+            // ma HD
+            sqlCon.Open();
+            SqlCommand command = new SqlCommand("Select dbo.auto_MaHD()", sqlCon);
+            command.ExecuteNonQuery();
+            txtIDHD.Text = command.ExecuteScalar().ToString();
+            sqlCon.Close();
 
 
         }

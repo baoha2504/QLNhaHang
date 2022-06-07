@@ -17,6 +17,7 @@ namespace QLnhahang_anhttt
         SqlConnection sqlCon = new SqlConnection(Data_Provider.connectionSTR);
 
         Staff staff;
+
         public Registerform(Staff fg)
         {
             InitializeComponent();
@@ -52,6 +53,15 @@ namespace QLnhahang_anhttt
         #endregion
         // nut add
         string gender;
+        private void txtAddManv_Click(object sender, EventArgs e)
+        {
+            sqlCon.Close();
+            sqlCon.Open();
+            SqlCommand command = new SqlCommand("Select [dbo].[AUTO_MaNV]()", sqlCon);
+            command.ExecuteNonQuery();
+            txtAddManv.Text = command.ExecuteScalar().ToString();
+            sqlCon.Close();
+        }
         private void btnThem_Click(object sender, EventArgs e)
         {
             try
@@ -76,10 +86,11 @@ namespace QLnhahang_anhttt
                     }
                     else gender = "Nu";
                     sqlCon.Open();
-                    String query = "INSERT INTO NHANVIEN (maNV,hoTen,NgaySinh,GioiTinh,diaChi,soDienThoai,chucVu, Luong) VALUES('" + txtAddManv.Text + "',N'" +
-                            txtAddName.Text + "',N'" + guna2DateTimePickerBirth.Value.Date + "','" + gender + "','" + txtAddDC.Text + "','" + txtADDsdt.Text + "',N'" + txtAddChucvu.Text + "','" +txtAddSalary.Text + "' )";
-                    SqlCommand sqlDa = new SqlCommand(query, sqlCon);
-                    sqlDa.ExecuteNonQuery();
+                    /*  String query = "INSERT INTO NHANVIEN (maNV,hoTen,NgaySinh,GioiTinh,diaChi,soDienThoai,chucVu, Luong) VALUES('" + txtAddManv.Text + "',N'" +
+                              txtAddName.Text + "',N'" + guna2DateTimePickerBirth.Value.Date + "','" + gender + "','" + txtAddDC.Text + "','" + txtADDsdt.Text + "',N'" + txtAddChucvu.Text + "','" +txtAddSalary.Text + "' )";
+                      SqlCommand sqlDa = new SqlCommand(query, sqlCon);
+                      sqlDa.ExecuteNonQuery();*/
+                    Data_Provider.exc("exec add_NV '" + txtAddManv.Text + "','" + txtAddName.Text + "','" + guna2DateTimePickerBirth.Value.Date + "','" + gender + "','" + txtAddDC.Text + "','" + txtADDsdt.Text + "',N'" + txtAddChucvu.Text + "','" + txtAddSalary.Text + "';");
                     sqlCon.Close();
                     connect();
                     clear();
@@ -190,5 +201,7 @@ namespace QLnhahang_anhttt
                 errorProvider2.SetError(txtAddSalary, null);
             }
         }
+
+        
     }
 }

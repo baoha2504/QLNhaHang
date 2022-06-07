@@ -124,7 +124,6 @@ namespace QLnhahang_anhttt
             this.guna2TextBoxSearch.Size = new System.Drawing.Size(472, 45);
             this.guna2TextBoxSearch.TabIndex = 8;
             this.guna2TextBoxSearch.TextChanged += new System.EventHandler(this.guna2TextBoxSearch_TextChanged);
-            this.guna2TextBoxSearch.Enter += new System.EventHandler(this.guna2TextBoxSearch_Enter);
             // 
             // pictureBox1
             // 
@@ -264,6 +263,7 @@ namespace QLnhahang_anhttt
             this.guna2DataGridViewStaff.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
             this.guna2DataGridViewStaff.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Gainsboro;
             this.guna2DataGridViewStaff.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridViewStaff_CellClick);
+            this.guna2DataGridViewStaff.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.s);
             // 
             // guna2GroupBox1
             // 

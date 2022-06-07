@@ -72,5 +72,15 @@ namespace QLnhahang_anhttt.Food
             this.Hide();
 
         }
+
+        private void txtID_add_DoubleClick(object sender, EventArgs e)
+        {
+            sqlCon.Close();
+            sqlCon.Open();
+            SqlCommand command = new SqlCommand("Select [dbo].[auto_maKH]()", sqlCon);
+            command.ExecuteNonQuery();
+            txtID_add.Text = command.ExecuteScalar().ToString();
+            sqlCon.Close();
+        }
     }
 }

@@ -31,6 +31,8 @@ namespace QLnhahang_anhttt.Warehouse
         private void btXoaTatCa_Click(object sender, EventArgs e)
         {
             dtgvThemPhieuXuat.Rows.Clear();
+            txtSoPX.Enabled = true;
+            txtMaNV.Enabled = true;
         }
 
         private void btThem_Click(object sender, EventArgs e)

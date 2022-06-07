@@ -80,16 +80,16 @@ namespace QLnhahang_anhttt.Statistical
 
         private void ThongKeThang()
         {
-            query = "SELECT SUM(TongTien) FROM PHIEUNHAP WHERE MONTH(NgayNhap) = " + datethang1.ToString("MM");
+            query = "TKBĐthang_CHI";
             label11.Text = HienThi(query);
 
-            query = "SELECT SUM(TongTien) TongTien FROM HOADON WHERE MONTH(NgayThu) = " + datethang1.ToString("MM");
+            query = "TKBĐthang_THU";
             label9.Text = HienThi(query);
 
-            query = "SELECT SUM(TongTien) FROM PHIEUNHAP WHERE MONTH(NgayNhap) = " + datethang3.ToString("MM");
+            query = "TKBĐthang1_CHI";
             label13.Text = HienThi(query);
 
-            query = "SELECT SUM(TongTien) TongTien FROM HOADON WHERE MONTH(NgayThu) = " + datethang3.ToString("MM");
+            query = "TKBĐthang1_THU";
             label12.Text = HienThi(query);
 
             if (label11.Text == string.Empty)
@@ -156,16 +156,16 @@ namespace QLnhahang_anhttt.Statistical
 
         private void ThongKeNam()
         {
-            query = "SELECT SUM(TongTien) FROM PHIEUNHAP WHERE YEAR(NgayNhap) = " + datenam1.ToString("yyyy");
+            query = "TKBĐnam_CHI";
             label17.Text = HienThi(query);
 
-            query = "SELECT SUM(TongTien) TongTien FROM HOADON WHERE YEAR(NgayThu) = " + datenam1.ToString("yyyy");
+            query = "TKBĐnam_THU";
             label19.Text = HienThi(query);
 
-            query = "SELECT SUM(TongTien) FROM PHIEUNHAP WHERE YEAR(NgayNhap) = " + datenam3.ToString("yyyy");
+            query = "TKBĐnam1_CHI";
             label15.Text = HienThi(query);
 
-            query = "SELECT SUM(TongTien) TongTien FROM HOADON WHERE MONTH(NgayThu) = " + datenam3.ToString("yyyy");
+            query = "TKBĐnam1_THU";
             label16.Text = HienThi(query);
 
             if (label17.Text == string.Empty)

@@ -51,9 +51,9 @@ namespace QLnhahang_anhttt
             this.txtAddSalary = new System.Windows.Forms.TextBox();
             this.guna2DateTimePickerBirth = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.guna2RadioBtnNam = new Guna.UI2.WinForms.Guna2RadioButton();
             this.guna2RadioBtnNu = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.guna2RadioBtnNam = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
             this.panel2.SuspendLayout();
@@ -142,6 +142,7 @@ namespace QLnhahang_anhttt
             this.txtAddManv.Name = "txtAddManv";
             this.txtAddManv.Size = new System.Drawing.Size(301, 32);
             this.txtAddManv.TabIndex = 6;
+            this.txtAddManv.Click += new System.EventHandler(this.txtAddManv_Click);
             this.txtAddManv.Validating += new System.ComponentModel.CancelEventHandler(this.txtAddManv_Validating);
             // 
             // txtAddName
@@ -285,17 +286,24 @@ namespace QLnhahang_anhttt
             this.panel2.Size = new System.Drawing.Size(301, 40);
             this.panel2.TabIndex = 17;
             // 
-            // label9
+            // guna2RadioBtnNu
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Teal;
-            this.label9.Location = new System.Drawing.Point(27, 261);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(100, 28);
-            this.label9.TabIndex = 18;
-            this.label9.Text = "Gender";
+            this.guna2RadioBtnNu.AutoSize = true;
+            this.guna2RadioBtnNu.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2RadioBtnNu.CheckedState.BorderThickness = 0;
+            this.guna2RadioBtnNu.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.guna2RadioBtnNu.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.guna2RadioBtnNu.CheckedState.InnerOffset = -4;
+            this.guna2RadioBtnNu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.guna2RadioBtnNu.Location = new System.Drawing.Point(151, 7);
+            this.guna2RadioBtnNu.Name = "guna2RadioBtnNu";
+            this.guna2RadioBtnNu.Size = new System.Drawing.Size(54, 24);
+            this.guna2RadioBtnNu.TabIndex = 1;
+            this.guna2RadioBtnNu.Text = "Nu";
+            this.guna2RadioBtnNu.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2RadioBtnNu.UncheckedState.BorderThickness = 2;
+            this.guna2RadioBtnNu.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.guna2RadioBtnNu.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
             // 
             // guna2RadioBtnNam
             // 
@@ -316,24 +324,17 @@ namespace QLnhahang_anhttt
             this.guna2RadioBtnNam.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.guna2RadioBtnNam.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
             // 
-            // guna2RadioBtnNu
+            // label9
             // 
-            this.guna2RadioBtnNu.AutoSize = true;
-            this.guna2RadioBtnNu.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioBtnNu.CheckedState.BorderThickness = 0;
-            this.guna2RadioBtnNu.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.guna2RadioBtnNu.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2RadioBtnNu.CheckedState.InnerOffset = -4;
-            this.guna2RadioBtnNu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.guna2RadioBtnNu.Location = new System.Drawing.Point(151, 7);
-            this.guna2RadioBtnNu.Name = "guna2RadioBtnNu";
-            this.guna2RadioBtnNu.Size = new System.Drawing.Size(54, 24);
-            this.guna2RadioBtnNu.TabIndex = 1;
-            this.guna2RadioBtnNu.Text = "Nu";
-            this.guna2RadioBtnNu.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2RadioBtnNu.UncheckedState.BorderThickness = 2;
-            this.guna2RadioBtnNu.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2RadioBtnNu.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Teal;
+            this.label9.Location = new System.Drawing.Point(27, 261);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(100, 28);
+            this.label9.TabIndex = 18;
+            this.label9.Text = "Gender";
             // 
             // Registerform
             // 

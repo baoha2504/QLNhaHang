@@ -80,7 +80,7 @@ namespace QLnhahang_anhttt.Warehouse
         {
             try
             {
-                DateTime dateEdit = Convert.ToDateTime(ngayNhap);
+                DateTime dateEdit = Convert.ToDateTime(txtNgayNhap.Text);
                 string query = "UPDATE PHIEUNHAP SET SoPN = '" + txtPhieuNhap.Text + "', NgayNhap = '" + dateEdit.ToString("yyyy-MM-dd") + "', TongTien = " + txtTongTien.Text + ", MaNV = '" + txtNhanVien.Text + "', MaNCC = '" + txtNCC.Text + "' WHERE soPN = '";
                 CapNhat(query);
                 MessageBox.Show("Bạn đã chỉnh sửa thành công phiếu nhập", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);

@@ -70,16 +70,16 @@ namespace QLnhahang_anhttt.Statistical
             }
             conn.Close();
 
-            query = "SELECT SUM(TongTien) FROM PHIEUNHAP WHERE NgayNhap ='" + datengay1.ToString("yyyy-MM-dd") + "'";
+            query = "TKBĐngay_CHI";
             label11.Text = HienThi(query);
 
-            query = "SELECT SUM(TongTien) TongTien FROM HOADON WHERE NgayThu ='" + datengay1.ToString("yyyy-MM-dd") + "'";
+            query = "TKBĐngay_THU";
             label9.Text = HienThi(query);
 
-            query = "SELECT SUM(TongTien) FROM PHIEUNHAP WHERE NgayNhap ='" + datengay3.ToString("yyyy-MM-dd") + "'";
+            query = "TKBĐngay1_CHI";
             label13.Text = HienThi(query);
 
-            query = "SELECT SUM(TongTien) TongTien FROM HOADON WHERE NgayThu ='" + datengay3.ToString("yyyy-MM-dd") + "'";
+            query = "TKBĐngay1_THU";
             label12.Text = HienThi(query);
 
             if (label11.Text == string.Empty)

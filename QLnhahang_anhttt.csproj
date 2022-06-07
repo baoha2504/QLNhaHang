@@ -97,9 +97,9 @@
       <DependentUpon>DataSetFood.xsd</DependentUpon>
     </Compile>
     <Compile Include="Food\DataSetFood.Designer.cs">
+      <DependentUpon>DataSetFood.xsd</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DataSetFood.xsd</DependentUpon>
     </Compile>
     <Compile Include="Food\FoodMenu.cs">
       <SubType>UserControl</SubType>
@@ -435,9 +435,9 @@
       <DependentUpon>DataSetFood.xsd</DependentUpon>
     </None>
     <None Include="Food\DataSetFood.xsd">
-      <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>DataSetFood.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </None>
     <None Include="Food\DataSetFood.xss">
       <DependentUpon>DataSetFood.xsd</DependentUpon>

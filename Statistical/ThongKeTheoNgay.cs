@@ -40,31 +40,31 @@ namespace QLnhahang_anhttt.Statistical
         private void ThongKeTheoNgay_Load(object sender, System.EventArgs e)
         {
 
-            string query1 = "select ma.TenMon from MONAN as ma, CHITIETPYC as pyc, PHIEUYEUCAU as p where ma.MaMonAn = pyc.MaMonAn and pyc.SoPYC = p.SoPYC and p.NgayXuat = '" + guna2DateTimePicker1.Value.ToString("yyyy-MM-dd") + "' group by ma.TenMon having count(pyc.SoPYC) >= all(select count(pyc.SoPYC) from MONAN as ma, CHITIETPYC as pyc, PHIEUYEUCAU as p where ma.MaMonAn = pyc.MaMonAn and pyc.SoPYC = p.SoPYC and p.NgayXuat = '" + guna2DateTimePicker1.Value.ToString("yyyy-MM-dd") + "' group by ma.TenMon)";
+            string query1 = "TKngay_MonYT '" + guna2DateTimePicker1.Value.ToString("yyyy - MM - dd") + "'";
             label9.Text = HienThi(query1);
 
-            string query2 = "SELECT M.TenMon FROM MONAN M JOIN CHITIETPYC  P ON M.MAMonAn = P.MaMonAn JOIN PHIEUYEUCAU P2 ON P.SoPYC = P2.SoPYC WHERE NgayXuat ='" + guna2DateTimePicker1.Value.ToString("yyyy-MM-dd") + "' GROUP BY M.TenMon, M.DonGia, P.SoLuong HAVING (M.DonGia *P.SoLuong) >= ALL (SELECT (M.DonGia *P.SoLuong) FROM MONAN M JOIN CHITIETPYC  P ON M.MAMonAn = P.MaMonAn JOIN PHIEUYEUCAU P2 ON P.SoPYC = P2.SoPYC WHERE NgayXuat ='" + guna2DateTimePicker1.Value.ToString("yyyy-MM-dd") + "')";
+            string query2 = "TKngay_MonDT '" + guna2DateTimePicker1.Value.ToString("yyyy - MM - dd") + "'";
             label10.Text = HienThi(query2);
 
-            string query3 = "SELECT COUNT(SoPN) SoLuotPN FROM PHIEUNHAP WHERE NgayNhap = '" + guna2DateTimePicker1.Value.ToString("yyyy-MM-dd") + "'";
+            string query3 = "TKngay_SoPN '" + guna2DateTimePicker1.Value.ToString("yyyy-MM-dd") + "'";
             label11.Text = HienThi(query3);
 
-            string query4 = "SELECT COUNT(SoPX) SoLuotPX FROM PHIEUXUAT WHERE NgayXuat ='" + guna2DateTimePicker1.Value.ToString("yyyy-MM-dd") + "'";
+            string query4 = "TKngay_SoPX'" + guna2DateTimePicker1.Value.ToString("yyyy-MM-dd") + "'";
             label12.Text = HienThi(query4);
 
-            string query5 = "SELECT COUNT(MaHD) FROM HOADON WHERE NgayThu = '" + guna2DateTimePicker1.Value.ToString("yyyy-MM-dd") + "'";
+            string query5 = "TKngay_SoHD '" + guna2DateTimePicker1.Value.ToString("yyyy-MM-dd") + "'";
             label13.Text = HienThi(query5);
 
-            string query6 = "select nv.HoTen from NHANVIEN as nv, HOADON as hd  where (nv.MaNV = hd.MaNV and hd.NgayThu = '" + guna2DateTimePicker1.Value.ToString("yyyy-MM-dd") + "') group by nv.HoTen having (count(hd.MaHD)) >=  all (select count(hd.MaHD) from NHANVIEN as nv, HOADON as hd where (nv.MaNV = hd.MaNV and hd.NgayThu = '" + guna2DateTimePicker1.Value.ToString("yyyy-MM-dd") + "') group by nv.HoTen)";
+            string query6 = "TKngay_NV '" + guna2DateTimePicker1.Value.ToString("yyyy-MM-dd") + "'";
             label14.Text = HienThi(query6);
 
-            string query7 = "SELECT K.TenKH FROM KHACHHANG K, HOADON H WHERE K.MaKH = H.MaKH AND NgayThu ='" + guna2DateTimePicker1.Value.ToString("yyyy-MM-dd") + "' GROUP BY K.TenKH HAVING SUM(TONGTIEN)>= ALL (SELECT (SUM(TONGTIEN)) FROM  KHACHHANG A, HOADON B WHERE A.MaKH = B.MaKH AND NgayThu ='" + guna2DateTimePicker1.Value.ToString("yyyy-MM-dd") + "' GROUP BY A.TenKH)";
+            string query7 = "TKngay_KH'" + guna2DateTimePicker1.Value.ToString("yyyy-MM-dd") + "'";
             label15.Text = HienThi(query7);
 
-            string query8 = "SELECT SUM(TongTien) FROM PHIEUNHAP WHERE NgayNhap ='" + guna2DateTimePicker1.Value.ToString("yyyy-MM-dd") + "'";
+            string query8 = "TKngay_CHI'" + guna2DateTimePicker1.Value.ToString("yyyy-MM-dd") + "'";
             label19.Text = HienThi(query8) + " VNĐ";
 
-            string query9 = "SELECT SUM(TongTien) TongTien FROM HOADON WHERE NgayThu ='" + guna2DateTimePicker1.Value.ToString("yyyy-MM-dd") + "'";
+            string query9 = "TKngay_THU'" + guna2DateTimePicker1.Value.ToString("yyyy-MM-dd") + "'";
             label18.Text = HienThi(query9) + " VNĐ";
 
             if (label9.Text == string.Empty)
