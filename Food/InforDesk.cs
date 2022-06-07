@@ -37,7 +37,7 @@ namespace QLnhahang_anhttt.Food
                 Button btn = new Button() { Width = 110, Height = 110 };
                 // hiển thị thông tin bàn từ csdl lên button
                 btn.Text = "Bàn " + item["soHieuBan"] + " ( " + item["soGhe"] + " ghế )" + Environment.NewLine + item["tinhTrang"];
-                btn.BackgroundImage = Image.FromFile(@"D:\food\pngtree-white-restaurant-table-image_2234080-removebg-preview.png");
+                btn.BackgroundImage = Image.FromFile(@"D:\QLNhaHang\Food\food\pngtree-white-restaurant-table-image_2234080-removebg-preview.png");
                 int newSize = 10;
                 btn.Font = new Font(btn.Font.FontFamily, newSize);
                 btn.ForeColor = Color.Black;

@@ -934,7 +934,7 @@ namespace QLnhahang_anhttt.Food
                 try
                 {
                     if (path == "")
-                        menu[index].Background = Image.FromFile(@"D:\food\menufood.png"); // Chỉnh tùy máy
+                        menu[index].Background = Image.FromFile(@"D:\QLNhaHang\Food\food\menufood.png"); // Chỉnh tùy máy
                     else
                         menu[index].Background = Image.FromFile(path);
                 }

@@ -16,7 +16,7 @@ namespace QLnhahang_anhttt.Food
     public partial class AddFood : Form
     {
         SqlConnection sqlCon = new SqlConnection(Data_Provider.connectionSTR);
-        string pt = @"D:\food\menufood.png";
+        string pt = @"D:\QLNhaHang\Food\food\menufood.png";
         string loai;
 
         public AddFood()
