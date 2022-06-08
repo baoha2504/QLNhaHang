@@ -58,7 +58,7 @@ namespace QLnhahang_anhttt
         {
             sqlCon.Close();
             sqlCon.Open();
-            SqlDataAdapter sqlDa = new SqlDataAdapter("select MaKM as 'Sale ID', TenKM as 'Name', Han as 'Expiry date', MucGiam as 'Reduce' from KHUYENMAI", sqlCon);
+            SqlDataAdapter sqlDa = new SqlDataAdapter("select MaKM as 'Discount ID', TenKM as 'Name', Han as 'Expiry date', MucGiam as 'Reduce' from KHUYENMAI", sqlCon);
             DataTable dtb = new DataTable();
             sqlDa.Fill(dtb);
             guna2DataGridViewSAle.DataSource = dtb;
@@ -631,7 +631,7 @@ namespace QLnhahang_anhttt
                 /*   String query = "UPDATE KHUYENMAI set tenKM = N'" + guna2TextBoxSaleName.Text + "',han = '" + guna2DateTimePickerSale.Value.Date + "',MucGiam= N'" + guna2TextBoxReductionRate.Text + "' where maKM = '" + guna2TextBoxSaleID.Text + "'";
                    SqlCommand cmd = new SqlCommand(query, sqlCon);
                    cmd.ExecuteNonQuery();*/
-                Data_Provider.exc("exec update_KM '" + guna2TextBoxSaleID.Text + "','" + guna2TextBoxSaleName.Text + "','" + guna2DateTimePickerSale.Value.ToString("yyyy-MM-dd") + "','" + guna2TextBoxReductionRate.Text + "';");
+                Data_Provider.exc("exec update_KM '" + guna2TextBoxSaleID.Text + "', N'" + guna2TextBoxSaleName.Text + "','" + guna2DateTimePickerSale.Value.ToString("yyyy-MM-dd") + "','" + guna2TextBoxReductionRate.Text + "';");
 
                 MessageBox.Show("Update success");
                 sqlCon.Close();

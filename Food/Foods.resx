@@ -459,9 +459,6 @@
   <metadata name="quanLyNhaHangDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>931, 17</value>
   </metadata>
-  <metadata name="quanLyNhaHangDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>931, 17</value>
-  </metadata>
   <data name="button2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -910,10 +907,13 @@
         wzAMwzAMkxH5xjf+H2weh/f9y0AvAAAAAElFTkSuQmCC
 </value>
   </data>
+  <metadata name="quanLyNhaHangDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>931, 17</value>
+  </metadata>
   <data name="button1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAEASSURBVHhe7d0J
+        vQAADr0BR/uQrQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAEASSURBVHhe7d0J
         nBxlmfjxJwcQIBBIuC+5zwQQFBBZ5UbkZkFc5QZBRIRFBdczKGBwRRf/LgiyKuHSAeWKyVRXTzrnkITJ
         RcjFkYOE3MlkMpNjzvq/b+dRh+o3yRx9VFf9fn6+RjOTme56q+rt6emuV4go4tXIdpKS/YwTjfPFly+J
         J7eZ/32/+fPn5s8njBeM18z/941q879rjPeM+caakCYjCLF/F/68eYb9GjXZr2m/tv0e9nt58rj582Hj

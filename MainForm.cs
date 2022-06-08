@@ -103,7 +103,7 @@ namespace QLnhahang_anhttt
         {
             sidePanel.Height = guna2GradientTileBtnStatistical.Height;
             sidePanel.Top = guna2GradientTileBtnStatistical.Top;
-            if (permission == 1 || permission == 2)
+            if (permission == 1)
             {
                 statisticals2.BringToFront();
             }

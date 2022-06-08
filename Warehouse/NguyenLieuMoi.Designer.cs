@@ -124,37 +124,37 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Mistral", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Mistral", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Red;
             this.label4.Location = new System.Drawing.Point(36, 320);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 27);
+            this.label4.Size = new System.Drawing.Size(61, 34);
             this.label4.TabIndex = 5;
-            this.label4.Text = "Đơn vị";
+            this.label4.Text = "Unit";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Mistral", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Mistral", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Red;
             this.label3.Location = new System.Drawing.Point(36, 234);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(147, 27);
+            this.label3.Size = new System.Drawing.Size(176, 34);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Tên nguyên liệu";
+            this.label3.Text = "Ingredient Name";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Mistral", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Mistral", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Red;
             this.label2.Location = new System.Drawing.Point(36, 153);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(146, 27);
+            this.label2.Size = new System.Drawing.Size(167, 34);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Mã nguyên liệu";
+            this.label2.Text = "Ingredient Code";
             // 
             // btThemNLMoi
             // 
@@ -176,7 +176,7 @@
             this.btThemNLMoi.PressedColor = System.Drawing.Color.Transparent;
             this.btThemNLMoi.Size = new System.Drawing.Size(233, 57);
             this.btThemNLMoi.TabIndex = 2;
-            this.btThemNLMoi.Text = "Thêm";
+            this.btThemNLMoi.Text = "Add";
             this.btThemNLMoi.Click += new System.EventHandler(this.btThemNLMoi_Click);
             // 
             // label1
@@ -185,11 +185,11 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Mistral", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(114, 38);
+            this.label1.Location = new System.Drawing.Point(145, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(328, 60);
+            this.label1.Size = new System.Drawing.Size(273, 60);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Nguyên Liệu mới";
+            this.label1.Text = "New Ingredient";
             // 
             // guna2ControlBox1
             // 

@@ -73,6 +73,7 @@ namespace QLnhahang_anhttt.Food
 
         public void HienThi()
         {
+            sqlCon.Close();
             sqlCon.Open();
             SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT * FROM MONAN", sqlCon);
             DataTable dtb = new DataTable();
@@ -319,7 +320,8 @@ namespace QLnhahang_anhttt.Food
         public void loaddata()
         {
             sqlCon.Open();
-            SqlDataAdapter sqlDa = new SqlDataAdapter("select * from PHIEUYEUCAU where loai='2'", sqlCon);
+            //  SqlDataAdapter sqlDa = new SqlDataAdapter("select * from PHIEUYEUCAU where loai='2'", sqlCon);
+            SqlDataAdapter sqlDa = new SqlDataAdapter("exec [dbo].[get_Pyc2]", sqlCon);
             DataTable dtb = new DataTable();
             sqlDa.Fill(dtb);
             dsyc.DataSource = dtb;
@@ -344,7 +346,9 @@ namespace QLnhahang_anhttt.Food
             {
                 sqlCon.Open();
                 cbbTableID_Order.Enabled = true;
-                SqlDataAdapter ban = new SqlDataAdapter("select SoHieuBan from BAN where tinhtrang='NONE'", sqlCon);
+                // SqlDataAdapter ban = new SqlDataAdapter("select SoHieuBan from BAN where tinhtrang='NONE'", sqlCon);
+                SqlDataAdapter ban = new SqlDataAdapter("exec [dbo].[get_Shb]", sqlCon);
+
                 DataTable b = new DataTable();
                 ban.Fill(b);
                 cbbTableID_Order.DataSource = b;
@@ -353,11 +357,8 @@ namespace QLnhahang_anhttt.Food
                 cbbTableID_Order.Text = "Chọn bàn";
                 sqlCon.Close();
             }
-           
             
         }
-
-
         //something
 
         private void btnAddFood_Click(object sender, EventArgs e)
@@ -456,16 +457,26 @@ namespace QLnhahang_anhttt.Food
                     {
                         sqlCon.Open();
 
-                        SqlCommand up = new SqlCommand();
+                      /*  SqlCommand up = new SqlCommand();
                         up.Connection = sqlCon;
                         up.CommandText = "update BAN set tinhtrang = 'FULL' where SoHieuBan = '" + cbbTableID_Order.Text + "' ";
-                        up.ExecuteNonQuery();
+                        up.ExecuteNonQuery();*/
 
 
                         SqlCommand add1 = new SqlCommand();
                         add1.Connection = sqlCon;
-                        add1.CommandText = "INSERT INTO PHIEUYEUCAU (SOPYC, NGAYXUAT, NGAYGIOYC, LOAI, MAKH, SOHIEUBAN) VALUES ('" + txtOrderID_Order.Text + "','" + dt.ToString("yyyy-MM-dd") + "','" + time.ToString() + "','2','" + lblID_Order.Text + "','" + cbbTableID_Order.Text + "')";
+                       // add1.CommandText = "INSERT INTO PHIEUYEUCAU (SOPYC, NGAYXUAT, NGAYGIOYC, LOAI, MAKH, SOHIEUBAN) VALUES ('" + txtOrderID_Order.Text + "','" + dt.ToString("yyyy-MM-dd") + "','" + time.ToString() + "','2','" + lblID_Order.Text + "','" + cbbTableID_Order.Text + "')";
+                        add1.CommandText = "exec add_pyc '" + txtOrderID_Order.Text + "','" + dt.ToString("yyyy-MM-dd") + "','" + time.ToString() + "','" + "2" +"','" + lblID_Order.Text + "','" + cbbTableID_Order.Text + "';";
                         add1.ExecuteNonQuery();
+                    
+
+                        // update ban sang tinh trang full khi nhan ADD  
+                        SqlCommand up = new SqlCommand();
+                        up.Connection = sqlCon;
+                        // up.CommandText = "update BAN set tinhtrang = 'FULL' where SoHieuBan = '" + cbbTableID_Order.Text + "' ";
+                        up.CommandText = "exec update_Ban '" + txtOrderID_Order.Text + "' ";  // update ban theo phieu yeu cau
+                        up.ExecuteNonQuery();
+
                         sqlCon.Close();
                         for (int i = 0; i < FoodMenu.count; i++)
                         {
@@ -475,7 +486,8 @@ namespace QLnhahang_anhttt.Food
                                 try
                                 {
                                     SqlDataReader ma = null;
-                                    SqlCommand macmd = new SqlCommand("select MaMonAn from MonAn where tenmon=N'" + paymentlist[i].lbl_name.Text + "'", sqlCon);
+                                 // SqlCommand macmd = new SqlCommand("select MaMonAn from MonAn where tenmon=N'" + paymentlist[i].lbl_name.Text + "'", sqlCon);
+                                    SqlCommand macmd = new SqlCommand("exec get_MaMonAn N'" + paymentlist[i].lbl_name.Text + "'", sqlCon);
                                     ma = macmd.ExecuteReader();
                                     while (ma.Read())
                                     {
@@ -491,7 +503,8 @@ namespace QLnhahang_anhttt.Food
                                 sqlCon.Open();
                                 SqlCommand add2 = new SqlCommand();
                                 add2.Connection = sqlCon;
-                                add2.CommandText = "INSERT INTO CHITIETPYC (SOPYC, MAMONAN, SOLUONG, DONGIA) VALUES('" + txtOrderID_Order.Text + "','" + mamon + "','" + paymentlist[i].guna2NumericUpDown1.Value + "','" + paymentlist[i].lbl_price.Text + "')";
+                                //add2.CommandText = "INSERT INTO CHITIETPYC (SOPYC, MAMONAN, SOLUONG, DONGIA) VALUES('" + txtOrderID_Order.Text + "','" + mamon + "','" + paymentlist[i].guna2NumericUpDown1.Value + "','" + paymentlist[i].lbl_price.Text + "')";
+                                add2.CommandText = "exec add_CTPyc '" + txtOrderID_Order.Text + "','" + mamon + "','" + paymentlist[i].guna2NumericUpDown1.Value + "','" + paymentlist[i].lbl_price.Text + "';";
                                 add2.ExecuteNonQuery();
                                 sqlCon.Close();
                                 //MessageBox.Show("Order Successfully!!");
@@ -500,7 +513,7 @@ namespace QLnhahang_anhttt.Food
                         MessageBox.Show("Order Successfully!!");
                     } catch
                     {
-                        MessageBox.Show("Vui lòng kiểm tra thông tin khách hàng trước khi gọi món", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Vui lòng kiểm tra thông tin khách hàng trước khi gọi món!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
                 else if (String.IsNullOrEmpty(txtPhone_Order.Text))
@@ -730,7 +743,8 @@ namespace QLnhahang_anhttt.Food
             try
             {
                 SqlDataReader subtt = null;
-                SqlCommand subcmd = new SqlCommand("select Sum((Soluong)*(Dongia)) from CHITIETPYC where sopyc = '" + dsyc.Rows[i].Cells[0].Value.ToString() + "'", sqlCon);
+                // SqlCommand subcmd = new SqlCommand("select Sum((Soluong)*(Dongia)) from CHITIETPYC where sopyc = '" + dsyc.Rows[i].Cells[0].Value.ToString() + "'", sqlCon);
+                SqlCommand subcmd = new SqlCommand("exec get_preMoney '" + dsyc.Rows[i].Cells[0].Value.ToString() + "'", sqlCon);
                 subtt = subcmd.ExecuteReader();
                 while (subtt.Read())
                 {
@@ -816,7 +830,8 @@ namespace QLnhahang_anhttt.Food
 
             sqlCon.Open();
             SqlDataReader muc = null;
-            SqlCommand pt = new SqlCommand("select mucgiam from khuyenmai where makm='" + cbbDiscount.Text + "'", sqlCon);
+            // SqlCommand pt = new SqlCommand("select mucgiam from khuyenmai where makm='" + cbbDiscount.Text + "'", sqlCon);
+            SqlCommand pt = new SqlCommand("exec get_MucGiam '" + cbbDiscount.Text + "'", sqlCon);
             muc = pt.ExecuteReader();
             while (muc.Read())
             {
@@ -838,14 +853,18 @@ namespace QLnhahang_anhttt.Food
                 sqlCon.Open();
                 SqlCommand del = new SqlCommand();
                 del.Connection = sqlCon;
-                del.CommandText = "update phieuyeucau set loai='1' where sopyc='" + lblOrderID_Bill.Text + "' ";
+                // del.CommandText = "update phieuyeucau set loai='1' where sopyc='" + lblOrderID_Bill.Text + "' ";
+                del.CommandText = "exec update_PYC '" + lblOrderID_Bill.Text + "' ";
+
                 del.ExecuteNonQuery();
                 sqlCon.Close();
 
                 sqlCon.Open();
                 SqlCommand up = new SqlCommand();
                 up.Connection = sqlCon;
-                up.CommandText = "update BAN set tinhtrang='NONE' where SoHieuBan='" + lblTableID_Bill.Text + "' ";
+                //up.CommandText = "update BAN set tinhtrang='NONE' where SoHieuBan='" + lblTableID_Bill.Text + "' ";
+                up.CommandText = "exec update_BanTrong '" + lblTableID_Bill.Text + "' ";
+
                 up.ExecuteNonQuery();
                 sqlCon.Close();
 
@@ -853,7 +872,8 @@ namespace QLnhahang_anhttt.Food
                 SqlCommand add = new SqlCommand();
                 add.Connection = sqlCon;
                 DateTime date = Convert.ToDateTime(dateTimePicker1.Text);
-                add.CommandText = "INSERT INTO HOADON (MAHD, NGAYTHU, TONGTIEN, MANV, MAKH, SOPYC) VALUES ('" + txtIDHD.Text + "',N'" + date.ToString("yyyy-MM-dd") + "','" + lblTotal1_Bill.Text + "','" + cbbNV_Bill.Text + "','" + lblID_Bill.Text + "','" + lblOrderID_Bill.Text + "')";
+                // add.CommandText = "INSERT INTO HOADON (MAHD, NGAYTHU, TONGTIEN, MANV, MAKH, SOPYC) VALUES ('" + txtIDHD.Text + "',N'" + date.ToString("yyyy-MM-dd") + "','" + lblTotal1_Bill.Text + "','" + cbbNV_Bill.Text + "','" + lblID_Bill.Text + "','" + lblOrderID_Bill.Text + "')";
+                add.CommandText = "exec Them_HD '" + txtIDHD.Text + "',N'" + date.ToString("yyyy-MM-dd") + "','" + lblTotal1_Bill.Text + "','" + cbbNV_Bill.Text + "','" + lblID_Bill.Text + "','" + lblOrderID_Bill.Text + "';";
                 add.ExecuteNonQuery();
                 sqlCon.Close();
                 DialogResult result = MessageBox.Show("Đã thanh toán thành công!\nBạn có muốn in hóa đơn không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
@@ -934,7 +954,7 @@ namespace QLnhahang_anhttt.Food
                 try
                 {
                     if (path == "")
-                        menu[index].Background = Image.FromFile(@"D:\QLNhaHang\Food\food\menufood.png"); // Chỉnh tùy máy
+                        menu[index].Background = Image.FromFile(@"D:\food\menufood.png"); // Chỉnh tùy máy
                     else
                         menu[index].Background = Image.FromFile(path);
                 }
@@ -995,7 +1015,8 @@ namespace QLnhahang_anhttt.Food
                 sqlCon.Open();
                 SqlCommand table = new SqlCommand();
                 table.Connection = sqlCon;
-                table.CommandText = "update ban set tinhtrang = 'BOOKED' where sohieuban ='" + txtTableID.Text + "' ";
+                // table.CommandText = "update ban set tinhtrang = 'BOOKED' where sohieuban ='" + txtTableID.Text + "' ";
+                table.CommandText = "exec book_table '" + txtTableID.Text + "' ";
                 table.ExecuteNonQuery();
                 sqlCon.Close();
                 MessageBox.Show("This table is booked!");
@@ -1010,16 +1031,22 @@ namespace QLnhahang_anhttt.Food
         {
             // update lai tinh trang ban;
             sqlCon.Open();
-            //Data_Provider.exc("update ban set tinhtrang = 'NONE' where '" + txtTableID.Text.Trim() + "'");
-            SqlCommand table = new SqlCommand();
-            table.Connection = sqlCon;
-            table.CommandText = "update ban set tinhtrang = 'NONE' where sohieuban = '" + txtTableID.Text.Trim() + "'";
-            table.ExecuteNonQuery();
+            /*    //Data_Provider.exc("update ban set tinhtrang = 'NONE' where '" + txtTableID.Text.Trim() + "'");
+                SqlCommand table = new SqlCommand();
+                table.Connection = sqlCon;
+                table.CommandText = "update ban set tinhtrang = 'NONE' where sohieuban = '" + txtTableID.Text.Trim() + "'";
+                table.ExecuteNonQuery();
+                //loadban();
+                MessageBox.Show("This table is NONE!");
+                sqlCon.Close();
+                //Data_Provider.exc("exec update_ban ('" + txtTableID.Text + "');");*/
+           
+            Data_Provider.exc("exec cancel_ban '" + txtTableID.Text + "';");
             //loadban();
             MessageBox.Show("This table is NONE!");
             sqlCon.Close();
             //Data_Provider.exc("exec update_ban ('" + txtTableID.Text + "');");
-            
+
         }
 
         private void btnPrint_Bill_Click(object sender, EventArgs e)
